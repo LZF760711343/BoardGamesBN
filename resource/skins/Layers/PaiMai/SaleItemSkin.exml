@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SaleItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*" width="115" height="165">
+	<e:Image           width="115" height="121"  source="kuangbg_area_png"/>
+	<e:Image  y="19" source="fangka_icon1_png" horizontalCenter="0"/>
+    <e:Label id="text_count" text="100" x="28" y="117" size="23" width="63" height="26" verticalAlign="middle" textAlign="center" visible="false"/>
+	<UI:CommonBtn id="text_Count" label="123" bgStr="bigR_icon_png" skinName="UI.CommonBtnSkin" y="122" scaleX="0.6" scaleY="0.6"/>
+</e:Skin>

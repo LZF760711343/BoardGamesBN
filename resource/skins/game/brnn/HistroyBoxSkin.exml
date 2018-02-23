@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.brnn.HistroyBoxSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:UI="UI.*" width="913" height="508">
+	<w:Config id="15fe6cbce08"/>
+	<UI:LayerBgImg source="zst_dikuan_png"/>
+	<e:Image y="78" source="zst_area33_png" horizontalCenter="0"/>
+	<e:Image x="207" y="101" source="tiao_hz12_png"/>
+	<e:Image left="153" y="89" source="new_hzicon_png"/>
+	<UI:CommonBtn id="_btnClose" right="-14" top="-23" scaleX="0.8" scaleY="0.8" skinName="UI.CommonBtnSkin" icon="zst_exit_png"/>
+	<e:Image horizontalCenter="0" top="15" source="zst_hztext_png"/>
+	<e:Image source="tian_zst_png" left="43" y="129"/>
+	<e:Image source="di_zst_png" left="43" y="215.34"/>
+	<e:Image source="huang_zst_png" y="387" left="43"/>
+	<e:Image source="xuan_zst_png" left="43" y="301.66"/>
+	<e:Group x="154" y="129" anchorOffsetX="0" width="721">
+		<e:Image x="0" y="0" source="gx_hzarea22_png"/>
+		<e:Image x="10" y="10" source="gx_hzarea22_png"/>
+		<e:Image x="70" y="70" source="gx_hzarea22_png"/>
+		<e:Image x="20" y="20" source="gx_hzarea22_png"/>
+		<e:Image x="60" y="60" source="gx_hzarea22_png"/>
+		<e:Image x="30" y="30" source="gx_hzarea22_png"/>
+		<e:Image x="40" y="40" source="gx_hzarea22_png"/>
+		<e:Image x="50" y="50" source="gx_hzarea22_png"/>
+		<e:Image x="60" y="60" source="gx_hzarea22_png"/>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="left" verticalAlign="top" gap="27"/>
+		</e:layout>
+	</e:Group>
+	<e:List id="_list" x="154" y="129" itemRendererSkinName="HistroyRecord" width="721" height="337" anchorOffsetX="0" anchorOffsetY="0">
+		<e:layout>
+			<e:TileLayout requestedRowCount="4" horizontalAlign="left" verticalAlign="middle" rowAlign="justifyUsingGap" columnAlign="left" requestedColumnCount="9" orientation="columns" horizontalGap="27"/>
+		</e:layout>
+		<e:ArrayCollection>
+		</e:ArrayCollection>
+	</e:List>
+</e:Skin>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PkBoardSkin" xmlns:e="http://ns.egret.com/eui" width="1000" height="318" xmlns:zjh="zjh.*" xmlns:UI="UI"
+        xmlns:w="http://ns.egret.com/wing" xmlns:UI1="UI.*" xmlns:tween="egret.tween.*" states="left_lose,left_win" >
+	<w:Declarations>
+		<tween:TweenGroup id="_win">
+			<tween:TweenItem target="{group}">
+				<tween:To duration="500" ease="cubicInOut">
+					<tween:props>
+						<e:Object x="{220}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:To duration="500" ease="cubicInOut">
+					<tween:props>
+						<e:Object x="{459}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="cubicOut">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{-1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{-1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{-1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{-1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{1}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1800"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object source="sz_bao1_png"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{1.5}" scaleY="{1.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400" ease="bounceOut">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="500"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{1.5}" scaleY="{1.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400" ease="bounceOut">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="500"/>
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Group id="group" x="-321">
+		<e:Image source="zjh_pkboard_png"  scaleX.left_lose="1.1" scaleY.left_lose="1.1" x.left_lose="-18.67" source.left_lose="zjh_pkboard_png" scaleX="1.1" scaleY="1.1" x.left_win="-23.98"/>
+		<e:Label id="_playerName" text="水源" x="79" y="117.77999999999997" fontFamily="Microsoft YaHei" size="20"/>
+		<e:Label id="_playerGlod" text="999" x="83.5" y="156.65999999999997" fontFamily="Microsoft YaHei" size="16" textColor="0xffd500"/>
+		<UI1:HeadBox id="_playImgs" x="63" y="33.870000000000005" skinName="UI.HeadBoxSkin" width="69" height="69"/>
+		<e:Image x="62.66" y="156.01" source="feng_icon1_png"/>
+		<zjh:Card id="_card1" x="50" y="202.04" skinName="niuniu.CardSkin" scaleX="0.5" scaleY="0.5" x.left_lose="22"/>
+		<zjh:Card id="_card2" x="70" y="201.75" skinName="niuniu.CardSkin" scaleX="0.5" scaleY="0.5" x.left_lose="42"/>
+		<zjh:Card id="_card3" x="90" y="201.75" skinName="niuniu.CardSkin" scaleX="0.5" scaleY="0.5" x.left_lose="62"/>
+	</e:Group>
+
+
+
+	<e:Group id="group0" y="0"  x="1000">
+		<e:Image source="zjh_pkboard2_png" scaleX.left_lose="1.1" scaleY.left_lose="1.1" source.left_lose="zjh_pkboard2_png" scaleX="1.1" scaleY="1.1"/>
+		<e:Label id="_OplayerName" text="水源" x="200" y="117.77999999999997" fontFamily="Microsoft YaHei" size="20"/>
+		<e:Label id="_OplayerGlod" text="999" x="222.71" y="156.65999999999997" fontFamily="Microsoft YaHei" size="16" textColor="0xFFD500"/>
+		<UI1:HeadBox id="_OplayImgs" x="200" y="33.870000000000005" skinName="UI.HeadBoxSkin"  width="69" height="69"/>
+		<e:Image x="200" y="156.01" source="feng_icon1_png"/>
+		<zjh:Card id="_card4" x="160" y="201.35" skinName="niuniu.CardSkin" scaleX="0.5" scaleY="0.5"/>
+		<zjh:Card id="_card5" x="180" y="201.35" skinName="niuniu.CardSkin" scaleX="0.5" scaleY="0.5"/>
+		<zjh:Card id="_card6" x="200" y="201.35" skinName="niuniu.CardSkin" scaleX="0.5" scaleY="0.5"/>
+	</e:Group>
+    <e:Image id="image0" source="zjh_EffElc_png" x="360.33" bottom="28" />
+    <e:Image id="image" source="zjh_TextVs_png" x="529" y="82.37"  anchorOffsetX="173" anchorOffsetY="129"/>
+    <e:Image id="image3" x="825" y="178.32" source="zjh_TextVic_png"  anchorOffsetX="46" anchorOffsetY="49" x.left_win="210" y.left_win="179.34"/>
+    <e:Image id="image2" x="215" y="176.04" source="zjh_TextFail_png"  anchorOffsetX="52" anchorOffsetY="47" x.left_win="830" y.left_win="182.34"/>
+	<e:Image id="image1" x="221" y="161" source="sz_bao1_png" x.left_win="537"/>
+</e:Skin>

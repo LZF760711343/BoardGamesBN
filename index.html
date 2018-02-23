@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HZ棋牌</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="full-screen" content="true" />
+	<meta name="screen-orientation" content="portrait" />
+	<meta name="x5-fullscreen" content="true" />
+	<meta name="360-fullscreen" content="true" />
+	<style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+<script>
+	MAP_CONFIG = "$1";
+	VERSION = "$1"
+</script>
+<!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+<!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="resourcemanager/resourcemanager.js" src-release="resourcemanager/resourcemanager.min.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js" src-release="libs/modules/eui/eui.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js" src-release="libs/modules/socket/socket.min.js"></script>
+	<script egret="lib" src="libs/modules/particle/particle.js" src-release="libs/modules/particle/particle.min.js"></script>
+	<script egret="lib" src="promise/bin/promise.js" src-release="promise/bin/promise.min.js"></script>
+	<!--modules_files_end-->
+
+<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+
+
+<!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+<!--game_files_start-->
+	<script egret="game" src="bin-debug/core/datas/const.js"></script>
+	<script egret="game" src="bin-debug/core/datas/model.js"></script>
+	<script egret="game" src="bin-debug/core/view/BaseScene.js"></script>
+	<script egret="game" src="bin-debug/core/datas/Config.js"></script>
+	<script egret="game" src="bin-debug/core/view/BaseLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/GameSceneBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/LogicBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/GameScene.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameScene.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/AnimationBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/CardBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/DiscardBoxBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/GameDatasBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/GameEffectLayerBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/GameMsgHandlerBase.js"></script>
+	<script egret="game" src="bin-debug/core/net/NetConst.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/GameUIBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/PlayerBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/RoundAccountLayerBase.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/H5WebBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/Zoom.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/GameScene.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/cardbox/CardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/DiscardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/GameScene.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/HandCardBox.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/IPlatform.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/zjh/ZJHLogic.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameScene.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/RoomConfigLayerBase.js"></script>
+	<script egret="game" src="bin-debug/core/view/SelectScene/SelectScene.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/CommonBtn.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/CountDown.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/RadioBtn.js"></script>
+	<script egret="game" src="bin-debug/DebugUsers.js"></script>
+	<script egret="game" src="bin-debug/LoginScene.js"></script>
+	<script egret="game" src="bin-debug/utils/GzqdSdk.js"></script>
+	<script egret="game" src="bin-debug/utils/IWebView.js"></script>
+	<script egret="game" src="bin-debug/core/view/effect/Effect.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/animation/Lost.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/animation/Start.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/animation/Win.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/Animation.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/NativeBridge.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/AnimationMjZhongMa.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/Bubble.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/NativePlatform.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/ChatBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/ChatTalkBox.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/PayCode.js"></script>
+	<script egret="game" src="bin-debug/core/control/pool/Distributor.js"></script>
+	<script egret="game" src="bin-debug/core/control/pool/IDistributor.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/base/GameEvent.js"></script>
+	<script egret="game" src="bin-debug/core/control/pool/IPoolObject.js"></script>
+	<script egret="game" src="bin-debug/core/control/pool/ObjectGenerator.js"></script>
+	<script egret="game" src="bin-debug/core/control/ResManager.js"></script>
+	<script egret="game" src="bin-debug/core/control/SceneManager.js"></script>
+	<script egret="game" src="bin-debug/core/control/SelectSceneMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/ani/chipsPoolNiuNiu.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/ani/chipsPoolShanguang.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/ani/ZhuanJiaShanguang.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/BrnnCountDown.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/BrnnRadioBtn.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/BrnnZoom.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/ChipsPool.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/DisCardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/GameDatas.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/GameLang.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/GameListLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/GameMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/control/SoundManage.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/GameUI.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/HandCardBoxBr.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/HistroyBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/model.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/Player.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/ShenQingListLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/TipBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/WangListLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/WinLose.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/brnn/ZhuanJiaCuoPai.js"></script>
+	<script egret="game" src="bin-debug/core/control/GlobalMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/Card.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/CardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/dh/liandui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/dh/plane.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/dh/RedLight.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/dh/shunzi.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/dh/wangzha.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/dh/zhadan.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/DiscardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/GameBtnBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/GameDatas.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/GameEffectLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/GameMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/datas/ConfigDef.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/GameUI.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/logic/HandCard.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/logic/Poker.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/logic/PokerCard.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/model.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/Player.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/ddz/RoundAccountDdzLyayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/DissolveLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/GameConst.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Aui/majiangchiAui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Aui/majiangGangAui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Aui/majianghuAui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Aui/majiangpengAui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Aui/majiangshaoAui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Aui/majiangtanAui.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Card.js"></script>
+	<script egret="game" src="bin-debug/core/control/LayerManage.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/cardbox/CardBoxLeft.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/cardbox/CardBoxRight.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/cardbox/CardBoxTop.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/cardbox/CardType.js"></script>
+	<script egret="game" src="bin-debug/core/datas/Filters.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameBtnBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameConst.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameDatas.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameEffectLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/control/ConfigDefManager.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/GameUI.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/logic/Majiang.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/logic/MajiangCard.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/model.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/Player.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/RoundAccountMjLyayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/SelectBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/SelectBtn.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/TanDiscardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/majiang/TimeBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/CalBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/Card.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/CuoPaiAni.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/DiscardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/GameBtnBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/GameDatas.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/GameEffectLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/GameMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/datas/GameLangs.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/GameUI.js"></script>
+	<script egret="game" src="bin-debug/core/datas/LocalDatas.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/Player.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/niuniu/RoundAccountLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/PhoneInfoBox.js"></script>
+	<script egret="game" src="bin-debug/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/niuniu/NiuniuLogic.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/niuniu/Poker.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/Robot.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/SelectSceneLogic.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/robot/zjh/ZJHGoldLogic.js"></script>
+	<script egret="game" src="bin-debug/core/net/BaseMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/Card.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/ChipsBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/ChipsObj.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/ChipsPool.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/CuoPaiAni.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/DiscardBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameBtnBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameDatas.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameEffectLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameLangs.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameMsgHandler.js"></script>
+	<script egret="game" src="bin-debug/core/net/DataView.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/GameUI.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/model.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/PkAniLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/game/zjh/Player.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/AccountLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/AppDownload.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/BindingPhoneLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/CreateRoomLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/Dezhou.RoomConfigLayerSkin.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/DZZRoomConfigLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/MaJiangRoomConfigLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/NiuniuRoomcConfigLayer.js"></script>
+	<script egret="game" src="bin-debug/core/net/GameLang.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/SZPRoomConfigLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/create/TwoNiuniuRoomcConfigLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/DrawLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/EnterRoomLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/GameAnnouncementLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/GameMessagetDetaiLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/GameMessgeListLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/HintSkinLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/ModifyUserInfoLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/PaiMaiLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/PaiMaiWindowLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/PerforManceLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/PlayMethodLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/PreforManceSecondLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/RankingListLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/recharge/FirstGiftLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/recharge/GetGiftAni.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/recharge/RechargeLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/RulesLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/SafeBoxLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/SettingLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/ShareDayLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/ShareGift.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/SharePost.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/UserInfoLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/WaitingLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/Layers/WelfareCenterLayer.js"></script>
+	<script egret="game" src="bin-debug/core/view/SelectScene/HunderNNSelectRoomItem.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/H5WechatOAPlatform.js"></script>
+	<script egret="game" src="bin-debug/core/view/SelectScene/SpeakerMan.js"></script>
+	<script egret="game" src="bin-debug/core/net/NetEvent.js"></script>
+	<script egret="game" src="bin-debug/core/net/Protocols.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/Danmu.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/DropDownList.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/GrayBtn.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/HeadBox.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/LoadingIcon.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/ProgressBar.js"></script>
+	<script egret="game" src="bin-debug/core/net/NetManage.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/ToggleButton.js"></script>
+	<script egret="game" src="bin-debug/core/view/skins/Tween.js"></script>
+	<script egret="game" src="bin-debug/core/net/ReceiveMsg.js"></script>
+	<script egret="game" src="bin-debug/Global.js"></script>
+	<script egret="game" src="bin-debug/core/net/WebSocket.js"></script>
+	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/test/TestLayer.js"></script>
+	<script egret="game" src="bin-debug/ThemeAdapter.js"></script>
+	<script egret="game" src="bin-debug/utils/Base64.js"></script>
+	<script egret="game" src="bin-debug/utils/BitmapLabel.js"></script>
+	<script egret="game" src="bin-debug/utils/CoolTime.js"></script>
+	<script egret="game" src="bin-debug/utils/Decorators.js"></script>
+	<script egret="game" src="bin-debug/utils/EffectUtils.js"></script>
+	<script egret="game" src="bin-debug/utils/EventManager.js"></script>
+	<script egret="game" src="bin-debug/utils/FrameManager.js"></script>
+	<script egret="game" src="bin-debug/core/control/platform/H5WechatPlatform.js"></script>
+	<script egret="game" src="bin-debug/utils/HtmlWebImgView.js"></script>
+	<script egret="game" src="bin-debug/utils/HtmlWebView.js"></script>
+	<script egret="game" src="bin-debug/core/control/EVENT_DEFINF.js"></script>
+	<script egret="game" src="bin-debug/utils/LogManage.js"></script>
+	<script egret="game" src="bin-debug/utils/NativeWebView.js"></script>
+	<script egret="game" src="bin-debug/utils/Recorder.js"></script>
+	<script egret="game" src="bin-debug/utils/SprintfWrapper.js"></script>
+	<script egret="game" src="bin-debug/utils/StringUtil.js"></script>
+	<script egret="game" src="bin-debug/utils/Toast.js"></script>
+	<script egret="game" src="bin-debug/utils/uploadPhoto.js"></script>
+	<script egret="game" src="bin-debug/utils/Util.js"></script>
+	<script egret="game" src="bin-debug/utils/WoPlaySdk.js"></script>
+	<!--game_files_end-->
+</head>
+
+<body>
+	<div style="margin: auto;width: 100%;height: 100%;" 
+	class="egret-player" 
+	data-entry-class="Main" 
+	data-orientation="landscape" 
+	data-scale-mode="fixedNarrow" 
+	data-frame-rate="30"
+	data-content-width="1136" data-content-height="640" 
+	data-show-paint-rect="false" 
+	data-multi-fingered="2" 
+	data-show-fps="false"
+	data-show-log="false" 
+	ata-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+<img src="" style=" position: fixed;left: 0;top:50%;transform:translateY(-50%);transform-origin: 0 0;" class="egret-img"/>
+
+<div class="-mob-share-ui" style="display: none">
+<ul class="-mob-share-list">
+	<li class="-mob-share-weixin">
+		<p>微信</p>
+	</li>
+</ul>
+<div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=1eb3f69b89a44"></script>
+<script>
+	function IsPC() {
+		var userAgentInfo = navigator.userAgent;
+			var Agents = ["Android", "iPhone",
+				"SymbianOS", "Windows Phone",
+				"iPad", "iPod"];
+			var flag = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) > 0) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+	}
+	if (document.getElementsByClassName("egret-img")) {
+		var img = document.getElementsByClassName("egret-img")[0];
+		if (!IsPC() && document.body.clientWidth < document.body.clientHeight) {
+			img.width = document.body.clientHeight;
+			img.height = document.body.clientWidth;
+			img.style.transform = "rotate(90deg) translateY(" + document.body.clientWidth / -1 + "px) translateX(" + document.body.clientHeight / -2 + "px)";
+		} else {
+			img.style.width = "100%";
+		}
+		img.src = "http://www.hongzhegame.com/boardgames/splash_img.jpg";
+	}
+	egret.runEgret({
+		renderMode: "canvas", audioType: 0
+	});
+</script>
+
+</body>
+
+</html>

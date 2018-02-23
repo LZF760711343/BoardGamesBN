@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UI.DropDownListSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" states="up,down"  width="237" height="96">
+	<w:Config id="15c5d30f5ee"/>
+	
+	
+	<e:Group id="_allGroup" horizontalCenter="0" verticalCenter="0">
+		<e:Label id="_label1" text="初级场" x="53" y="27" size="30" fontFamily="Microsoft YaHei" width="147" height="35" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" bold="true" textAlign="center" visible="false"/>
+		<e:Group id="_group" x="51" y="69" anchorOffsetX="0" width="184" anchorOffsetY="0" height="141" visible="false">
+			<e:Image y="0" x="0" anchorOffsetX="0" width="187"/>
+			<e:Scroller x="3" y="3" anchorOffsetX="0" width="181" anchorOffsetY="0" height="133">
+			<e:List id="_list" x="-10" y="2" anchorOffsetX="0" width="176" anchorOffsetY="0" height="127" itemRendererSkinName="DorpDownLabel">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object str="初级场-5000入场"/>
+						<e:Object str="中级场-30万入场"/>
+						<e:Object str="高级场-60万入场"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="_groupbtn" width="186" height="32" horizontalCenter="-2" top="35" anchorOffsetX="0" visible="false">
+			<UI:CommonBtn id="_btn1" label="Button" x="149" y="-9" skinName="UI.ScaleButonSkin" scaleX="1" scaleY="1" anchorOffsetX="0" width="42" anchorOffsetY="0" height="42"/>
+		</e:Group>
+		<UI:CommonBtn x="25" y="50" bgStr="jrfj_icon_png" skinName="UI.CommonBtnSkin" icon="kuaisukaishi_icon_png"/>
+	</e:Group>
+	
+	
+</e:Skin>

@@ -1,0 +1,47 @@
+{
+    "name": "GameRoomGloldConfig",
+    "dataSize": 4,
+    "key": "id",
+    "data": [
+        {
+            "id": 1,
+            "GameID": 13,
+            "chuJi_minPlay": 2000,
+            "chuJi_maxPlay": 700000,
+            "zhongJi_minPlay": 700000,
+            "zhongJi_maxPlay": 2000000,
+            "gaoJi_minPlay": 2000000,
+            "gaoJi_maxPlay": -1
+        },
+        {
+            "id": 2,
+            "GameID": 9,
+            "chuJi_minPlay": 10000,
+            "chuJi_maxPlay": 500000,
+            "zhongJi_minPlay": 500000,
+            "zhongJi_maxPlay": 2000000,
+            "gaoJi_minPlay": 2000000,
+            "gaoJi_maxPlay": -1
+        },
+        {
+            "id": 3,
+            "GameID": 11,
+            "chuJi_minPlay": 10000,
+            "chuJi_maxPlay": 300000,
+            "zhongJi_minPlay": 300000,
+            "zhongJi_maxPlay": 2000000,
+            "gaoJi_minPlay": 1000000,
+            "gaoJi_maxPlay": -1
+        },
+        {
+            "id": 4,
+            "GameID": 40,
+            "chuJi_minPlay": 5000,
+            "chuJi_maxPlay": 700000,
+            "zhongJi_minPlay": 700000,
+            "zhongJi_maxPlay": 2000000,
+            "gaoJi_minPlay": 2000000,
+            "gaoJi_maxPlay": -1
+        }
+    ]
+}

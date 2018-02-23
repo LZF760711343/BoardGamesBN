@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="zjh.ChipsBtnSkin" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+	
+	<e:Image horizontalCenter="0" verticalCenter="0"  alpha.disabled="0.6" source="{bgStr}" width="100%" height="100%" width.down="90%" height.down="90%"/>
+	<e:BitmapLabel horizontalCenter="0" verticalCenter="-3" font="zjhChips_fnt" letterSpacing="-3" alpha.disabled="0.6" scaleX.down="0.9" scaleY.down="0.9" text="{icon}" text.disabled="{icon}"/>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TakeIntegralSkin" width="540" height="363" xmlns:e="http://ns.egret.com/eui" xmlns:components="components.*" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+<UI:LayerBgImg x="0" y="0" width="100%" height="100%"/>
+	<e:Image x="9" anchorOffsetX="0" width="96%" anchorOffsetY="0" height="64" source="titleBox_png" scale9Grid="20,24,15,60"/>
+     <e:Image source="drjf_toptext_png" y="5" horizontalCenter="0"/>
+
+          <e:Image source="dmxm_text1_png" x="51.0000000000001" y="125"/>
+     <e:Image source="drjf_text1_png" x="387" y="125"/>
+
+     <e:Label id="_labelMinChips"  textColor="0xb36c25" verticalAlign="middle"
+	         textAlign="left"  text="400" x="98" y="215"/>
+<e:Label id="_labelMaxChips"  textColor="0xb36c25" verticalAlign="middle"
+	         textAlign="right"  text="500" x="415" y="215"/>
+<e:Label id="_labelMangZ" size="30"  textColor="0x46a226" anchorOffsetY="0"
+	          text="1/2" x="103" y="83"/>
+<e:Label id="_labelTakeScore"  textColor="0x46a226" verticalAlign="middle"
+	         textAlign="center"  text="250" x="419" y="86"/>
+    <UI:CommonBtn id="_btnStartGame" label="Button" skinName="UI.CommonBtnSkin" bgStr="blue_icon1_png" icon="gamebegin_text2_png"  width="169" height="75" y="246" horizontalCenter="0"/>
+	<e:HSlider id="_hSlider" y="152.5" x="165" anchorOffsetX="0" width="254" anchorOffsetY="0" height="29" skinName="skins.HSliderSkin"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="-11" top="-12"/>
+
+</e:Skin>

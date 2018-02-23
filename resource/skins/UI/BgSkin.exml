@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UI.BgSkin" xmlns:e="http://ns.egret.com/eui"  states="1,2" >
+	<e:Rect width="100%" height="100%" alpha="0.5" includeIn="1"/>
+</e:Skin>

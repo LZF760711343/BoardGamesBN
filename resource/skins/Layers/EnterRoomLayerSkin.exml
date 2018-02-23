@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EnterRoomLayerSkin" width="760" height="580" xmlns:e="http://ns.egret.com/eui" xmlns:components="components.*" xmlns:niuniu="niuniu.*" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+<UI:LayerBgImg top="0" width="100%" height="100%" />
+	<e:Image x="37.92" y="81.85" source="kuang1_png" anchorOffsetX="0" width="685.15" anchorOffsetY="0" height="488"/>
+	<e:Image x="221.77" y="161.24" source="xiahuaxian_area_png"/>
+	<e:Image x="316.77" y="161.24" source="xiahuaxian_area_png"/>
+	<e:Image x="409.77" y="161.24" source="xiahuaxian_area_png"/>
+	<e:Image x="500.77" y="161.24" source="xiahuaxian_area_png"/>
+	<e:Image x="592.77" y="161.24" source="xiahuaxian_area_png"/>
+	<e:Image x="127.77" y="161.24" source="xiahuaxian_area_png"/>
+	
+	
+	<e:Group id="_btnGroup" y="182.23" x="76">
+		<UI:CommonBtn id="_num1" skinName="UI.CommonBtnSkin" name="1" bgStr="button_green_png" x="0" y="0" label="1"/>
+		<UI:CommonBtn id="_num2" skinName="UI.CommonBtnSkin" name="2" bgStr="button_green_png" y="0" x="207" label="2"/>
+		<UI:CommonBtn id="_num3" skinName="UI.CommonBtnSkin" name="3" bgStr="button_green_png" x="414" y="0" label="3"/>
+		<UI:CommonBtn id="_num4" skinName="UI.CommonBtnSkin" name="4" bgStr="button_green_png" x="0" y="95" label="4"/>
+		<UI:CommonBtn id="_num5" skinName="UI.CommonBtnSkin" name="5" bgStr="button_green_png" y="95" x="207" label="5"/>
+		<UI:CommonBtn id="_num6" skinName="UI.CommonBtnSkin" name="6" bgStr="button_green_png" x="414" y="95" label="6"/>
+		<UI:CommonBtn id="_num7" skinName="UI.CommonBtnSkin" name="7" bgStr="button_green_png" x="0" y="190" label="7"/>
+		<UI:CommonBtn id="num8" skinName="UI.CommonBtnSkin" name="8" bgStr="button_green_png" y="190" x="207" label="8"/>
+		<UI:CommonBtn id="_num9" skinName="UI.CommonBtnSkin" name="9" bgStr="button_green_png" x="414" y="190" label="9"/>
+		<UI:CommonBtn id="_num0" skinName="UI.CommonBtnSkin" name="0" bgStr="button_green_png" y="285" x="207" label="0"/>
+		<UI:CommonBtn id="_reset" skinName="UI.CommonBtnSkin" name="r" bgStr="button_Bred_png" x="0" y="285" label="重 输"/>
+		<UI:CommonBtn id="_dedel" skinName="UI.CommonBtnSkin" name="d" bgStr="bigG_icon_png" x="414" y="285" label="删 除"/>
+	</e:Group>
+	
+	<e:Label id="_erLabel" fontFamily="Microsoft YaHei" y="87.5" anchorOffsetX="0" textAlign="center" size="50" anchorOffsetY="0" bold="true" horizontalCenter="64.5"  width="351.15"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Group x="138.36" y="117.5" width="500" height="44">
+		<e:Label id="_roomLab1"  size="40" bold="true" horizontalCenter="-243.5" verticalCenter="-2"/>
+		<e:Label id="_roomLab2"  size="40" bold="true" horizontalCenter="-148.5" verticalCenter="-1"/>
+		<e:Label id="_roomLab3"  size="40" bold="true" horizontalCenter="-51.5" verticalCenter="-2"/>
+		<e:Label id="_roomLab4"  size="40" bold="true" horizontalCenter="41.5" verticalCenter="-2"/>
+		<e:Label id="_roomLab5"  size="40" bold="true" horizontalCenter="131.5" verticalCenter="-2"/>
+		<e:Label id="_roomLab6"  size="40" bold="true" horizontalCenter="224.5" verticalCenter="-2"/>
+	</e:Group>
+	<e:Image horizontalCenter="0" top="26" source="jiarufangjian_text_png"/>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SystemSetSkin" width="760" height="393" xmlns:e="http://ns.egret.com/eui" xmlns:components="components.*" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" states="select,game,majiang" height.game="300" height.select="430">
+	<e:Image source="paihang1_png" width="100%" height="100%" scale9Grid="94,233,571,275" scale9Grid.game="94,81,571,427" anchorOffsetY.select="0" height.select="430.88"/>
+	<e:Image horizontalCenter="0" top="26" source="xitongshezhi_text_png"/>
+
+	<e:Label text="音乐" size="38" fontFamily="Microsoft YaHei" horizontalCenter="-243" top="117"/>
+	<e:Label text="声效" size="38" fontFamily="Microsoft YaHei" horizontalCenter="-243" top="235"/>
+	<e:Label text="方言语音" size="38" fontFamily="Microsoft YaHei" includeIn="majiang" x="96.67" y="324.66"/>
+
+     <e:Image x="196" y="132" source="gB_area_png"/>
+	<e:Image x="196" y="251" source="gB_area_png"/>
+	<e:Image x="253" y="344.99" source="gB_area_png" includeIn="majiang" width="302"/>
+    <UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+    <!--<UI:CommonBtn label="Button" x="65.5" y="236" skinName="UI.CommonBtnSkin" bgStr="blue_icon1_png" icon="tcdl_text2_png"  width="149" height="74" includeIn="select"/>-->
+    <UI:CommonBtn id="_btnChange" label="切换账号" skinName="UI.CommonBtnSkin" bgStr="bigG_icon_png"  x.game="208.5" includeIn="select" horizontalCenter="1.5" y="298"/>
+	<e:ToggleButton id="_btnMusic"  x="558" y="108" skinName="UI.ToggleButtonSkin"/>
+	<e:ToggleButton id="_btnEffect" label="ToggleButton" x="558" y="226" skinName="UI.ToggleButtonSkin"/>
+	<e:ToggleButton id="_btnLocalism" label="ToggleButton" x="558" y="312.99" skinName="UI.ToggleButtonSkin" includeIn="majiang" selected="true"/>
+	<e:Rect id="_rect" width="757" height="393" includeIn="select" x="2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+	<e:Label id="_versionLab" text="版本号:1.0.0" x="22" y="389.03" bold="true" size="25" fontFamily="Microsoft YaHei" visible.majiang="false" includeIn="select"/>
+
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UI.CommonBtnSkin2" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled">
+	<e:Image width.up="100%" height.up="100%" width.down="90%" height.down="90%"
+	         width="100%" height="100%" source="{bgStr}" source.disabled="{bgGrayStr}"  x="0" y="0" verticalCenter.up="0" verticalCenter.down="-1.5" left.up="0" left.down="3"/>
+	<e:Group x="0" y="0" scaleX.down="0.9" scaleY.down="0.9" width.up="100%" verticalCenter.up="0" width.down="100%" verticalCenter.down="0" right.up="0" right.down="0">
+		<e:Label text="领取" bold="true" size="36" fontFamily="Microsoft YaHei" left="20" verticalCenter="-2" left.down="35" left.up="30"/>
+		<e:Label text="{label}" size="24" style="style2" textColor="0xf4efeb" size.down="30" size.up="30" verticalCenter.up="0" verticalCenter.down="0" x.disabled="0" y="0" horizontalCenter.down="35" horizontalCenter.up="40" textColor.up="0xffffff" textColor.down="0xffffff" bold="true"/>
+	</e:Group>
+</e:Skin>

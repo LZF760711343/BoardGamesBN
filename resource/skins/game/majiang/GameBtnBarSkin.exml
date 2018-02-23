@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="majiang.GameBtnBarSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing" states="ready,none,goldready">
+	<e:Group includeIn="ready,goldready" >
+		<UI:GrayBtn id="btnChangeDesk" label="换桌" horizontalCenter="0" icon="button_green_png" bottom="4" includeIn="goldready" x="458" y="-4.760000000000005" scaleX="0.8" scaleY="0.8" skinName="UI.CommonBtnSkin3" bgStr="button_green_png"/>
+		
+		<UI:GrayBtn id="btnReady" label="准 备" horizontalCenter="0" icon="bigR_icon_png"
+		              bottom="4" includeIn="ready,goldready" x="458" y="-4.760000000000005" scaleX="0.8"
+		              scaleY="0.8"  skinName="UI.CommonBtnSkin3"/>
+		<e:layout>
+			<e:HorizontalLayout gap="130" />
+		</e:layout>
+	</e:Group>
+</e:Skin>

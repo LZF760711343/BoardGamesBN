@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankingListLayerSkin" width="1114" height="618" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<UI:LayerBgImg width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin" anchorOffsetX="0" anchorOffsetY="0" width="89" height="88" right="5" top="13" scaleX="0.8" scaleY="0.8"/>
+	<e:Image y="111.63" source="head_area_png" scale9Grid="135,9,813,55" width="1089.67" horizontalCenter="0"/>
+	<e:Group y="103" horizontalCenter="0.5" anchorOffsetY="0" height="498.33">
+		<e:Group x="43" y="26.56">
+			<e:Label text="名次" x="0" y="1.9999999999999858" size="32" fontFamily="Microsoft YaHei"/>
+			<e:Label text="头像" x="125.99999999999994" y="1.9999999999999858" size="32" fontFamily="Microsoft YaHei"/>
+			<e:Label text="玩家名字" x="337" y="3.0000000000000284" size="32" fontFamily="Microsoft YaHei"/>
+			<e:Label text="财富值" x="751" y="0" size="32" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Scroller width="1072.06" height="410" x="2.18" y="82.92" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group width="1072.06" anchorOffsetX="0" anchorOffsetY="0" y="2.67">
+			<e:List id="_ranList" itemRendererSkinName="RankingListSkin" y="1" width="99.9%" horizontalCenter="0.4700000000000273" useVirtualLayout="true">
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object fa="null"/>
+				</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+				<e:VerticalLayout paddingTop="17" gap="18"/>
+				</e:layout>
+			</e:List>
+				<e:Group x="28.68" y="7.31" anchorOffsetY="0" height="88.33" touchEnabled="false" touchChildren="false">
+					<e:Image x="0" y="0" source="hz_hg1_png"/>
+				</e:Group>
+				<e:Group x="28.68" y="112.62" anchorOffsetY="0" height="88.33">
+					<e:Image x="0" y="0" source="hz_hg2_png"/>
+				</e:Group>
+				<e:Group x="28.68" y="213.94" anchorOffsetY="0" height="88.33">
+					<e:Image x="0" y="0" source="hz_hg3_png"/>
+				</e:Group>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Image horizontalCenter="0" top="24" source="zongcaifu_text_png"/>
+</e:Skin>

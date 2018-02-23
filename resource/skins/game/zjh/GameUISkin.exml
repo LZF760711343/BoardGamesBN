@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="zjh.GameUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*" width="1136" height="640">
+	<e:Label id="roomIdLab" text="房间号：123456" bold="true" size="26" fontFamily="黑体" textColor="0xFFFFFF" left="16" top="17"/>
+	<e:Label id="gameCntLab" text="第 0/8 局" size="26" bold="true" fontFamily="黑体" left="16" top="59" textColor="0xffffff"/>
+	<UI:CommonBtn id="_chatBtn" label="Button" icon="lt_icon_png" skinName="UI.ScaleButonSkin" right="14" bottom="184" height="82"/>
+	<UI:CommonBtn id="_voiceBtn" label="Button" icon="yy_icon_png" skinName="UI.ScaleButonSkin" right="13" bottom="90"/>
+	<UI:CommonBtn id="_inviteBtn" label="Button" icon="yqf_icon_png" skinName="UI.ScaleButonSkin" right="13" bottom="0"/>
+	<UI:CommonBtn id="_rechargeBtn" label="Button" icon="cz_hzicon_png" skinName="UI.ScaleButonSkin" right="14" bottom="184" visible="false"/>
+	<UI:Zoom id="_zoomButton" skinName="UI.ZoomSkin" top="17" right="18" locked="true"/>
+	<UI:CommonBtn id="_SetBtn" label="Button" x="934.81" y="13.04" skinName="UI.ScaleButonSkin" icon="Sz_icon_png" visible="false"/>
+	<UI:CommonBtn id="_dissolveBtn" label="Button" x="1028.76" y="13.04" skinName="UI.ScaleButonSkin" icon="yc_icon_png" visible="false"/>
+	<UI:CommonBtn id="_ruleBtn" label="Button" icon="gz_icon_png" skinName="UI.ScaleButonSkin" left="23" top="106"/>
+</e:Skin>

@@ -1,0 +1,159 @@
+﻿@charset "utf-8";
+/*公共部分*/
+* {
+    word-spacing: 0;
+    letter-spacing: .02rem;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear {
+    clear: both
+}
+.half {
+    width: 50%;
+    float: left;
+    position: relative
+}
+.half > a {
+    position: relative;
+    width: 92px;
+    display: inline-block;
+    background: #18b4ed;
+    height: 92px;
+    left: 50%;
+    margin-left: -4rem
+}
+.half > a  img {
+    width: 92px;
+    height: 92px;
+
+}
+.half > p {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 1.2rem;
+    color: #999;
+}
+.logo-license {
+    margin-top: 8rem
+}
+.logo {
+    border-radius: 100%
+}
+/*图片裁剪-触屏设备*/
+.htmleaf-container{
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    /*display: none;*/
+    z-index: 9999999;
+}
+[hidden] {
+    display: none;
+}
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+}
+#clipArea {
+    height: 90%;
+}
+/*上传图标*/
+#file{
+    float: left;
+    height: 100%;
+}
+#clipBtn{
+    float: right;
+    height: 100%;
+    width: 8rem;
+    background: #18b4ed;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-size: 2rem;
+    z-index: 999;
+}
+.foot-use{
+    background: #fff;
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+.uploader1 {
+    position: absolute;
+    width: 50%;
+    cursor: default;
+    height: 100%;
+    float: left;
+}
+.filename {
+    position: absolute;
+    outline: 0 none;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    color: #999;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 0;
+    top: 9.2rem;
+    text-align: center;
+
+}
+.button {
+    float: left;
+    height: 100%;
+    display: inline-block;
+    outline: 0 none;
+    margin: 0;
+    cursor: pointer;
+    border: 0;
+    width: 8rem;
+    font-size: 2rem;
+}
+.uploader1 input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height:8rem;
+    width: 50%;
+    cursor: pointer;
+    opacity: 0;
+}
+.blue .button {
+    color: #fff;
+    background: #18b4ed;
+    height: 100%;
+}
+
+
+
+
+
+
+
+

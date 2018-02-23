@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.brnn.GameUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:UI="UI.*" xmlns:tween="egret.tween.*" xmlns:brnn="niuniu.brnn.*" width="1136" height="640">
+	<w:Declarations>
+		<tween:TweenGroup id="_play">
+			<tween:TweenItem target="{_playGameLabelTabBtn}">
+				<tween:Set/>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object left="{17}" bottom="{100}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object left="{12}" bottom="{88}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup/>
+	</w:Declarations>
+	<w:Config id="15c3e77f9d6" />
+	<e:Group top="96" left="75">
+	</e:Group>
+	<UI:CommonBtn id="_playGameLabelTabBtn" label="Button" skinName="UI.ScaleButonSkin" icon="zbwj_hzicon_png"
+	               left="12" bottom="88"/>
+	<UI:CommonBtn id="_histroyBtn" label="Button" skinName="UI.ScaleButonSkin" icon="zs_hzicon_png" right="12" bottom="88"/>
+	<UI:CommonBtn id="_ruleBtn" label="Button" icon="guiz_hzicon_png" skinName="UI.ScaleButonSkin" left="12" top="66"
+	              />
+	<UI:BrnnZoom id="_zoomButton" height="623" skinName="UI.ZoomSkin" top="12" right="12"/>
+	<UI:CommonBtn id="_chatBtn" label="Button" icon="liaotian_hzicon_png" skinName="UI.ScaleButonSkin" right="90" anchorOffsetY="0" top="11"/>
+	<e:Component id="_dangmuGroup" left="0" right="0" top="110" bottom="215" touchChildren="false" touchEnabled="false"  anchorOffsetY="0"/>
+	<UI:CommonBtn id="_voiceBtn" label="Button" icon="yy_hzicon_png" skinName="UI.ScaleButonSkin" right="90" bottom="88"/>
+	<e:Group id="_ruleInfo" width="233" anchorOffsetY="0" top="12" bottom="11" anchorOffsetX="0" verticalCenter="0.5" right="-233">
+		<e:Image width="100%" height="100%" source="hzkuize_dib_png"/>
+		<e:Image source="hzbrll_guize_png" top="16" left="21" height="583" width="193" verticalCenter="0"/>
+	</e:Group>
+	<UI:CommonBtn id="_huanZhouBtn" label="Button" skinName="UI.ScaleButonSkin" icon="hzhz_hzicon_png" bottom="88" left="90"/>
+
+</e:Skin>

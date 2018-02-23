@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UserInfoLayerSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:components="components.*" xmlns:ns1="*" xmlns:UI="UI.*" width="556" height="269">
+	<e:Image source="paihang1_png" width="100%" height="100%"/>
+	<e:Image source="dibang_area2_1_png" bottom="8" left="8" right="8" top="45"/>
+	<e:Component id="_sex" x="341" y="117.33" skinName="UI.UserInfoLableSkin"/>
+	<e:Component id="_gold" x="341" y="155.45" skinName="UI.UserInfoLableSkin"/>
+	<e:Component id="_nameLabel2" x="341" y="78.91" skinName="UI.UserInfoLableSkin"/>
+	<e:Label text="性别：" x="283" y="120.91" size="22"/>
+	<e:Label text="金币：" x="283" y="160.25" size="22"/>
+	<e:Label text="个性签名：" x="239" y="199.78" size="22" visible="false"/>
+	<e:Label text="名称：" x="283" y="80.58" size="22"/>
+	<!--<e:Label id="_nameLabel" text="水" y="191.78" size="30" fontFamily="微软雅黑" bold="true" left="24" textColor="0xffffff" anchorOffsetX="0" width="180" anchorOffsetY="0" height="28"/>
+	<e:Label id="_idLabel" y="238.78" text="ID:" size="22" fontFamily="微软雅黑" bold="true" left="24" textColor="0xffffff" anchorOffsetX="0" width="180"/>-->
+	<e:Label id="_ipLabel" y="270.78" text="IP:192.168.1.1" size="22" fontFamily="微软雅黑" bold="true" textColor="0xffffff" left="24" width="180" visible="false"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="-16" top="-18" scaleX="0.8" scaleY="0.8"/>
+	<e:Component id="_nameLabel" x="107" y="80" skinName="UI.UserInfoLableSkin"/>
+	<e:Component id="_idLabel" x="107" y="119.58" skinName="UI.UserInfoLableSkin"/>
+	<e:Group id="_headGroup" x="78.61" y="114.78" anchorOffsetX="37" width="72" anchorOffsetY="35" height="72" scaleX="1" scaleY="1">
+		<e:Rect id="_roundMask" ellipseWidth="20" ellipseHeight="20" scaleX="1.4" scaleY="1.4" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tad_area_png" scaleX="1.4" scaleY="1.4" left="0" right="0" top="0" bottom="0"/>
+		<UI:HeadBox id="_head" skinName="UI.HeadBoxSkin" scaleX="1.4" scaleY="1.4" left="0" right="0" top="0" bottom="0"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" left="0" bottom="0" visible="false">
+		<e:Image x="0" y="0" source="j_area_png" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="_iconSex" x="8" y="4" source="nan_area_png"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="_uploadPhoto" width="73" height="75" x="41.61" y="77.78" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Image bottom="5" scaleX="1.2" scaleY="1.2" height="19" source="b_area11_png" left="0" right="0"/>
+		<e:Label text="点击上传" size="12" scaleX="1" scaleY="1" horizontalCenter="-0.5" bottom="10"/>
+	</e:Group>
+	<UI:CommonBtn id="_modifyBtn"  x="235" y="201.5" anchorOffsetX="0" width="81" anchorOffsetY="0" height="41" skinName="UI.CommonBtnSkin" bgStr="tu_area_png" icon="xiugai_text_png" visible="false"/>
+	<e:Label text="个人资料" y="9" bold="true" horizontalCenter="0.5"/>
+	<e:Group x="341" y="197" anchorOffsetY="0" anchorOffsetX="0" maxWidth="198" minWidth="121" visible="false">
+		<e:Image source="arean1112_png" left="0" right="0" top="0" bottom="0" scale9Grid="10,11,102,11"/>
+		<e:Label id="_qianMingText" text="范德萨范德萨范德萨范德萨范德萨范德萨范德萨范德萨范德萨范德萨" size="18" left="10" right="10" top="7" bottom="7"/>
+	</e:Group>
+</e:Skin>

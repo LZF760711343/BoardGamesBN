@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuyWindowSkin" width="760" height="581" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*">
+	<UI:LayerBgImg x="5" y="1.68" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0"/>
+	<UI:CommonBtn id="btn_buy" label="购买" x="282" y="450" anchorOffsetY="0" anchorOffsetX="0" skinName="UI.CommonBtnSkin" bgStr="button_Bred_png"/>
+	<e:Image x="52" y="113" width="685" height="183" scale9Grid="9,8,147,52" anchorOffsetX="0" anchorOffsetY="0" source="kuang1_png"/>
+	<e:Image  x="52" y="335" width="658" height="78" anchorOffsetX="0" anchorOffsetY="0" source="kuang1_png"/>
+
+	<e:Image x="127" y="136" anchorOffsetX="0" anchorOffsetY="0" source="kuangbg_area_png"/>
+	<e:Image x="141.4" y="153.4" width="108" height="95" source="fangka_icon1_png"/>
+
+
+	<UI:CommonBtn id="btn_add" label="Button" x="270" y="106" anchorOffsetY="0" height="28" anchorOffsetX="0" width="30" skinName="UI.CommonBtnSkin" visible="false"/>
+	<UI:CommonBtn id="btn_reduce" label="Button" x="161" y="105.5" anchorOffsetY="0" height="28" anchorOffsetX="0" width="30" skinName="UI.CommonBtnSkin" visible="false"/>
+	<e:Label text="门票" x="337" y="142" anchorOffsetX="0" width="198" anchorOffsetY="0" height="44" textAlign="left" size="33" fontFamily="Microsoft YaHei"/>
+	<e:Label text="购买的数量：" x="337.5" y="198.76" anchorOffsetX="0" width="184" anchorOffsetY="0" height="25" textAlign="left" size="24" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+	<e:Label text="总价：" x="162.16" y="358.5" anchorOffsetX="0" width="172" anchorOffsetY="0" height="31" textAlign="center" size="24" fontFamily="Microsoft YaHei" verticalAlign="middle"/>
+
+
+	<UI:CommonBtn id="_btnClose" label="Button" x="672" anchorOffsetX="0" anchorOffsetY="0" bgStr="close_icon_png" skinName="UI.CloseBtnSkin"/>
+	<e:Group x="339.52" y="242.68">
+		<e:Image x="0" y="0" width="214" height="44" source="kuang1_png"/>
+		<e:EditableText id="text_up" text="1" size="32" textAlign="center" verticalAlign="middle" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group x="240.5" y="353.94">
+		<e:Image x="68.56" y="-1.54" anchorOffsetX="0" width="257" anchorOffsetY="0" height="44" source="kuang1_png"/>
+	</e:Group>
+	<e:Label id="text_cost" text="10000" x="391.15" y="359.54" size="34" verticalAlign="middle" textAlign="center"/>
+	<e:Image horizontalCenter="0" top="19" source="goumaidaoju_text_png"/>
+
+</e:Skin>

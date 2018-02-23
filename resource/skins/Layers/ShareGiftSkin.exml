@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShareGiftSkin" width="935" height="497" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<UI:LayerBgImg width="100%" height="100%" locked="true"/>
+	<e:Image horizontalCenter="0" top="26" source="yaoqiu_png"/>
+	<e:Image source="kuang1_png" anchorOffsetX="0" y="97.5" width="94%" scale9Grid="27,121,166,201" height="77%" horizontalCenter="0.5"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" scaleX="0.8" scaleY="0.8"/>
+	<e:Label text="邀请的好友：点击头像可领取金币" x="54.28" y="123.92" fontFamily="Microsoft YaHei" size="25"/>
+	<e:Label text="规则说明" x="54.28" y="256.63" fontFamily="Microsoft YaHei" size="25"/>
+	<e:Label text="1.点击“邀请”按钮，给微信好友发送邀请链接" x="54.28" y="289.96" fontFamily="Microsoft YaHei" size="22"/>
+	<e:Label text="2.成功邀请一个新注册用户激活并玩结束一局即可送2万金币" x="53.64" y="318.16" fontFamily="Microsoft YaHei" size="22"/>
+	<e:Label text="3.奖励上限30人。" x="53.02" y="350.9" fontFamily="Microsoft YaHei" size="22"/>
+	<e:Label text="4.成功邀请好友的奖励以消息里面邮件形式发送。" x="53.02" y="383.16" fontFamily="Microsoft YaHei" size="22" visible="false"/>
+	<e:Scroller width="760" height="82" y="163.56" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5">
+
+			<e:List id="_shraeHeard" width="100%" height="60" itemRendererSkinName="ShareHeardSkin">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:HorizontalLayout gap="32"/>
+				</e:layout>
+			</e:List>
+
+	</e:Scroller>
+	<UI:CommonBtn id="_yaoqing" label="邀 请" skinName="UI.CommonBtnSkin" bgStr="bigG_icon_png" scaleX="0.9" scaleY="0.9" horizontalCenter="0" y="386.51"/>
+</e:Skin>

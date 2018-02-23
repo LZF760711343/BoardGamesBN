@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.brnn.ShenQingListSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:UI="UI.*" width="913" height="508">
+	<w:Config id="15fe71103d8"/>
+	<UI:LayerBgImg width="100%" height="100%" x="1" y="-1"/>
+	<UI:CommonBtn id="_applyBtn" skinName="UI.CommonBtnSkin" bgStr="button_Bred_png" touchChildren="false" x="136" y="344.83" label="申请上庄"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" scaleX="0.8" scaleY="0.8"/>
+	<e:Image horizontalCenter="-231" top="27" source="sqsz_hztext1_png"/>
+	<e:Image horizontalCenter="180.5" top="28" source="szlb_texthz_png"/>
+	<e:Image y="102" source="tiao_hzarea_png" rotation="90" horizontalCenter="0" width="392"/>
+	<e:Image y="168.67" source="rengshu_area_png" x="132"/>
+	<e:Image y="251" x="35.67" width="396" height="62" source="dibang_area2_1_png"/>
+	<e:Label text="上庄条件" x="171" y="173.67" fontFamily="Microsoft YaHei" bold="true"/>
+	<e:Group top="102" right="14">
+		<e:Image y="0" source="rengshu_area_png" anchorOffsetX="0" width="423.33" x="0"/>
+		<e:Label text="序列" x="60.999999999999886" y="7" fontFamily="Microsoft YaHei" bold="true"/>
+		<e:Label text="用户名" x="232.32999999999993" y="7" fontFamily="Microsoft YaHei" bold="true"/>
+	</e:Group>
+	<e:BitmapLabel x="152.5" y="263.2" font="AddNum_fnt" text="5000" scaleX="1.2" scaleY="1.2"/>
+	<e:Image x="275" y="265" anchorOffsetX="0" anchorOffsetY="0" source="wanNum_png" width="33" height="34"/>
+	<e:Scroller width="348" height="308" x="533" y="148" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="on">
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" y="-1">
+			<e:List id="_list" width="348" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="niuniu.brnn.ShenQingListItemSkin" scaleX="1" scaleY="1">
+				<e:ArrayCollection>
+					<!--<e:Array>
+						<e:Object text="1"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+						<e:Object text="null"/>
+					</e:Array>-->
+				</e:ArrayCollection>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

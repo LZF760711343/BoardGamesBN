@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoundAccountmjItem" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:majiang="majiang.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="_bg" source="ditu_area_png"/>
+	<e:Image source="nyl_icon_png" horizontalCenter="0"/>
+	<e:DataGroup y="137.66" itemRendererSkinName="RoundAccountmjItem" x="207">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object a="null"/>
+				<e:Object a="null"/>
+				<e:Object a="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="10"/>
+		</e:layout>
+	</e:DataGroup>
+    <UI:CommonBtn id="_goBtn"  y="518.33" skinName="UI.CommonBtnSkin" icon="fengxian_text_png" x="329" bgStr="orange_icon1_png"/>
+	<UI:CommonBtn id="_goBtn0"  y="518.33" skinName="UI.CommonBtnSkin" bgStr="ready_greeniocn1_png" icon="zhunbei_text_png" x="686"/>
+</e:Skin>

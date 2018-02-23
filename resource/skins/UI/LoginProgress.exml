@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.LoginProgress" height="5" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image height="5" source="jdt_di_png" horizontalCenter="0" verticalCenter="0" scale9Grid="9,9,1,8" width="100%"/>
+	<e:Image id="thumb" height="3" source="jdt_ht_png" x="0" y="1" width="100%" scale9Grid="9,8,2,7"/>
+	<e:Image y="9.44" source="jdt_sg1_png" anchorOffsetX="19" anchorOffsetY="32" x="{value}" height="50"/>
+</e:Skin>

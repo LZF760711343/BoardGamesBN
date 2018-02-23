@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DDZ.GameBtnBarSkin" height="190" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing" states="showCard,none,call,grab,double,ready,callfen,goldready" height.goldready="190" width.goldready="420">
+	<UI:CountDown id="_countDown" y="11" horizontalCenter="0" includeIn="showCard,call,grab,double,callfen" skinName="UI.CountDownSkin"/>
+	<e:Group y="118.76" horizontalCenter="0" includeIn="showCard,call,grab,double,callfen">
+		<UI:CommonBtn id="btnBuyao" label="不 出" x="0" bgStr="bigG_icon_png"
+		              bgGrayStr="bigH_icon_png" y="0" includeIn="showCard" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btnTishi" label="提 示" x="0" bgStr="bigG_icon_png"
+		              bgGrayStr="bigH_icon_png" y="0" includeIn="showCard" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btnChupai" label="出 牌" x="0"
+		              bgStr="bigR_icon_png" bgGrayStr="bigH_icon_png" y="0" includeIn="showCard" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btnBujiao" label="不 叫" x="0"
+		              bgGrayStr="bigH_icon_png" y="0" includeIn="call,grab,callfen"  name="0" label.callfen="不 叫" bgStr.callfen="bigG_icon_png" bgStr="bigG_icon_png" skinName="UI.CommonBtnSkin3" label.call="不 叫" label.grab="不 抢" skinName.callfen="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btn1fen" label="1 分" includeIn="callfen" x="0" y="0" bgStr="bigR_icon_png" name="1" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btn2fen" label="2 分" includeIn="callfen" x="150" y="0" bgStr="bigR_icon_png" name="2" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btn3fen" label="3 分" includeIn="callfen" x="303" y="0" bgStr="bigR_icon_png" name="3" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btnJiaodizhu" label="叫地主" x="0"
+		              bgStr="bigR_icon_png" bgGrayStr="bigH_icon_png" y="0" includeIn="call,grab"
+		               name="1" skinName="UI.CommonBtnSkin3" label.call="叫地主" label.grab="抢地主" scaleX="0.7" scaleY="0.7" x.call="331.91"/>
+		<UI:CommonBtn id="btnJiabei" label="加 倍" x="0" bgStr="bigG_icon_png"
+		              bgGrayStr="bigH_icon_png" y="0" includeIn="double"  skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<UI:CommonBtn id="btnBujiabei" label="不加倍" x="0"
+		              bgStr="bigR_icon_png" bgGrayStr="bigH_icon_png" y="0" includeIn="double" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+		<e:layout>
+			<e:HorizontalLayout gap="10"  gap.grab="100" gap.double="100" gap.callfen="30" gap.call="100" gap.showCard="30"/>
+		</e:layout>
+	</e:Group>
+	<UI:CommonBtn id="btnReady" label="准 备" horizontalCenter="0"
+	              bottom="4" includeIn="ready,goldready"  bgStr="bigR_icon_png" skinName="UI.CommonBtnSkin3" x.goldready="100" horizontalCenter.goldready="116" bottom.goldready="9" scaleX.goldready="0.8" scaleY.goldready="0.8" scaleX="0.8" scaleY="0.8"/>
+	<UI:CommonBtn id="btnChangeDesk" label="换 桌" horizontalCenter="-116" bottom="9" includeIn="goldready" bgStr="button_green_png" skinName="UI.CommonBtnSkin3" x="100" scaleX="0.8" scaleY="0.8"/>
+	
+</e:Skin>

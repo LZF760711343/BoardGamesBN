@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="niuniu.CardTypeAni" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" width="150" height="80">
+	<w:Config id="15d1d244d46"/>
+	<w:Declarations>
+		<tween:TweenGroup id="ani">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object  width="{132}" height="{40}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400" ease="quintOut">
+					<tween:props>
+						<e:Object  width="{132}" height="{40}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-78}" y="{76.5}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="quadOut">
+					<tween:props>
+						<e:Object x="{52}" y="{15.5}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{177}" y="{86}" width="{10}" height="{5}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400" ease="quintOut">
+					<tween:props>
+						<e:Object x="{83}" y="{27}" width="{197}" height="{122}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="200"/>
+				<tween:Set/>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+
+
+	<e:Group width="300" height="200" x="-114" y="-62">
+		<e:Image id="image" source="dibang_png" scaleX="1.5" scaleY="1.5" horizontalCenter="44" top="68"/>
+		<e:Image id="image1" source="sg_ld2_png" x="83" y="27" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="image0" source="sg_ld_png" x="19.0000000000001" y="27" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="image2" y="72" horizontalCenter="38.5" x="153" source="{name}"/>
+	</e:Group>
+</e:Skin>

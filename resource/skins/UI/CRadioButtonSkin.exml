@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CRadioButtonSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down,disabled" >
+	<e:Image verticalCenter="1" left="2" source="k1_area_png" source.disabled="k8_area_png" scaleX="1.4" scaleY="1.4"/>
+	<e:Image verticalCenter="1.5" left="4" includeIn="down" source="d1_icon_png" x="10" y="10" scaleX="1.4" scaleY="1.4"/>
+	<e:Label text="{label}" x="34" size="22" fontFamily="Microsoft YaHei" verticalCenter="0" textColor.disabled="0xa6a59c" scaleX="1.4" scaleY="1.4"/>
+</e:Skin>

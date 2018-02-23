@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="zhuangjiacuopai" width="232" height="54" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" states="cuopai,none">
+	<w:Declarations>
+		<tween:TweenGroup id="_play">
+		
+			<tween:TweenItem target="{image}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{11}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{19}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1400"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="200" />
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{11}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{19}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1200"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="400" />
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{13}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{21}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{12}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{20}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="800"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="800" />
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{11}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{19}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="600"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image4}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="1000" />
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{11}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{19}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="400"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image5}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="1200" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{30}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{37}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="300"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image6}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="1350" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{30}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{37}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="150"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image7}">
+			<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="1500" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{30}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{37}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="image5" source="dian_hz_png" x="189" y="37" includeIn="cuopai" />
+	<e:Image id="image6" source="dian_hz_png" x="199" y="37" includeIn="cuopai" />
+	<e:Image id="image7" source="dian_hz_png" x="209" y="37" includeIn="cuopai" />
+	<e:Image id="image4" source="pai1_hz_png" x="157" y="19" includeIn="cuopai" />
+	<e:Image id="image3" source="cuo1_hz_png" x="127" y="19" includeIn="cuopai" />
+	<e:Image id="image2" source="zai1_hz_png" x="98" y="20" includeIn="cuopai" />
+	<e:Image id="image1" source="z1_hz_png" x="70" y="21" includeIn="cuopai" />
+	<e:Image id="image0" source="j1_hz_png" x="42" y="19" includeIn="cuopai" />
+	<e:Image id="image" source="z1_hz_1_png" x="15" y="19" includeIn="cuopai" />
+</e:Skin>

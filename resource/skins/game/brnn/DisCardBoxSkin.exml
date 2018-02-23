@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.brnn.DisCardBoxSkin" xmlns:tween="egret.tween.*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" width="199" height="101">
+	<w:Config id="15c430b37a6" />
+	<w:Declarations horizontalCenter="0" verticalCenter="9">
+		<tween:TweenGroup id="showCards">
+			<tween:TweenItem target="{_typeImg}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="800" />
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{1.3}" scaleY="{1.3}" alpha="{1}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="200" ease="cubicIn">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_rateBox}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="800" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{card5}">
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object x="{86}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object x="{116}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Group id="_cardsGroup" horizontalCenter="0" verticalCenter="0.5" height="100" anchorOffsetX="0" width="188">
+		<niuniu:Card xmlns:niuniu="niuniu.*" x="0" y="0" skinName="niuniu.CardSkin" scaleX="0.6" scaleY="0.6"  width="120" height="166" visible="false"/>
+		<niuniu:Card xmlns:niuniu="niuniu.*" x="26" y="0" skinName="niuniu.CardSkin" scaleX="0.6" scaleY="0.6" width="120" height="166" visible="false"/>
+		<niuniu:Card xmlns:niuniu="niuniu.*" x="56" y="0" skinName="niuniu.CardSkin" scaleX="0.6" scaleY="0.6"  height="166" width="120" visible="false"/>
+		<niuniu:Card id="card4" xmlns:niuniu="niuniu.*" x="86" y="0" skinName="niuniu.CardSkin" scaleX="0.6" scaleY="0.6"  width="120" height="166" visible="false"/>
+		<niuniu:Card id="card5" xmlns:niuniu="niuniu.*" x="116" y="0" skinName="niuniu.CardSkin" scaleX="0.6" scaleY="0.6"  width="120" height="166" visible="false"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="_typeImg" horizontalCenter="0" verticalCenter="11" />
+	<e:Component id="_rateBox" x="107" y="-28" name="j5_bei_png" visible="false">
+		<e:skinName>
+			<e:Skin states="win,lose" >
+				<e:Image id="_rateImgBg" y="0" x="0" source="redqi_icon_png"  source.lose="blueqi_icon_png"/>
+				<e:Image id="_rateImg" x="4" y="36"  source="{name}"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Component>
+</e:Skin>

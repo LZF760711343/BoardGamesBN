@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.AccountItemSkin8" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing" width="1020">
+	<e:Rect id="_bg" width="100%" height="100%" fillColor="0xFFFFFF" ellipseWidth="15" ellipseHeight="15" scaleX="1"
+	        scaleY="1" alpha="{data.alpha}" />
+	<UI:HeadBox id="_headBox" y="5.32" skinName="UI.HeadBoxSkin" horizontalCenter="-480"
+	            anchorOffsetX="0" width="42.34" anchorOffsetY="0" height="42.34" />
+	<e:Label id="_nickName" text="{data.nickName}" style="style3" size="22" y="16" horizontalCenter="-385.5"
+	         fontFamily="Microsoft YaHei"  textColor="0xffffff"/>
+	<e:Label id="_id" style="style3" size="22" y="16" horizontalCenter="-218" text="{data.account}"
+	         fontFamily="Microsoft YaHei"  textColor="0xffffff"/>
+	<e:Label id="_score" style="style3" size="22" textAlign="center" textColor="0x54a530" text="{data.score}"
+	         verticalCenter="0" horizontalCenter="440.5" />
+	<e:Label id="lab1" text="最高积分:" size="22" fontFamily="Microsoft YaHei" textColor="0x54a530" y="16"
+	         horizontalCenter="-55" />
+	<e:Label id="lab2" text="最高积分:" size="22" fontFamily="Microsoft YaHei" textColor="0x54a530" y="16"
+	         horizontalCenter="99" />
+	<e:Label id="lab3" text="最高积分:" size="22" fontFamily="Microsoft YaHei" textColor="0x54a530" y="16"
+	         horizontalCenter="256" />
+	<e:Image id="_roomOnwerImg" source="fanzhu_icon_png" x="38.27" y="-1.5" anchorOffsetX="0" width="35.09"
+	         anchorOffsetY="0" height="22" />
+	<e:Image id="_winerImg" source="winner_icon_png" x="789.5" y="-31.5" />
+</e:Skin>

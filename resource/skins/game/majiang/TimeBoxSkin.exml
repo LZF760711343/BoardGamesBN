@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="majiang.TimeBoxSkin" currentState="state3" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing"
+        states="state1,state4,state3,state2,none" width="120" height="106">
+	<e:Image x="0" y="0"  source="dlxb_icon11_png"/>
+	<e:Image x="0" y="0" source="dlxb_icon11_png"/>
+	<e:Image source="green_deng_png" x="-9" y="69" source.state4="blue_deng_png" x.state4="-22" y.state4="-19" source.state2="red_deng_png"           x.state2="79" y.state2="-21.5" source.state3="yellow_deng_png" y.state3="-23.5" x.state3="-22.5" includeIn="state1,state4,state3,state2"           x.state1="-21.5" y.state1="69" />
+	<UI:CountDown id="_countDown" includeIn="state1,state4,state3,state2" curTime="10" horizontalCenter="2.5" verticalCenter="-1.5">
+		<UI:skinName>
+			<e:Skin>
+				<e:BitmapLabel font="MjCountdown_fnt" text="{curTime}" letterSpacing="5" horizontalCenter="0" verticalCenter="0" />
+			</e:Skin>
+		</UI:skinName>
+	</UI:CountDown>
+	<e:Component id="_labels" horizontalCenter="0" verticalCenter="1.5" >
+		<e:skinName>
+			<e:Skin width="122" height="121" xmlns:w="http://ns.egret.com/wing" states="s2,s3,s4,s1" >
+				<e:Image id="iconBei" source="icon_mj_bei_png" horizontalCenter="2" verticalCenter="-39.5" verticalCenter.s3="-1.5" horizontalCenter.s3="43" verticalCenter.s4="34.5" verticalCenter.s1="-5.5" horizontalCenter.s1="-38" scaleX="0.95" scaleY="0.95" horizontalCenter.s2="2" verticalCenter.s2="-39.5" horizontalCenter.s4="2"/>
+				<e:Image id="iconNan" horizontalCenter="2" source="icon_mj_nan_png" verticalCenter="35" verticalCenter.s3="-4" horizontalCenter.s3="-40" verticalCenter.s4="-39" verticalCenter.s1="-6" horizontalCenter.s1="44" horizontalCenter.s2="2" verticalCenter.s2="35" horizontalCenter.s4="2"/>
+				<e:Image id="iconDong" verticalCenter="-3" source="icon_mj_dong_png" horizontalCenter="-39.5" horizontalCenter.s3="3.5" verticalCenter.s3="-39" horizontalCenter.s4="42.5" horizontalCenter.s1="0.5" verticalCenter.s1="35" horizontalCenter.s2="-39.5" verticalCenter.s2="-4" verticalCenter.s4="-3"/>
+				<e:Image id="iconXi" source="icon_mj_xi_png" horizontalCenter="43"  horizontalCenter.s3="1" verticalCenter.s3="35" verticalCenter="-2" horizontalCenter.s4="-39" horizontalCenter.s1="2" verticalCenter.s1="-39" horizontalCenter.s2="43" verticalCenter.s2="-2" verticalCenter.s4="-2"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Component>
+</e:Skin>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DDZ.RoomConfigLayerSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*" width="870" height="510" states="1,2,3,4"  height.3="618"  height.1="464" width.2="1114" height.2="618" width.3="1114" width.4="1114" height.4="618">
+	<UI:LayerBgImg includeIn="2,3,4"  height="100%" width="100%" />
+	<e:Image horizontalCenter="0" top="25" source="guizeshuom_text_png" includeIn="2,3,4"/>
+	<e:Image x="229" y="93" anchorOffsetY="0" height="515" anchorOffsetX="0" width="875" scaleX="1" scaleY="1" source="kuang1_png" scale9Grid="14,286,206,0" includeIn="2,4"/>
+	<e:Image width="199" height="519" x="23" y="93" source="kuang1_png" includeIn="2,4"/>
+	<e:Group id="_roomGroup" x="95.81" y="156.21" x.2="311.26" y.2="157.89" y.1="31.32" x.1="38.52" x.4="311.26" y.4="157.89" includeIn="1,2">
+		<e:Label text="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" fontFamily="微软雅黑" horizontalCenter="-1.5" size="18" x="10" includeIn="1,2,4" text.2="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" textColor.1="0xde7577" textColor="0xde7577" y="288.58" text.4="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡"/>
+		<e:Label text="玩法" x="13" y="84" size="25" fontFamily="Microsoft YaHei" includeIn="1,2,4"/>
+		<e:Label text="炸弹上线" x="-6.08" y="159.42999999999998" size="25" fontFamily="Microsoft YaHei" includeIn="1,2,4"/>
+		<e:Label text="限制" x="13" y="216.39000000000001" size="25" fontFamily="Microsoft YaHei" includeIn="1,2,4"/>
+		<e:Label text="局数" x="13" size="25" fontFamily="Microsoft YaHei" x.1="13" includeIn="1,2,4"/>
+		<e:RadioButton x="116" label="8局(3房卡)" groupName="ddz_level" id="_levelRadio1" value="0" skinName.3="CRadioButtonSkin" skinName="CRadioButtonSkin2" includeIn="1,2,4"/>
+		<e:RadioButton label="16局(5房卡)" id="_levelRadio2" groupName="ddz_level" x="383" value="1" skinName="CRadioButtonSkin2" includeIn="1,2,4"/>
+		<e:RadioButton id="_jdzRadio" label="叫地主" x="116" y="84" skinName="RRadioButtonSkin" groupName="ddz_type" value="0" includeIn="1,2,4"/>
+		<e:RadioButton id="_3zRadio" groupName="ddz_zha" y="160" label="3炸" skinName="RRadioButtonSkin" x="143" value="0" includeIn="1,2,4"/>
+		<e:RadioButton id="_4zRadio" groupName="ddz_zha" x="369" label="4炸" y="160" skinName="RRadioButtonSkin" value="1" includeIn="1,2,4"/>
+		<e:RadioButton id="_5zRadio" y="160" groupName="ddz_zha" label="5炸" skinName="RRadioButtonSkin" x="566" value="2" includeIn="1,2,4"/>
+		<e:RadioButton id="_jfRadio" skinName="RRadioButtonSkin" y="84" label="叫分（123分）" x="383" groupName="ddz_type" value="1" includeIn="1,2,4"/>
+		<e:ToggleButton id="_ipxzRadio" x="109" y="217" skinName="RRadioButtonSkin" label="IP限制" includeIn="1,2,4"/>
+		<e:ToggleButton id="_dlwzRadio" x="340" y="217" skinName="RRadioButtonSkin" label="地理位置限制" x.3="447" y.3="221.22" includeIn="1,2,4"/>
+	</e:Group>
+	<e:Group id="_cardGorup" includeIn="2,4" x="266.98" y="132.21" anchorOffsetY="0" height="452.91" anchorOffsetX="0" width="808.7" visible.2="false">
+		<e:Image source="ddz_gztu1_png" x="18"/>
+		<e:Label text="王炸" includeIn="2,4" x="255" y="17.12" textColor="0xFFFFFF"/>
+		<e:Label text="炸弹" includeIn="2,4" x="253" y="90.48" textColor="0xFFFFFF"/>
+		<e:Label text="单牌" includeIn="2,4" x="253" y="168.88" textColor="0xFFFFFF"/>
+		<e:Label text="对牌" includeIn="2,4" x="253" y="244.79" textColor="0xFFFFFF"/>
+		<e:Label text="三张牌" includeIn="2,4" x="253" y="316.89" textColor="0xFFFFFF"/>
+		<e:Label text="三带一" includeIn="2,4" x="253" y="392.66" textColor="0xFFFFFF"/>
+		<e:Label text="顺子" includeIn="2,4" x="630.57" y="15.06" textColor="0xFFFFFF"/>
+		<e:Label text="连对" includeIn="2,4" x="666" y="90.48" textColor="0xFFFFFF"/>
+		<e:Label text="三顺" includeIn="2,4" x="666" y="165.84" textColor="0xFFFFFF"/>
+		<e:Label text="四带二" includeIn="2,4" x="700.24" y="241.03" textColor="0xFFFFFF"/>
+		<e:Label text="飞机" includeIn="2,4" x="504.16" y="379.8" textColor="0xFFFFFF"/>
+	</e:Group>
+	<UI:CommonBtn id="_btnClose" label="Button" includeIn="2,3,4" x="1026" y="0" icon="close_icon_png" skinName="UI.CloseBtnSkin"/>
+	<e:TabBar width="200" includeIn="4" x="29.01" y="112" itemRendererSkinName="RoomConfigTabberSkin" height="91">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object name="棋牌说明"/>
+			</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+	<e:TabBar id="_tabber" height="159.33" includeIn="2" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="RoomConfigTabberSkin" y="113.64" horizontalCenter="-434">
+		<e:layout>
+		<e:VerticalLayout/>
+		</e:layout>
+		<e:ArrayCollection>
+		<e:Array>
+			<e:Object name="房间规则"/>
+			<e:Object name="棋牌说明"/>
+		</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+	<!--<e:Image includeIn="2" source="close_icon_bg_png" right="0" top="0"/>-->
+	<e:Scroller width="1036.36" height="469.7" includeIn="3" x="44" y="117" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group>
+			<e:Label id="_label1" text="Label" size="20" fontFamily="Microsoft YaHei" horizontalCenter="0" top="0" width="100%"/>
+		</e:Group>
+	</e:Scroller>
+    <!--<e:Image includeIn="3" source="user_info_bg_png" left="0" top="0" anchorOffsetY="0" height="100%" width="100%"/>-->
+
+
+
+
+
+
+	
+</e:Skin>

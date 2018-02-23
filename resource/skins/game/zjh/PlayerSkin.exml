@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="zjh.PlayerSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"
+        xmlns:niuniu="niuniu.*" xmlns:UI="UI.*" xmlns:Effect="Effect.*" xmlns:zjh="zjh.*" xmlns:tween="egret.tween.*"
+        states="player1,player2,player3,player4,player5,player6" width.player2="91" height.player2="135"
+        width.player4="91" height.player4="135" width.player5="91"
+        height.player5="135" width.player6="98" height.player6="128" height.player1="135" width.player1="91" width.player3="91" height.player3="135" height="135" width="91">
+	<w:Declarations>
+		<tween:TweenGroup id="_blinkAni">
+			<tween:TweenItem target="{_compImg}">
+				<tween:props>
+					<e:Object loop="{true}"/>
+				</tween:props>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="_bg" x.player6="0" x.player5="0" x.player4="0" x.player3="0" x.player1="0" y.player6="0" y.player5="-1"
+	         y.player2="0"
+	        
+	         horizontalCenter.player6="0"
+	         verticalCenter.player6="0"  scale9Grid.player6="24,27,47,127" source="pebg_area_png" source.player2="pebg_area_png" source.player4="pebg_area_png" source.player5="pebg_area_png" y="0" source.player6="pebg_area_png"/>
+	<e:Rect id="_roundMask" width="74" height="74" x="8" y="6" ellipseWidth="20" ellipseHeight="20"/>
+	<e:Image id="_bgCeng" x="6" y="4" width="78" height="78" source="tad_area_png"/>
+	<UI:HeadBox id="_headBox" width="74" height="74" x="8" y="6" x.player4="8" y.player3="6" x.player2="8"
+	            y.player2="6" y.player1="6" x.player3="8" x.player1="8" x.player5="8" x.player6="11" y.player6="10"
+	             y.player5="6" y.player4="6" skinName="UI.HeadBoxSkin" />
+	<e:Image id="_readyLb" x="112" x.player2="159" y="41" x.player3="22" y.player3="145.5"
+	         x.player4="-112" y.player4="40" y.player1="-18" x.player1="126" y.player2="44" x.player5="-143" y.player5="64"
+	         x.player6="139" y.player6="71"  source="yzb_area_png" visible="false"/>
+	<e:Label id="_nameLb" text="名字很长很长" y="89" size="14" bold="true" fontFamily="微软雅黑" y.player2="91" y.player4="91"
+	         horizontalCenter.player1="1.5"
+	         textColor="0xFFF8F0" y.player5="90"
+	         y.player6="88" horizontalCenter.player6="0" size.player6="12" size.player5="14"  y.player1="91" y.player3="91" horizontalCenter.player2="1.5" horizontalCenter.player3="1.5" horizontalCenter.player4="1.5" horizontalCenter.player5="1.5"/>
+	<e:Image id="_chipIcon" x="6" y="107" x.player2="12" y.player2="111" x.player4="15" y.player4="111" x.player5="14"
+	         y.player5="107" x.player6="15" y.player6="100" width="20" height="20" source="feng_icon1_png" x.player1="10"
+	         y.player1="110" x.player3="12"  y.player3="110"/>
+	<e:Label id="_chipsLb" text="9.99万" x="31" y="111" textColor="0xFFDC3B" size="13" fontFamily="微软雅黑" bold="true"
+	         x.player2="35" y.player2="113" width="57" x.player4="37" y.player4="113" x.player5="37" y.player5="111"
+	         x.player6="37" y.player6="103" size.player5="12" size.player6="12" x.player1="35" y.player1="113"
+	         x.player3="37"  y.player3="114"/>
+	<e:Image id="_tipImg" source="buqian_yishutext2_png" y="34" x.player1="160" y.player1="27" x.player2="168"
+	         y.player2="57" y.player3="142" x.player4="-207" y.player4="47" x.player5="-137" y.player5="125"
+	         x.player6="183" y.player6="125" x.player3="5"  visible="false"/>
+	<e:Image id="_dealerImg" x="-40" y="-37.5" x.player1="-38" y.player1="-35" x.player2="73"
+	         y.player2="-38" x.player3="86" y.player3="-13" x.player4="-43" y.player4="-23" x.player5="-15"
+	         y.player5="-23" x.player6="59" y.player6="-17"  source="zhuan1_icon_png" visible="false"/>
+	<Effect:FrameAni id="_frameAni" source="mj_head_ani_box0_png" x="-71" x.player1="-74"
+	                 y.player1="-59" x.player2="-75.5" y.player2="-58.5" width.player2="226"
+	                 x.player3="-72" y.player3="-59" x.player4="-73" y.player4="-58.5"
+	                 x.player5="-73" y.player5="-54.69" scaleY.player5="0.86" height.player5="281.84" x.player6="-72"
+	                 y.player6="-56.5" height.player6="236"  y="-57" anchorOffsetY="0" height.player4="248" height.player3="248" height.player1="248" anchorOffsetX="0" width="226" height.player2="248" visible="false"/>
+	<e:Group id="_waitingTip" width="100" height="35" x="113" x.player1="118" y.player1="34" x.player2="136"
+	         y.player2="80" x.player3="-156" x.player4="-221" y.player4="89" y.player3="49" y="32" visible="false">
+		<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.5" x.player1="0" y.player1="0" scaleX="1" scaleY="1" />
+		<e:Label id="_tipLabel" text="思考中..." x="0" y="0" size="25" fontFamily="微软雅黑" width="100%" height="100%"
+		         verticalAlign="middle" textAlign="center" x.player2="0" />
+	</e:Group>
+	<UI:ProgressBar id="_proBar" width="100%" height="100%" touchChildren="false" touchEnabled="false" visible="false">
+		<UI:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Rect id="_target" width="100%" height="100%" fillAlpha="0" strokeWeight="6" strokeColor="0x6cff00"
+				        ellipseHeight="20" ellipseWidth="20" />
+			</e:Skin>
+		</UI:skinName>
+	</UI:ProgressBar>
+	<!-- choumaIcon.player1="dezhou_choumaF_png" choumaIcon.player5="dezhou_choumaLv_png"
+	choumaIcon.player3="dezhou_choumaZ_png" choumaIcon.player2="dezhou_choumaH_png"
+	choumaIcon.player4="dezhou_choumaL_png" -->
+	<zjh:ChipsBar id="_betChipsBar" x="127" y="58" y.player1="-12.71" x.player1="103.84" x.player2="118.72" y.player2="4"
+	              x.player3="-13" y.player3="141" y.player4="8" x.player4="-237" name="999999" visible="false">
+		<e:Skin>
+			<e:Image y="3"  source="cmk1_area_png"/>
+			<e:Label id="_betChipsLab" size="20" fontFamily="微软雅黑" horizontalCenter="15.5" verticalAlign="middle"
+			         verticalCenter="2" textColor="0xffffff" text="999999" />
+		</e:Skin>
+	</zjh:ChipsBar>
+	<e:Image id="_compImg" x="-10" y="-8.5" source="zjh_PkSelectH_png" x.player2="-8" x.player4="-9.5" y.player4="-7.5" anchorOffsetY="0" height="150" scale9Grid="25,38,152,44" anchorOffsetX="0" width="109" visible="false"/>
+	<e:Group id="_gameTime" x="20" y="-57" x.player1="-51" y.player1="22" x.player2="89" y.player2="57" y.player3="33" x.player4="-56" y.player4="50" scaleX="0.6" scaleY="0.6" x.player3="-52" visible="false">
+		<e:Image y="0" horizontalCenter="0" source="clock_icon_png"/>
+		<e:BitmapLabel id="_timeLb" horizontalCenter="0" verticalCenter="0" font="clock_num_fnt" text="15"/>
+	</e:Group>
+</e:Skin>

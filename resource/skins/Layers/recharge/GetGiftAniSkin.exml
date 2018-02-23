@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GetGiftAniSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="gongxihuode">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{-69}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{1.05}" width="{228.58}" height="{47}" y="{136}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object y="{125}" width="{208}" height="{58}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_image3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="700" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="15ba2f403f4" />
+	<e:Rect width="100%" height="100%" alpha="0.5" />
+	<e:Group width="540" height="540" horizontalCenter="0" bottom="0">
+		<e:Image id="_image3" horizontalCenter="0" verticalCenter="0.5" anchorOffsetX="340"
+		         anchorOffsetY="254.5"  source="guang_area_png"/>
+		<e:Image id="image" y="121" horizontalCenter="0"  source="gxgd_topText_png"/>
+		<e:DataGroup id="_dataGroup" y="188" horizontalCenter="0">
+			<e:itemRendererSkinName>
+				<e:Skin width="151" height="169">
+	<e:Image width="100%" height="100%" source="kuangbg_area_png"/>
+					<e:Image scaleX="0.9" scaleY="0.9" source="{data.icon}"  horizontalCenter="0" verticalCenter="0"/>
+	<e:Label text="{data.label}" y="133" horizontalCenter="0" size="24"/>
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object icon="jb_icon3_png" label="20000金币"/>
+					<e:Object icon="zs_icon3_png" label="20钻石"/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:DataGroup>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Dezhou.RoomConfigLayerSkin" xmlns:components="components.*"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*" width="870" height="510" states="1,2,3" height.3="530">
+    
+      <UI:LayerBgImg includeIn="2,3"  height="100%" width="100%" />	
+
+    <e:Image y="115" x="42" y.2="188" x.2="42" y.3="170" x.3="42" scaleX="1" scaleY="1" source.2="mz_text1_png" source="mz_text1_png"/>
+<e:Image y="199" x="41" y.2="271" y.3="228" scaleX="1" scaleY="1" source.2="drzf_text1_png" source="drzf_text1_png"/>
+<e:Image source="js_text1_png" y="29" x="42" y.2="109" y.3="109" scaleX="1" scaleY="1"/>
+
+<e:Image x="42" y="356" scaleX="1" scaleY="1" source="label_c_xianzhi_png" y.2="430.99" y.3="351.02" y.1="346.34"/>
+
+<e:Image source="orange_tiao_png" y="20" top="88" horizontalCenter="0" horizontalCenter.2="0.5" top.2="99" top.3="97" horizontalCenter.3="0.5"/>
+
+<UI:CommonBtn  includeIn="2,3" icon="close_icon_png" top="13" right="5" skinName="UI.CloseBtnSkin" scaleX="0.8" scaleY="0.8"/>
+
+<e:RadioButton id="_levelRadio1" selected="true" y="33" skinName="CRadioButtonSkin" x="152" label="8局(1房卡)" groupName="dz_level" value="0" y.2="113" x.2="154" y.3="113" x.3="154" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_levelRadio2" y="33" label="16局(2房卡)" skinName="CRadioButtonSkin" groupName="dz_level" x="378" value="1" y.2="113" y.3="113" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_12Radio" label="1/2" x="378" y="123" skinName="CRadioButtonSkin" groupName="dz_mangzhu" selected="false" value="2" y.2="190" x.2="378" y.3="172" x.3="378" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_510Radio" label="5/10" x="575" y="123" skinName="CRadioButtonSkin" groupName="dz_mangzhu" selected="false" value="3" y.2="190" x.2="575" y.3="172" x.3="575" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_15ScoreRadio" selected="true" label="100/500" y="278" groupName="dz_score" x="152" skinName="RRadioButtonSkin" enabled="true" value="1" x.2="154" y.2="348" x.3="154" y.3="290" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_21ScoreRadio" y="278" label="200/1000" groupName="dz_score" selected="false" x="378" skinName="RRadioButtonSkin" enabled="true" value="2" y.2="348" y.3="290" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_wmzRadio" label="无盲注" x="152" y="123" skinName="CRadioButtonSkin" groupName="dz_mangzhu" selected="true" value="1" y.2="190" x.2="154" y.3="172" x.3="154" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:RadioButton id="_150ScoreRadio" skinName="RRadioButtonSkin" y="278" x="575" label="1000/5000" groupName="dz_score" selected="false" enabled="true" value="3" y.2="348" y.3="290" scaleX="1" scaleY="1" includeIn="1,2"/>
+<e:ToggleButton id="_ipxzRadio" x="154.66" y="357" skinName="RRadioButtonSkin" label="IP限制" y.2="430.99" y.3="351.02" y.1="346.34" includeIn="1,2"/>
+<e:ToggleButton id="_dlwzRadio" x="380.66" y="357" skinName="RRadioButtonSkin" label="地理位置限制" y.2="430.99" y.3="351.02" y.1="346.34" includeIn="1,2"/>
+
+ <e:Label text="注:钻石在开始游戏后第一局牌局结算后扣除，提前解散不扣钻石" x="50" y="430" size="25" textColor="0xff8700" includeIn="1"/>   
+
+<UI:CommonBtn id="btnClose" includeIn="3" icon="create_room_png" horizontalCenter="0" y="422" skinName="UI.CommonBtnSkin"/>
+	
+</e:Skin>

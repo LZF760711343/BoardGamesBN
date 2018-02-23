@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RulesLayerSkin" width="732" height="564" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*">
+	<UI:LayerBgImg width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="titleBox_png" width="714" height="73.33" horizontalCenter="1" top="6" scale9Grid="23,27,11,57" anchorOffsetY="0"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" width="70" height="69" horizontalCenter="346" verticalCenter="-259.5"/>
+	<e:Image source="yxgz_toptext_png" top="8" horizontalCenter="0"/>
+	<e:Scroller width="630" height="420" horizontalCenter="-2" verticalCenter="30">
+		<e:Group>
+			<e:Image source="szbl_text_png" x="3" y="-1" scaleX="1" scaleY="1"/>
+			<e:Image source="tzqtz_text_png" x="194" y="-1" scaleX="1" scaleY="1"/>
+			<e:Image source="kp_text_png" x="420" y="-1" scaleX="1" scaleY="1"/>
+			<e:Image source="js_text_png" x="549" y="-1" scaleX="1" scaleY="1"/>
+			<e:Image source="sz_bt_4a1_png" x="149" y="-1" scaleX="1" scaleY="1"/>
+			<e:Image source="sz_bt_4a1_png" x="149" y="-1" scaleX="1" scaleY="1"/>
+			<e:Image x="376" y="-1" scaleX="1" scaleY="1" source="sz_bt_4a1_png"/>
+			<e:Image x="507" y="-1" scaleX="1" scaleY="1" source="sz_bt_4a1_png"/>
+			<e:Label text="1.游戏币不足时是不能当王的哦！最少需要1000W才可当王。" y="54" size="20" style="style2" textColor="0x5f170b" bold="true"/>
+			<e:Label text="2.王的总血量不足时，系统是会自动将王退位让贤的。" y="94" size="20" style="style2" textColor="0x5F170B" bold="true"/>
+			<e:Label text="3.玩家的最大投注和玩家自身携带的游戏币有关。" y="134" size="20" style="style2" textColor="0x5F170B" bold="true"/>
+			<e:Label text="4.多留意历史记录能让您赢得更多的游戏币哦！" y="174" size="20" style="style2" textColor="0x5F170B" bold="true"/>
+			<e:Label text="5.压中牛几就是翻几倍哦！无牛和牛一固定是1倍，牛牛和牛牛以上的" y="214" size="20" style="style2" textColor="0x5F170B" bold="true"/>
+			<e:Label text="牌型固定是10倍！" y="255" size="20" style="style2" textColor="0x5F170B" bold="true" x="24"/>
+			<e:Image y="300" source="tushi_area_png" width="628" anchorOffsetX="0"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

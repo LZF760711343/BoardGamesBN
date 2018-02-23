@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/H-ui.min.css" />
+    <title>HZ棋牌</title>
+</head>
+<body onload="GetOpen()" style="max-width: 640px;margin: 0 auto;">
+
+<div id="micro_div" style="display: none">
+    <div id="formbackground" style="position:absolute; width:100%; height:100% ;z-index:-1;margin: -8px;">
+        <img src="imgs/tip.jpg" height="100%" width="100%"/>
+    </div>
+</div>
+
+<div id="normal_div" style="text-align:center;margin-top: 30px;">
+    <div>
+        <img src="imgs/icon.png">
+    </div>
+    <div style="margin-top: 30px; font-size: 30px;">HZ棋牌
+        <div id="version"></div>
+    </div>
+    <div style="margin-top: 30px; ">
+        <input type="button" class="btn btn-success" style="width: 30%;" value="点击下载" onclick="download()" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    function GetOpen() {
+        var param = location.search;//获取url中"?"符后的字串
+        if (is_weixn()) {
+            document.getElementById('micro_div').style.display = 'inline';
+            document.getElementById('normal_div').style.display = 'none';
+        } else {
+            document.getElementById('micro_div').style.display = 'none';
+            document.getElementById('normal_div').style.display = 'inline';
+
+//            if (is_iOS()) {
+//                document.getElementById('version').innerHTML = 'iOS';
+//            } else {
+//                document.getElementById('version').innerHTML = 'android';
+//            }roomId=868762&chl=wwqp
+//            window.location.href = "HZ://enterRoom" + param;
+        }
+    }
+
+        function download() {
+            var url = location.search; //获取url中"?"符后的字串
+            var URL ="http://www.hongzhegame.com/";
+            var theRequest = {};
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    theRequest[strs[i].split("=")[0]]=(strs[i].split("=")[1]);
+                }
+            }
+            if(theRequest.chl==null){
+                theRequest.chl="HZ";
+            }
+            console.log("theRequest"+theRequest.chl);
+            var Url=URL+"QiDong/wx_login/sign_page_code.php"+url;
+            var res= new XMLHttpRequest();
+            res.onerror = function () { };
+            res.open("POST", Url, true);
+            res.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            res.send();
+            res.onreadystatechange = function (e, data) {
+                if (res.readyState == 4 && res.status == 200) {
+                    var text = res.responseText;
+                    console.log(text);
+                }
+            };
+            if (is_iOS()) {
+                window.location.href="itms-services://?action=download-manifest&url=https://www.hongzhegame.com/QiDong/version/plist/plist_HZ"+theRequest.serverid+".plist" ;
+            } else  {
+                window.location.href=URL+"QiDong/index.php/interface/downloadfile?pf=android&chl=HZ&debug=0";
+            }
+        }
+
+        function is_weixn() {
+            var ua = navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function  is_iOS() {
+            if((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i))) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+</script>
+</body>
+</html>

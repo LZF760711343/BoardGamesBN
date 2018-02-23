@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="kpNNselectRoomBtnSkin" xmlns:e="http://ns.egret.com/eui" height="306" width="222">
+	<e:Image x="-10" y="-7" />
+	<e:Image y="262" source="sjc_text_png" x="65"/>
+	<e:Label text="今晚吃鸭腿" x="86" y="39" textColor="0xffeb98" fontFamily="Microsoft YaHei" size="15"/>
+	<e:Image x="25" y="21" source="touxian_area_png"/>
+	<e:Label text="倍率：10" x="55" y="80" fontFamily="Microsoft YaHei" textColor="0xffeb98" size="15"/>
+	<e:Label text="进入条件：" x="55" y="103" fontFamily="Microsoft YaHei" textColor="0xFFEB98" size="15"/>
+	<e:Label text="下限:5000" x="53" y="130" fontFamily="Microsoft YaHei" textColor="0xFFEB98" size="15"/>
+	<e:Label text="上限:15亿" x="55.5" y="155" fontFamily="Microsoft YaHei" textColor="0xFFEB98" size="15"/>
+	<e:Label text="闲家叫庄:5-25倍" x="56.5" y="184" fontFamily="Microsoft YaHei" textColor="0xFFEB98" size="15"/>
+	<e:Image y="7" source="NO1chang_png" x="80"/>
+</e:Skin>

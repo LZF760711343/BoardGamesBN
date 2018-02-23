@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMessageListSkin" width="760" height="393" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" states="normal,empty">
+<UI:LayerBgImg x="0" y="0" width="100%" height="100%"/>
+	<e:Image source="yxxx_text_png" x="281" y="20"/>
+	<e:Image y="97" height="72%" width="96%" source="kuang1_png" scale9Grid="0,286,220,0" horizontalCenter="0" includeIn="normal"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" anchorOffsetX="0" anchorOffsetY="0" right="5" top="13" scaleX="0.8" scaleY="0.8"/>
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" source="new_area_png" includeIn="empty" horizontalCenter="0.5" verticalCenter="19.5"/>
+	<e:Label text="暂时无消息" includeIn="empty" y="327" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+			
+	<e:Scroller width="693" height="260" y="108" anchorOffsetX="0" anchorOffsetY="0" includeIn="normal" horizontalCenter="0" scrollPolicyV="on">
+		<e:Group anchorOffsetX="0" width="473" anchorOffsetY="0" height="248" y="1">
+			<e:List id="_listNew" width="100%"  anchorOffsetY="0" itemRendererSkinName="GameNewListSkin">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object headline="首充得到奖励消息" new="2017-06-21" new1="15:15:15"/>
+						<e:Object headline="微信分享得到奖励消息" new="2017-06-21" new1="15:15:15"/>
+						<e:Object headline="快充得到奖励消息" new="2017-06-21" new1="15:15:15"/>
+						<e:Object headline="比赛场得到奖励消息" new="2017-06-21" new1="15:15:15"/>
+						<e:Object headline="哈哈哈哈哈" new="2017-06-21" new1="15:15:15"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="10"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

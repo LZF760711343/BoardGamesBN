@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SZP.RoomConfigLayerSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*" width="870" height="510" states="1,2,3,4"  height.3="540"  width.2="1114" height.2="618" height.1="464" width.4="1114" height.4="618">
+	<!--<e:Image includeIn="2,3" source="user_info_bg_png" left="0" top="0" anchorOffsetY="0" height="100%" width="100%"/>-->
+	<UI:LayerBgImg includeIn="2,3,4"  height="100%" width="100%" />
+	<e:Image horizontalCenter="0" top="25" source="guizeshuom_text_png" includeIn="2,4"/>
+	<e:Image x="229" y="93" anchorOffsetY="0" height="515" anchorOffsetX="0" width="875" scaleX="1" scaleY="1" source="kuang1_png" scale9Grid="14,286,206,0" includeIn="2,4"/>
+	<e:Image width="199" height="519" x="23" y="93" source="kuang1_png" includeIn="2,4"/>
+	<!--<e:Image includeIn="3" source="user_info_bg_png" anchorOffsetY="0" height="100%" width="100%" left="0" top="0"/>-->
+	<!--<e:Image includeIn="2" source="close_icon_bg_png" right="0" top="0"/>-->
+
+    
+    
+
+
+
+	<e:Group id="_roomGroup" x="38.51999999999998" y="31.32000000000001" x.2="308.33" y.2="127.35" x.3="85.31" y.3="115.38" x.4="308.33" y.4="127.35" includeIn="1,2,3">
+		<e:Label text="底注" x="13" y="84" size="25" fontFamily="Microsoft YaHei" x.1="13" y.1="97.3" y.2="95.97" y.3="97.3"/>
+		<e:Label text="比牌" x="13" y="156" size="25" fontFamily="Microsoft YaHei" x.1="13"/>
+		<e:Label text="限制" x="13" y="343" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="回合封顶" x="0" y="220" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="加注封顶" x="0.6600000000000037" y="285" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="局数" x="13" y="0" size="25" fontFamily="Microsoft YaHei" size.1="25" x.1="13"/>
+		<e:Label y="440.68" text="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" fontFamily="微软雅黑" size="18" x="106.48000000000002" includeIn="1,2,4" textColor.1="0xde7577" textColor.2="0xde7577" textColor="0xde7577" textColor.4="0xde7577"/>
+		<e:Label y="403.68" text="牌型说明：豹子>顺金>顺子>对子>散牌" fontFamily="微软雅黑" size="18" x="107.48000000000002" includeIn="1,2" textColor.1="0xde7577" textColor.2="0xde7577" textColor="0xde7577"/>
+		<e:RadioButton id="_levelRadio1" skinName="CRadioButtonSkin" x="116" label="8局(3房卡)" groupName="szp_level" value="0" skinName.1="CRadioButtonSkin2" x.1="116"/>
+		<e:RadioButton id="_levelRadio2" label="16局(6房卡)" skinName="CRadioButtonSkin" groupName="szp_level" x="383" value="1" skinName.1="CRadioButtonSkin2"/>
+		<e:RadioButton id="_levelRadio3" label="26局(9房卡)" groupName="szp_level" x="116" value="1" y="49.32" skinName.1="CRadioButtonSkin2" skinName="CRadioButtonSkin2" value.1="2"/>
+		<e:RadioButton id="_radioButton5f" y="285" skinName="CRadioButtonSkin" x="168" label="5分" groupName="szp_f" value="5" skinName.1="CRadioButtonSkin2"/>
+		<e:RadioButton id="_radioButton10f" y="285" skinName="CRadioButtonSkin" x="380" label="10分" groupName="szp_f" value="10" skinName.1="CRadioButtonSkin2"/>
+		<e:RadioButton id="_radioButton20f" y="285" skinName="CRadioButtonSkin" x="595" label="20分" groupName="szp_f" value="20" skinName.1="CRadioButtonSkin2"/>
+		<e:RadioButton id="_radioButton1f" y="84" skinName="CRadioButtonSkin" x="116" label="1分" groupName="szp_1f" value="0" selected="true" skinName.1="CRadioButtonSkin2" y.1="97.3" y.2="95.97" y.3="97.3"/>
+		<e:RadioButton id="_radioButton3bout" y="156" skinName="CRadioButtonSkin" x="116" label="3回合后可比" groupName="szp_3bout" value="0" selected="true" skinName.1="CRadioButtonSkin2"/>
+		<e:RadioButton id="_radioButton10" skinName="CRadioButtonSkin" x="168" label="10" groupName="szp_z" value="10" skinName.1="CRadioButtonSkin2" y="220"/>
+		<e:RadioButton id="_radioButton15" skinName="CRadioButtonSkin" x="380" label="15" groupName="szp_z" value="15" y="220" skinName.1="CRadioButtonSkin2"/>
+		<e:RadioButton id="_radioButton20" skinName="CRadioButtonSkin" x="595" label="20" groupName="szp_z" value="20" skinName.1="CRadioButtonSkin2" y="220"/>
+		<e:ToggleButton id="_ipxzRadio" x="116" y="346" skinName="RRadioButtonSkin" label="IP限制" y.2="346" y.3="346.67" y.1="344.99" y.4="346"/>
+		<e:ToggleButton id="_dlwzRadio" x="342" y="346" skinName="RRadioButtonSkin" label="地理位置限制" y.2="346" y.3="346.67" y.1="344.99" y.4="346"/>
+	</e:Group>
+	<UI:CommonBtn id="_btnClose" label="Button" includeIn="2,4" x="1026" y="0" icon="close_icon_png" skinName="UI.CloseBtnSkin"/>
+	<e:Group id="_cardGorup" includeIn="2,4" x="266.98" y="141.29" anchorOffsetY="0" height="452.91" visible.2="false">
+		<e:Image includeIn="2,4" x="0" y="0" source="psz_gztu1_png"/>
+		<e:Label text="豹子" includeIn="2,4" x="196" y="15.55" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" size="26"/>
+		<e:Label text="同花顺" includeIn="2,4" x="196" y="92" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" size="26"/>
+		<e:Label text="金牛" includeIn="2,4" x="196" y="172" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" size="26" text.4="金花" text.2="金花"/>
+		<e:Label text="顺子" includeIn="2,4" x="196" y="248.96" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" size="26"/>
+		<e:Label text="对子" includeIn="2,4" x="530.76" y="15.55" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" size="26" x.4="582.77" x.2="578.75"/>
+		<e:Label text="高牌" includeIn="2,4" x="580.74" y="92" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" size="26"/>
+		<e:Label text="特殊牌" includeIn="2,4" x="580.74" y="171.94" size="26" textColor="0xFFFFFF" fontFamily="Microsoft YaHei"/>
+		<e:Label text="豹子&gt;同花顺&gt;金花&gt;顺子&gt;对子&gt;高牌&gt;特殊牌（特殊牌&gt;豹子）" y="326.34" size="22" bold="true" fontFamily="Microsoft YaHei" left="0"/>
+		<e:Label text="单牌：A&gt;K&gt;Q&gt;J&gt;10&gt;9&gt;8&gt;7&gt;6&gt;5&gt;4&gt;3&gt;2" y="364.38" size="22" bold="true" fontFamily="Microsoft YaHei" left="0"/>
+		<e:Label text="同花顺、顺子按照顺序比点。如AKQ&gt;A23&gt;KQJ&gt;QJ10" y="402.34" size="22" bold="true" fontFamily="Microsoft YaHei" left="0"/>
+		<e:Label y="375.33" text="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" fontFamily="Microsoft YaHei" size="20" x="103.01" includeIn="1" textColor="0xDE7577" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:TabBar width="200" includeIn="4" x="29.01" y="112" itemRendererSkinName="RoomConfigTabberSkin" height="91">
+		<e:ArrayCollection>
+		<e:Array>
+			<e:Object name="棋牌说明"/>
+		</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+	<e:TabBar id="_tabber" height="159.33" includeIn="2" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="RoomConfigTabberSkin" y="113.64" horizontalCenter="-434">
+		<e:layout>
+		<e:VerticalLayout/>
+		</e:layout>
+		<e:ArrayCollection>
+		<e:Array>
+			<e:Object name="房间规则"/>
+			<e:Object name="棋牌说明"/>
+		</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+
+</e:Skin>

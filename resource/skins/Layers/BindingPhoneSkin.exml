@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BindingPhoneSkin" width="759" height="393" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing"  states="Phone" >
+	<e:Image source="paihang1_png" anchorOffsetY="0" width="100%" height="100%" scale9Grid="94,75,571,433" locked="true"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" width="88" height="89" scaleX="0.8" scaleY="0.8"/>
+	<e:Label text="验证码：" x="106" y="186" style="style1" size="26" fontFamily="Microsoft YaHei" includeIn="Phone" anchorOffsetX="0" textColor="0xffffff"/>
+	<e:Label text="手机号：" x="106" y="120" style="style1" size="26" fontFamily="Microsoft YaHei" includeIn="Phone" textColor="0xffffff"/>
+	<e:Image x="243" y="117" width="271" height="37" includeIn="Phone" source="h_area_png" scale9Grid="142,15,176,4"/>
+	<e:Image x="243" y="183" width="271" height="37" includeIn="Phone" source="h_area_png" scale9Grid="142,15,176,4"/>
+	<e:Label id="_CountDownLab" text="60秒后重新获取" x="548" y="125.1" style="style2" size="20" scaleX="1" scaleY="1" textColor="0xffffc4" fontFamily="Microsoft YaHei" visible="false"/>
+	<UI:CommonBtn id="_quding" label="确 定" bgStr="bigG_icon_png" skinName="UI.CommonBtnSkin" x="287" y="265" includeIn="Phone"/>
+	<UI:CommonBtn id="_CountDownBtn" label="获取验证码" x="548" y="107" bgStr="bigG_icon_png" includeIn="Phone" scaleX="0.7" scaleY="0.7" skinName="UI.CommonBtnSkin3"/>
+	<e:EditableText id="_phoneText" width="230" height="27.67"  x="270" y="119.48" anchorOffsetY="0" size="32" anchorOffsetX="0" includeIn="Phone" textColor="0xffffff"/>
+	<e:EditableText id="_yanzhengText" width="198.67" height="27.67"  x="270" y="186.48" anchorOffsetY="0" size="32" anchorOffsetX="0" includeIn="Phone" textColor="0xffffff"/>
+	<e:Image horizontalCenter="0" top="22" source="bangdingshouji_text_png"/>
+</e:Skin>

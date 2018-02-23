@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankingListSkin" width="1072" height="87" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="_bgwhite" width="100%" height="100%" alpha="0.3"/>
+	<e:Label id="_id" verticalCenter="0" horizontalCenter="-467"  textColor="0xffffff"/>
+	<e:Group id="_GroupHead" horizontalCenter="-343" verticalCenter="0.5">
+		<e:Image id="_headImages" source="{data.headImages}" width="73" height="73" x="10" y="7"/>
+		<e:Image id="_kuang" source="hz_jk1_png" x="0" y="0"/>
+	</e:Group>
+	<e:Label id="_nickName" verticalCenter="0.5" horizontalCenter="-98" text="{data.nickName}" textColor="0xffffff"/>
+	<e:Label id="_gold" horizontalCenter="300" verticalCenter="0.5" text="{data.gold}" textColor="0xffffff"/>
+	
+</e:Skin>

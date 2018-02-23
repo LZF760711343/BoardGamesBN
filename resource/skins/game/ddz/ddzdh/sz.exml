@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="sz"  width="912" height="171" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="_sz1">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{46}" x="{11}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="650" ease="cubicOut">
+					<tween:props>
+						<e:Object x="{380}" alpha="{0}" y="{46}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{257}" y="{60}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object x="{492}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{616}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{526}" scaleX="{0.1}" scaleY="{0.1}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{569}" scaleX="{0.5}" scaleY="{0.5}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{0.79}" scaleY="{0.79}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+     <e:Image id="image" source="fly_sg10_png" x="0" y="49"/>
+     <e:Image id="image1" source="xxx_area_png" x="262" y="96" anchorOffsetX="58" anchorOffsetY="50"/>
+     <e:Image id="image0" source="sz_text_png" x="236" y="63"/>
+</e:Skin>

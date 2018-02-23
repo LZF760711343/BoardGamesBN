@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargeItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up"  width="145" height="220">
+	<w:Config id="15c3fac7448"/>
+	<e:Group id="_changeBIg" horizontalCenter.up="3.5" verticalCenter.up="-5.5" anchorOffsetX="0" width="146" anchorOffsetY="0" height="207" horizontalCenter="0.5" verticalCenter="0.5">
+	<e:Image id="_imgBg" horizontalCenter.up="-2.5" verticalCenter.up="-20.5" width="145" height="150" source="kuangbg_area_png" horizontalCenter="-0.5" top="8" top.up="8"/>
+	<e:Image id="_img" horizontalCenter="1" horizontalCenter.up="0.5" y.up="33" source.up="{data.pic}" verticalCenter="-21.5" source="{data.pic}"/>
+		<e:Image x="2" width="146" height="56" source="button_Bred_png" bottom="-10" bottom.up="-9" x.up="-3"/>
+	<e:Group id="_clickConversion" horizontalCenter="-4" horizontalCenter.up="-3" bottom.up="-5" verticalCenter="84">
+		<e:Image id="_icon" y="1" source.up="zs_licon_png" source="zs_licon_png"/>
+		<e:Label id="_priceLb" fontFamily="Microsoft YaHei" textColor="0xffffff" bold="true" size="24" text="1000" x="35" y="5"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+		<e:Group y="-0.0799999999999983" right="-17">
+			<e:Image id="_tipBox" source="img_cz_tip_png" x="0" y="0" scale9Grid="6,3,42,11" anchorOffsetY="0" y.up="1.92" width="100%" visible="false"/>
+			<e:Label id="_giftTipLb" text="多送5%" fontFamily="Microsoft YaHei" bold="true" size="14" textAlign="center" lineSpacing="2" y.up="4.15" horizontalCenter="0" left="10" right="10" y="1" visible="false"/>
+		</e:Group>
+	
+	<e:Image id="_imgHotTip" source="remai_hongt_png" left="0" top="8" left.up="0" top.up="10" visible="false"/>
+		<e:Label id="_golDscope" text="1500W~1600W" bold="true" size="20" horizontalCenter="0.5" top="22" visible="false"/>
+		<e:Label id="_moneyLb" text="50" horizontalCenter="0.5" size="26" bottom="52" horizontalCenter.up="0.5" bottom.up="51" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

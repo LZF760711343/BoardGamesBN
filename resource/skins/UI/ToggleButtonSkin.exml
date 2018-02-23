@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UI.ToggleButtonSkin"
+        states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected"
+        xmlns:e="http://ns.egret.com/eui">
+	<e:Image verticalCenter="0" horizontalCenter="0"
+	          source="y1_area_png" source.down="y1_area_png" source.up="y3_area_png" source.downAndSelected="y3_area_png"/>
+	<e:Image x="61" x.up="-4" x.downAndSelected="-4"  y="2"  source="nn_area_png"/>
+	<e:Label text="开" x="23" size="34" x.up="59" text.up="关"
+	         x.downAndSelected="59"
+	         text.downAndSelected="关"  fontFamily="Microsoft YaHei" verticalCenter="0" textColor.up="0x0a0909" verticalCenter.up="0" bold.up="true" textColor.downAndSelected="0x0a0909" bold.downAndSelected="true" verticalCenter.downAndSelected="0" bold="true"/>
+</e:Skin>

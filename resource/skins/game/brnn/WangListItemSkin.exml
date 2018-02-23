@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WangListItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="mianban_pg_png" x="0" y="0"/>
+	<e:Image x="8" y="9.5" source="role1_area2_png"/>
+	<e:Label id="_namelabel" text="我要稳稳的幸福" x="65.25" fontFamily="Microsoft YaHei" size="16" verticalCenter="0" textAlign="center" anchorOffsetX="0" width="112.58"/>
+</e:Skin>

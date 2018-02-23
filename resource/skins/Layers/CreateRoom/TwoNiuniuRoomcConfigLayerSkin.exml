@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="twoniuniu.RoomConfigLayerSkin" xmlns:UI="UI.*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" width="870" height="510" states="1,2,3,4,5" height.3="560" height.2="618" width.2="1114" height.1="464" height.5="618" width.5="1114">
+	<UI:LayerBgImg includeIn="2,3,5" height="100%" width="100%" x="1"  horizontalCenter.2="1" verticalCenter.2="0" horizontalCenter.5="1" verticalCenter.5="0"/>
+	<e:Image horizontalCenter="0" top="25" source="guizeshuom_text_png" includeIn="2,3,5"/>
+	<e:Image x="229" y="93" anchorOffsetY="0" height="515" anchorOffsetX="0" width="875" scaleX="1" scaleY="1" source="kuang1_png" scale9Grid="14,286,206,0" includeIn="2,5"/>
+	<e:Group id="_cardGorup" includeIn="2,5" x="266.98" y="119.29" anchorOffsetY="0" height="455.33" visible.2="false" visible.5="false">
+		<e:Image includeIn="2,5" x="0" y="0" source="ll_gztu1_png"/>
+	</e:Group>
+	<e:Image width="199" height="519" x="23" y="93" source="kuang1_png" includeIn="2,5"/>
+	<e:Group id="_roomGroup" x="38.98" y="100.97" x.2="286.92" y.2="130.97" anchorOffsetY="0" height="403" x.1="38.52" y.1="31.32" x.5="286.92" y.5="130.97">
+		<e:Label text="局数" x="13" size="25" fontFamily="Microsoft YaHei" x.1="13"/>
+		<e:Label text="玩法" x="13" y="84" size="25" fontFamily="Microsoft YaHei" y.4="215.85" y.5="240.14"/>
+		<e:Label text="下注限制" x="-8.96" y="170.07" size="25" fontFamily="Microsoft YaHei" visible.4="false" visible.5="false"/>
+		<e:Label text="（可多选）" x="-5.29" y="202.71" size="20" fontFamily="Microsoft YaHei" visible.4="false" visible.5="false"/>
+		<e:RadioButton id="_levelRadio11" skinName="CRadioButtonSkin" x="116" label="2人" value="0" y.2="4.34" y.3="3.34" skinName.1="CRadioButtonSkin2" skinName.2="CRadioButtonSkin2" label.4="2人" enabled.4="true" selected.4="true" y.5="4.34" label.5="2人" touchChildren.5="false" selected.5="true" selected="true" groupName.5="nn_level1" skinName.5="CRadioButtonSkin" groupName.4="nn_level1" groupName="nn"/>
+		<e:RadioButton id="_levelRadio1" skinName="CRadioButtonSkin" x="116" label="75W~80W 1张" enabled="true" includeIn="4,5" y="55" groupName="two_level" name="0" value="0" visible="false"/>
+		<e:RadioButton id="_levelRadio2" skinName="CRadioButtonSkin" x="116.72" label="150W~160W 2张" enabled="true" includeIn="4,5" y="55" groupName="two_level" name="1" value="1"/>
+		<e:RadioButton id="_levelRadio3" skinName="CRadioButtonSkin" x="435" label="300W~320W 4张" enabled="true" includeIn="4,5" y="55" groupName="two_level" name="2" value="2"/>
+		<e:RadioButton id="_levelRadio4" skinName="CRadioButtonSkin" x="116.94" label="750W~800W 10张" enabled="true" includeIn="4,5" y="118.03" groupName="two_level" name="3" value="3"/>
+		<e:RadioButton id="_levelRadio5" skinName="CRadioButtonSkin" x="439.44" label="1500W~1600W 20张" enabled="true" includeIn="4,5" y="118.03" groupName="two_level" name="4" value="4"/>
+		<e:RadioButton id="_kpqzRadio" label="看牌抢庄" x="116" y="84" skinName="CRadioButtonSkin" groupName="nn_zhuang" value="1" selected="true" y.4="213.33" y.5="233.32" visible="false"/>
+		<e:RadioButton id="_kpqzRadio1" label="看牌抢庄" x="116" y="84" skinName="CRadioButtonSkin" value="1" selected="true" y.4="215.85" y.5="240.14"/>
+		<e:RadioButton id="_lzRadio" skinName="CRadioButtonSkin" y="116" label="轮庄" x="369" groupName="nn_zhuang" value="3" y.2="182.99" y.3="171.66" y.1="113.67" skinName.1="CRadioButtonSkin2" skinName.2="CRadioButtonSkin2" y.5="182.99" skinName.5="CRadioButtonSkin2" visible="false"/>
+		<e:RadioButton id="_fzzjRadio" y="116" skinName="CRadioButtonSkin" label="无庄（混战）" groupName="nn_zhuang" x="566" value="0" y.2="182.99" y.3="171.66" y.1="112.67" skinName.1="CRadioButtonSkin2" skinName.2="CRadioButtonSkin2" y.5="182.99" skinName.5="CRadioButtonSkin2" visible="false"/>
+		<e:RadioButton id="_nnhzRadio" skinName="RRadioButtonSkin" y="159" x="566" label="牛牛换庄" groupName="nn_z_type" enabled="false" value="2" y.2="225.65" y.3="216.66" y.1="164.67" y.5="225.65" visible="false"/>
+		<e:RadioButton id="_njhzRadio" y="159" label="牛九换庄" groupName="nn_z_type" x="369" skinName="RRadioButtonSkin" enabled="false" value="1" y.2="225.65" y.3="216.66" y.1="164.67" visible="false" y.5="225.65"/>
+		<e:RadioButton id="_sxlzRadio" label="顺序轮庄" y="159" groupName="nn_z_type" x="143" skinName="RRadioButtonSkin" enabled="false" value="0" y.2="225.65" y.3="216.66" y.1="166.67" visible="false" y.5="225.65"/>
+		<e:CheckBox id="_scoreCBox4" y="226" label="10分" skinName="RRadioButtonSkin" x="143" y.2="223.65" y.3="221.33" y.1="224.35" visible.4="false" y.5="223.65" visible.5="false"/>
+		<e:CheckBox id="_scoreCBox5" y="226" label="20分" skinName="RRadioButtonSkin" x="369" y.2="223.65" y.3="221.33" y.1="218.35" x.3="383.67" x.2="369" x.1="370.66" visible.4="false" y.5="223.65" x.5="369" visible.5="false"/>
+		<e:CheckBox id="_scoreCBox3" y="170" label="5分" skinName="RRadioButtonSkin" x="566" y.2="177.63" y.3="172.33" y.1="170.35" visible.4="false" y.5="177.63" visible.5="false"/>
+		<e:CheckBox id="_scoreCBox2" y="170" label="2分" skinName="RRadioButtonSkin" x="369" y.2="177.63" y.3="172.33" y.1="170.35" visible.4="false" y.5="177.63" visible.5="false" selected="true"/>
+		<e:CheckBox id="_scoreCBox1" y="170" label="1分" x="143" skinName="RRadioButtonSkin" y.2="176.3" y.3="172.33" y.1="170.35" selected.1="true" visible.4="false" y.5="176.3" visible.5="false" selected.2="true" selected="true"/>
+		<e:ToggleButton id="_ipxzRadio" x="109" y="288" skinName="RRadioButtonSkin" label="IP限制" y.2="287.68" y.3="287.66" y.1="287.99" y.4="297.11" y.5="321.57"/>
+		<e:ToggleButton id="_dlwzRadio" x="312" y="288" skinName="RRadioButtonSkin" label="地理位置限制" y.2="287.68" y.3="287.66" y.1="287.99" y.4="297.11" y.5="321.57"/>
+		<e:Label text="限制" x="13" y="288.65" size="25" fontFamily="Microsoft YaHei" y.4="297.76" y.5="322.54"/>
+		<e:Label y="343.71" text="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" fontFamily="微软雅黑" size="18" x="67.50000000000003" includeIn="1,2,4,5" textColor="0xDE7577" scaleX="1" scaleY="1" y.4="371" y.5="377.6"/>
+	</e:Group>
+	<e:Label y="469.97" text="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" fontFamily="微软雅黑" 
+	         horizontalCenter="0" size="20" horizontalCenter.3="-2.5" y.3="399" size.3="28"
+	         text.3="大小：五小牛>五花牛>四炸>牛牛>牛一~牛九>没牛" text.2="大小：五小牛>五花牛>四炸>牛牛>牛一~牛九>没牛" fontFamily.3="Microsoft YaHei"  includeIn="1" textColor="0xde7577" visible="false"/>
+	<UI:CommonBtn id="btnClose" label="Button" includeIn="3" skinName="UI.ScaleButonSkin" icon="create_room_png"
+	              horizontalCenter="0" y="453"  visible="false"/>
+	<UI:CommonBtn id="_btnClose" label="Button" includeIn="2,5" x="1026" y="0" icon="close_icon_png"  skinName="UI.CloseBtnSkin"/>
+	<e:TabBar id="_tabber" height="159.33" includeIn="2,5" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="RoomConfigTabberSkin" y="113.64" horizontalCenter="-434">
+		<e:layout>
+			<e:VerticalLayout gap="15"/>
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object name="房间规则"/>
+				<e:Object name="牌型说明"/>
+			</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+</e:Skin>

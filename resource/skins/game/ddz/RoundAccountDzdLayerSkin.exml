@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoundAccountDzdLayerSkin" width="740" height="490" xmlns:e="http://ns.egret.com/eui"  xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+<UI:LayerBgImg x="0" y="0" width="100%" height="100%"/>
+	<e:Image x="8.21" y="91.87" source="head_area_png" scale9Grid="135,9,813,55" anchorOffsetX="0" width="719.97"/>
+     
+     <e:Image id="_title" y="3" horizontalCenter="0" source="win_icon1_png"/>
+
+	<e:Rect width="701.34" height="70" x="19.01" y="166.71" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.2"/>
+	<e:Rect width="701.34" height="70" x="19.01" y="312.97" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.2"/>
+
+	<e:Scroller y="175.69"  horizontalCenter="1" anchorOffsetX="0" width="696" anchorOffsetY="0" height="224">
+		<e:DataGroup id="_group" itemRendererSkinName="RoundAccountddzItem" x="-38.67" y="4" height="220" anchorOffsetY="0" anchorOffsetX="0" width="698">
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object a="null"/>
+					<e:Object a="null"/>
+					<e:Object a="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:VerticalLayout />
+			</e:layout>
+		</e:DataGroup>
+		
+        
+	</e:Scroller>
+	<UI:CommonBtn id="_goBtn" label="继 续" y="454.04" horizontalCenter="-10.5" skinName="UI.CommonBtnSkin" bgStr="bigR_icon_png"/>
+	<e:Label id="_difenLb" text="x1" x="124.68" y="416.64" fontFamily="Microsoft YaHei" textColor="0x41977d" size="23"/>
+	<e:Label id="_zhadanLb" text="x2" x="287.72" y="416.03" fontFamily="Microsoft YaHei" textColor="0x41977d" size="23" visible="false"/>
+	<e:Label id="_chuntianLb" text="x3" x="374.65" y="416.03" fontFamily="Microsoft YaHei" textColor="0x41977d" size="23"/>
+	<e:Label id="_rateLb" text="x4" x="649.31" y="416.64" fontFamily="Microsoft YaHei" textColor="0x41977d" size="23"/>
+	<e:Label id="_difeng" text="底分：" x="58.69" y="417.97" bold="true" size="23" fontFamily="Microsoft YaHei"/>
+	<e:Label id="_zongbeishu" text="总倍数：" x="560.61" y="417.97" bold="true" size="23" fontFamily="Microsoft YaHei"/>
+	<e:Label id="_boom" text="炸弹：" x="222.63" y="417.97" bold="true" size="23" fontFamily="Microsoft YaHei" visible="false"/>
+	<e:Label id="_cuntian" text="春天：" x="305.95" y="417.97" bold="true" size="23" fontFamily="Microsoft YaHei"/>
+	<e:Label text="昵称" size="40" horizontalCenter="-150" verticalCenter="-116" fontFamily="Microsoft YaHei"/>
+	<e:Label text="积分" size="40" horizontalCenter="159" verticalCenter="-116" fontFamily="Microsoft YaHei"/>
+</e:Skin>

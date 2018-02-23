@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelectRoomBtnSkin" width="230" height="320" states="up,down,disabled"  xmlns:e="http://ns.egret.com/eui">
+<e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0" scaleX.down="0.9" scaleY.down="0.9"/>
+</e:Skin>

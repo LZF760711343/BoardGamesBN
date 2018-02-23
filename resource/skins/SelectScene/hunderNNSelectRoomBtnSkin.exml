@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hunderNNSelectRoomBtnSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="224" height="188" states="up,down" >
+	<w:Config id="15c3ea211f6"/>
+	<e:Image y="-5" x="-8" />
+	<e:Label id="_wangNameLabel" x="61" y="41" textColor="0xFFEB98" size="15" fontFamily="Microsoft YaHei" />
+	<e:Label id="_peopleNum" text="20/20" y="109" textColor="0xFFEB98" size="15" fontFamily="Microsoft YaHei" x="91"/>
+	<e:BitmapLabel id="_tablenum" y="9" text="1号桌" font="hundrednnselectfont_fnt" x="78"/>
+	<e:BitmapLabel id="_tablewang" x="70" y="149" text="单王场" font="hundrednnselectfont_fnt"/>
+</e:Skin>

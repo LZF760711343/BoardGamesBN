@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UI.RecorderSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="record_box_png" horizontalCenter="-0.5" verticalCenter="0" scale9Grid="31,30,35,36" width="123" height="118"/>
+	<e:Image source="recordImg1_png" width="44" height="63" horizontalCenter="-20" verticalCenter="-0.5"/>
+	<e:Image id="_img6" source="recordImg2_png" x="74" y="33" height="6" width="35"/>
+	<e:Image id="_img5" source="recordImg2_png" y="43" height="6" x="74" width="30"/>
+	<e:Image id="_img4" source="recordImg2_png" y="53" height="6" x="74" width="25"/>
+	<e:Image id="_img3" source="recordImg2_png" y="63" height="6" x="74" width="20"/>
+	<e:Image id="_img2" source="recordImg2_png" y="73" height="6" x="74" width="15"/>
+	<e:Image id="_img1" source="recordImg2_png" y="83" height="6" x="74" width="10"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UI.DanmuSkin" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" fillAlpha="0.5" strokeAlpha="0.5" touchEnabled="false" touchChildren="false"/>
+	<e:Image id="_head" top="0" bottom="0" left="0" anchorOffsetX="0" alpha="0.5" touchEnabled="false" source="defaultHead_png" width="50"/>
+	<e:Label id="_talk" text="Labelfdfdfdfd fdsaf " size="22" left="60" top="14" bottom="14" right="10" alpha="0.5" touchEnabled="false" scaleX="1"/>
+</e:Skin>

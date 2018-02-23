@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SaleBtnSkin" xmlns:e="http://ns.egret.com/eui" states="up,down">
+	<e:Image horizontalCenter="0" verticalCenter="0" width.up="100%" height.up="100%" width.down="90%" height.down="90%"
+	         width="100%" height="100%" source="{bgStr}"  scaleX.down="0.9" scaleY.down="0.9" x.down="0" y.down="0"/>
+	<e:Image id="iconDisplay"  anchorOffsetX="-33" anchorOffsetY="-17" x.up="0" y.up="0" scaleX.down="0.9" scaleY.down="0.9" x.down="0" y.down="0"/>
+</e:Skin>

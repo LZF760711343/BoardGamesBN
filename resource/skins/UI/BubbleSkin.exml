@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BubbleSkin" currentState="left" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        states="left,right,bottom,top,bottom_left,bottom_right">
+	<e:Image id="_bgImg" source="bubble_bg_png" width="100%" verticalCenter="0" left="8" left.right="0"
+	         verticalCenter.right="0" height="100%" scale9Grid="12,8,20,18" />
+	<e:Image id="_boult" source="bubble_arrows_png" left.left="-8" verticalCenter.left="-2.5" verticalCenter.right="-0.5" scaleX.right="-1" right.right="-15" rotation.top="90" horizontalCenter.top="2.5" y.top="-14" bottom.bottom="-11" rotation.bottom="-90" horizontalCenter.bottom="0" bottom.bottom_left="-12" rotation.bottom_left="-90" left.bottom_left="41" bottom.bottom_right="-11" rotation.bottom_right="-90" right.bottom_right="21" x="-7" y="9"/>
+	<e:Label id="label" size="18" y.right="30" maxWidth="400" verticalAlign="top"
+	         textAlign="left" verticalCenter="-2" x.bottom="30" x.left="30" left.left="20"
+	         left.bottom="20" right.right="10" x.top="30" left.top="20" x.bottom_left="30"
+	         left.bottom_left="20" x.bottom_right="30" left.bottom_right="20"  textColor="0xffffff" style="style1" />
+</e:Skin>

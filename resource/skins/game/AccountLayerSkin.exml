@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Layers.AccountLayerSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" width="1114" height="619" states="5,8"  width.5="1114" height.5="619">
+	<!--<e:Image source="woodbang_tiao1_png" horizontalCenter="0" top="0"/>-->
+	<e:Image horizontalCenter="0"  height="100%" source="paihang1_png" width="100%" verticalCenter="0"/>
+	<e:Image horizontalCenter="0" top="19" source="baijujieshu_text_png"/>
+	<e:Label id="_roomIdLab" text="房间号:123456" x="49.69" y="21.5" size="18" fontFamily="Microsoft YaHei" bold.5="true"/>
+	<e:Label id="_timeLab" text="2016-10-13\n11:44" x="47.03" y="51.32" size="18" fontFamily="Microsoft YaHei" textAlign="center" bold.5="true"/>
+	<UI:LayerBgImg width="1080" height="510" includeIn="8" y="101.24"   horizontalCenter="0"/>
+	<e:DataGroup id="_dataGroup"   horizontalCenter="0" itemRendererSkinName="niuniu.AccountItemSkin" itemRendererSkinName.8="niuniu.AccountItemSkin8" top="135" horizontalCenter.8="0" top.8="180" x.5="244" verticalCenter.5="5.5" scaleX.5="1.1" scaleY.5="1.1" horizontalCenter.5="0" top.5="106">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object score="10" nickName="测网速" account="123586" alpha="1"/>
+				<e:Object score="-5" nickName="测网速" account="123586"/>
+				<e:Object score="20" nickName="测网速" account="123586" alpha="1"/>
+				<e:Object score="20" nickName="测网速" account="123586" alpha="1"/>
+				<e:Object score="20" nickName="测网速" account="123586" alpha="1"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+		<e:HorizontalLayout gap="15" gap.5="0"/>
+		</e:layout>
+		<e:layout.8>
+		<e:VerticalLayout gap="0"/>
+		</e:layout.8>
+	</e:DataGroup>
+	<UI:CommonBtn id="_btnShare" label="分享" horizontalCenter="0" bottom="1" skinName="UI.CommonBtnSkin" bgStr="button_green_png" horizontalCenter.8="0" bottom.8="-10" anchorOffsetY.8="0" height.8="84.36" horizontalCenter.5="1" bottom.5="10"/>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin"   top="15" right="5" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Label text="玩家名字" includeIn="8" fontFamily="Microsoft YaHei" top="126" horizontalCenter="-387"/>
+	<e:Label text="玩家ID" includeIn="8" fontFamily="Microsoft YaHei" top="126" horizontalCenter="-217"/>
+	<e:Label text="玩家名字" includeIn="8" fontFamily="Microsoft YaHei" top="126" horizontalCenter="-60"/>
+	<e:Label text="玩家名字" includeIn="8" fontFamily="Microsoft YaHei" horizontalCenter="98" top="126"/>
+	<e:Label text="玩家名字" includeIn="8" fontFamily="Microsoft YaHei" horizontalCenter="265" top="125"/>
+	<e:Label text="总成绩" includeIn="8" fontFamily="Microsoft YaHei" horizontalCenter="447" top="126"/>
+</e:Skin>

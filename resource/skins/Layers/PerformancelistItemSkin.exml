@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PerformancelistItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="kk1_area_png"/>
+	<e:Label id="_userName" size="20" fontFamily="Microsoft YaHei" x="11" verticalCenter="2"  textAlign="right" height="27" verticalAlign="middle" anchorOffsetX="0" width="80" textColor="0xf2f2f2"/>
+	<e:Label id="_score" fontFamily="Microsoft YaHei" size="22" verticalCenter="0" horizontalCenter="52" text="{data.userscore}" textColor="0xf5f7f4"/>
+</e:Skin>

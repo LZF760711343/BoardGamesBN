@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ModifyUserInfoSkin" width="424" height="212" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="paihang1_png" width="100%" height="100%"/>
+	<e:Image source="dibang_area2_1_png" bottom="8" left="8" right="8" top="45"/>
+	<e:Label text="个人信息编辑" y="11" horizontalCenter="0" bold="true"/>
+	<e:Group id="_qiangmingGroup" x="63" y="135" visible="false">
+		<e:Image x="110" y="0" source="arean1112_png" width="184" height="30" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Label text="个人签名：" x="0" y="4" size="22"/>
+		<e:EditableText id="_qianMingText" width="161" height="18" text="Label" x="120" y="5" size="20" anchorOffsetY="0" anchorOffsetX="0"/>
+	</e:Group>
+	<e:Group id="_modifyInfoGroup" x="63" y="64">
+		<e:Label text="修改名称：" x="0" y="37.5" size="22"/>
+		<UI:CommonBtn id="_modifyBtn"  y="80.5" anchorOffsetX="0" width="81" anchorOffsetY="0" height="41" skinName="UI.CommonBtnSkin" bgStr="tu_area_png" icon="save_text_png" x="109"/>
+		<e:Label text="修改性别：" x="0" y="2" size="22"/>
+		<e:Image x="110" y="35" source="arean1112_png" anchorOffsetY="0" height="30" anchorOffsetX="0" width="184"/>
+		<e:EditableText id="_nameText" width="161" height="18" text="Label" x="120" y="41" size="20" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:RadioButton id="_ManRadio" label="男" x="123" y="0" skinName="CRadioButtonSkin1" anchorOffsetX="0" anchorOffsetY="0" groupName="sex_Gourp" value="1"/>
+		<e:RadioButton id="_GirdRadio" label="女" x="213" y="0" skinName="CRadioButtonSkin1" anchorOffsetX="0" anchorOffsetY="0" groupName="sex_Gourp" value="2"/>
+	</e:Group>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="-16" top="-18" scaleX="0.8" scaleY="0.8"/>
+</e:Skin>

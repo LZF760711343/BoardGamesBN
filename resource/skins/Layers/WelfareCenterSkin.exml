@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WelfareCenterSkin" width="1112" height="618" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<UI:LayerBgImg width="100%" height="100%"/>
+	<e:Image horizontalCenter="0" top="26" source="fulizhongxin_text_png"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" anchorOffsetX="0" anchorOffsetY="0" width="90" height="92" scaleX="0.8" scaleY="0.8"/>
+	<e:Image source="kuang1_png" anchorOffsetX="0" width="1083" x="16.72" y="99.02" height="501"/>
+	<e:Scroller width="1055.33" height="494" x="31" y="102" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group anchorOffsetX="0" width="1056.67" anchorOffsetY="0" height="491.33">
+			<e:Group x="35.66" y="28.29">
+				<e:Image x="1.33" y="0" scaleX="1" scaleY="1" source="yj_area_png"/>
+				<e:Label text="绑定手机号，立即获得50000金币" x="138.29" y="50.98" style="style2" size="24" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Label text="绑定手机" x="138.29" y="8.66" style="style2" size="34" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Image x="64.25" y="7.99" scaleX="1" scaleY="1" source="sj_area_png"/>
+				<e:Label text="已绑定" x="811.34" style="style2" size="34" scaleX="1" scaleY="1" textColor="0xFFFFFF" verticalCenter="0" bold="true"/>
+				<UI:CommonBtn id="_bingPhone" label="绑定手机" x="758" y="-4.12" bgStr="bigG_icon_png" skinName="UI.CommonBtnSkin" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group x="39.67" y="146.63">
+				<e:Image x="-2.66" y="0" scaleX="1" scaleY="1" source="yj_area_png"/>
+				<e:Label id="_daySign"   x="138.29" y="50.98" style="style2" size="24" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Label text="每日签到" x="139.63" y="7.33" style="style2" size="34" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Image x="41.28" y="4" scaleX="1" scaleY="1" source="qd_area_png"/>
+				<UI:CommonBtn id="_draw" label="签 到" x="758" y="-4.12" bgStr="bigG_icon_png" skinName="UI.CommonBtnSkin" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group x="39.67" y="385.03">
+				<e:Image x="-2.66" y="-3.99" scaleX="1" scaleY="1" source="yj_area_png"/>
+				<e:Label text="每日首次分享朋友圈，立即获得3000金币" x="139.29" y="48.32" style="style2" size="24" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Label text="分享有礼" x="139.63" y="7" style="style2" size="34" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Image x="42.28" y="8" scaleX="1" scaleY="1" source="q_area_png"/>
+				<UI:CommonBtn id="_share" label="微信分享" x="758" y="-8.11" bgStr="bigG_icon_png" skinName="UI.CommonBtnSkin" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group x="39.67" y="266.64">
+				<e:Image x="-2.66" y="0" scaleX="1" scaleY="1" source="yj_area_png"/>
+				<e:Label text="少于8000金币时可以领取，每次领取8000金币" x="138.29" y="50.98" style="style2" size="24" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Label text="破产补贴" x="139.63" y="8.33" style="style2" size="34" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Image x="48.28" y="8" scaleX="1" scaleY="1" source="bt_area_png"/>
+				<UI:CommonBtn id="_allowance" label="(2/2)" x="758" y="-4.12" bgStr="bigG_icon_png" icon="lq0_text_png" scaleX="1" scaleY="1" skinName="UI.CommonBtnSkin2" />
+			</e:Group>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

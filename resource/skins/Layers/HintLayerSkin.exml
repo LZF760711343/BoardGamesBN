@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HintLayerSkin" width="540" height="363" xmlns:e="http://ns.egret.com/eui" xmlns:components="components.*"         xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" states="sure,sureCannel,sure2,sureCannel2,sure3" currentState="{data.curState}" width.sure2="540" height.sure2="363" width.sureCannel2="540" height.sureCannel2="363" width.sure3="540" height.sure3="363">
+	<w:Config id="15c68347a35" />
+	<e:Image source="paihang1_png" width="100%" height="100%" scale9Grid="139,63,836,477"/>
+	<UI:CommonBtn id="_rightBtn" skinName="UI.CommonBtnSkin" bgStr="{data.rightBtnBg}"                horizontalCenter="130" y="243"  includeIn="sureCannel,sureCannel2" horizontalCenter.sureCannel2="130.5" y.sureCannel2="233" label="{data.rightBtnIcon}"/>
+	<UI:CommonBtn id="_leftBtn" skinName="UI.CommonBtnSkin" bgStr="{data.leftBtnBg}"                horizontalCenter="-130" y="243"  horizontalCenter.sure="0" horizontalCenter.sure2="1" y.sure2="227" horizontalCenter.sureCannel2="-129" y.sureCannel2="233" includeIn="sure,sureCannel,sure2,sureCannel2,sure3" horizontalCenter.sure3="6" y.sure3="244" label.sure="{data.leftBtnIcon}" label="{data.leftBtnIcon}"/>
+	<e:Label id="_tipslabel" y="81" fontFamily="Microsoft YaHei" size="25" height="150" width="457"           horizontalCenter="0" verticalAlign="middle" textAlign="center"   lineSpacing="15" horizontalCenter.sure2="0.5" y.sure2="87" anchorOffsetY.sure2="0" height.sure2="127" height.sureCannel2="127" y.sureCannel2="102" text="{data.tipsStr}" includeIn="sure,sureCannel,sure2,sureCannel2,sure3" horizontalCenter.sure3="0.5" y.sure3="81" textColor="0xffffff" horizontalCenter.sureCannel2="0.5"/>
+	<e:Image id="_topText" horizontalCenter="0" top="19" source="{data.title}"/>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin" top="10" right="6" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+</e:Skin>

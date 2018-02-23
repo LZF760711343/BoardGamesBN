@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMessagetDetaiSkin" width="760" height="393" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" states="receive" width.receive="760" height.receive="393">
+    <UI:LayerBgImg x="0" y="0" width="100%" height="100%"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" anchorOffsetX="0" anchorOffsetY="0" right="5" top="13" scaleX="0.8" scaleY="0.8" includeIn="receive"/>
+	<e:Image source="yxxx_text_png" x="281" y="20" includeIn="receive"/>
+	<e:Label text="你好！" x="117.67" y="127" size="28" includeIn="receive"/>
+	<e:Label id="_newMatter" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" x="69" y="179" anchorOffsetX="0" width="623.33" anchorOffsetY="0" height="119.33" size="28" includeIn="receive"/>
+	<e:Label text="HZ棋牌" x="561.66" y="317" size="28" includeIn="receive"/>
+	<e:Rect width="150" height="2" x="393.3" y="331.68" fillColor="0xFFFFFF" includeIn="receive"/>
+	<UI:CommonBtn id="_delectNew" label="删除消息" y="357" bgStr="button_Bred_png" skinName="UI.CommonBtnSkin" scaleX="0.8" scaleY="0.8" horizontalCenter="0" includeIn="receive"/>
+</e:Skin>

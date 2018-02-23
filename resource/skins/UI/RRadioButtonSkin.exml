@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RRadioButtonSkin" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled" >
+	<e:Image left="0" verticalCenter="0" x="10" y="10" source="k1_area_png" source.disabled="k8_area_png" scaleX="1.4" scaleY="1.4"/>
+	<e:Image includeIn="down" left="-7" top="-12" source="dg_icon_png" scaleX="1.2" scaleY="1.2"/>
+	<e:Label text="{label}" size="22" fontFamily="Microsoft YaHei" textColor.disabled="0xa6a59c" y.down="3" y.up="3" x.up="42" x.down="42" y.disabled="3" x.disabled="42" y="3" x="42" textColor="0xffffff" textColor.down="0xaab7fc" scaleX="1.4" scaleY="1.4"/>
+</e:Skin>

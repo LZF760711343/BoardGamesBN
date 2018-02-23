@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PerformanceItemSkin" width="208" height="497" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="kuang1_png" anchorOffsetX="0" width="208"/>
+	<e:Label id="_gameName" text="牛牛" size="29" fontFamily="Microsoft YaHei" horizontalCenter="0.5" top="14"/>
+    <e:Image id="_gameHead" y="56" horizontalCenter="0"  />
+    <e:Label id="_roomNumber" text="房间号：123456" y="184" size="13" horizontalCenter="1"  textColor="0xf4f2f2" fontFamily="Microsoft YaHei"/>
+    <e:Label id="_gameTime" text="时间：2016-10-10  20:20:20" size="13"
+             textAlign="right"  horizontalCenter="-0.5" y="212" textColor="0xf7f2f2" fontFamily="Microsoft YaHei"/>
+    <e:Scroller width="189" height="242" x="10" y="229">
+        <e:List id="_listUserinfo" x="-92.36" y="-65.28"  itemRendererSkinName="PerformancelistItemSkin" anchorOffsetX="0" width="188">
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object str="null"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+    </e:Scroller>
+</e:Skin>

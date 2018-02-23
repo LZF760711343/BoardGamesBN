@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HZ棋牌</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            height: 100%;
+            overflow: hidden;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="chrome-extension://oofgjnalpjodkfmfomihdlchiiacnman/injectScripts.min.js"></script>
+</head>
+<body onload="getCurFolder()">
+<div id="Layer1" style="height:100%;text-align: center;">
+    <img src="imgs/btn_open_app.png" onclick="openUrl(true)" style="width:150px;margin: -0px 0 0 -75px;position:absolute;top:65%;left:50%">
+    <img src="imgs/btn_open_web.png" onclick="openUrl(false)" style="width:150px;margin: -70px 0 0 -75px;position:absolute;top:65%;left:50%">
+    <img src="imgs/bg.jpg" height="100%" width="100%">
+
+    <script type="text/javascript">
+        function openUrl(isApp){
+            var url;
+            var URL="http://www.hongzhegame.com/";
+            //roomId,chl,username,sid
+//            '?roomId=1111&chl=android_gzqd&username=gzqd&sid=777';
+            var param=location.search.substring(1);//获取url中"?"符后面的字串;
+            if (isApp) {
+                url=URL+"boardgames/share/down.html";
+                if(param){
+                    url += ("?"+param);
+                }
+                var uri = URL+"QiDong/wx_login/sign_page_code.php?url="+encodeURIComponent(url)+"&"+param;
+                var redirect_uri = encodeURIComponent(uri);
+                location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx91a28c2d6fea4ca7&redirect_uri="+redirect_uri+"&response_type=code&scope=snsapi_base#wechat_redirect"
+                return;
+            } else {
+                url ="../web/index.html";
+            }
+            if(param){
+                url += ("?"+param);
+            }
+
+            location.href = url;
+        }
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+    </script>
+</div>
+</body>
+<script>
+    function getCurFolder() {
+        var url=location.search;//获取url中"?"符后的字串
+        console.log(url);
+        if (is_iOS()) {
+            if (is_weixn()) {
+
+            }else{
+                window.location.href="../web/index.html"+url;
+            }
+        }else{
+            if (is_weixn()) {
+
+            }else{
+                window.location.href="../web/index.html"+url;
+            }
+        }
+    };
+    function is_weixn() {
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function  is_iOS() {
+        if((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginSceneSkin" states="normal,progress" xmlns:UI="UI.*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:brnn="niuniu.brnn.*" xmlns:tween="egret.tween.*" xmlns:zjh="zjh.*">
+	<w:Declarations>
+	</w:Declarations>
+	<e:Image width="100%" height="100%"  source="login_bg_jpg" locked="true"/>
+	<e:Image source="tongyi_area_png" y="536.24" includeIn="normal" horizontalCenter="0"/>
+	<e:Image id="_woplay" horizontalCenter="1" scaleX="0" scaleY="0" verticalCenter="-38"  visible="false"/>
+	<e:Image id="_playLight" x="120" y="250" alpha="0"  visible="false"/>
+	<e:Label text="抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活" style="style1" size="22" bottom="13"
+	         horizontalCenter="0"   textColor="0x65768f"/>
+	<e:Group id="_btnGroup" includeIn="normal"
+	         y="417.24" horizontalCenter="0">
+		<UI:CommonBtn id="_wxbtn" icon="btn_weixin_login_png" horizontalCenter="-257" verticalCenter="-12.5" x="-2" y="62"
+		              includeIn="normal,progress" skinName="UI.ScaleButonSkin" />
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="20" />
+		</e:layout>
+	</e:Group>
+	<e:EditableText id="_txtInput" width="600" height="60"  horizontalCenter="6" verticalCenter="254"
+	                prompt="点击输入账号(0-5开发测试账号,请不要输入)" promptColor="0xffffff" strokeColor="0xffffff" verticalAlign="middle"
+	                includeIn="normal"  textColor="0xffffff"/>
+	<e:ProgressBar id="_progressBar" includeIn="progress" value="0" skinName="skins.LoginProgress" horizontalCenter="0" y="561" maximum="1034"/>
+	<e:Component id="panelLayer" width="100%" height="100%" touchEnabled="false" visible.progress="false" locked="true"/>
+	<e:Group y="517" horizontalCenter="0">
+		<e:Label id="_BitemLogin" text="100%" includeIn="progress" y="0" x="258"/>
+		<e:Label text="正在加载中,请稍后..." y="4" includeIn="progress" x="0" size="26"/>
+	</e:Group>
+</e:Skin>

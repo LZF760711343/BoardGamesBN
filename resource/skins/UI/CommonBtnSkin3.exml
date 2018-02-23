@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UI.CommonBtnSkin3" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15d5a0595c2"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width.up="100%" height.up="100%" width.down="90%" height.down="90%"
+	         width="100%" height="100%" source="{bgStr}" source.disabled="{bgGrayStr}" />
+	<e:Image id="iconDisplay" scaleY.down="0.9" scaleX.down="0.9" horizontalCenter="0" verticalCenter="0" />
+	<e:Label text="{label}" fontFamily="Microsoft YaHei" size="35" horizontalCenter="0" scaleX.down="0.9" scaleY.down="0.9" verticalCenter="-3" verticalAlign="middle" textAlign="center" bold="true"/>
+</e:Skin>

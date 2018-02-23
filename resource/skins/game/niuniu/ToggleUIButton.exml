@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ToggleUIButton" xmlns:e="http://ns.egret.com/eui" states="up,down" >
+	<e:Image width="48" height="25" includeIn="down" source="open_text1_png"/>
+	<e:Image width="48" height="25" includeIn="up" source="close_text1_png"/>
+</e:Skin>

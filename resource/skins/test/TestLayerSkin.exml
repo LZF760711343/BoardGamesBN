@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TestLayerSkin" currentState="hide" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        states="send,hide,mj,poker,server" width="1280" height="720">
+	<e:Rect width="100%" height="100%" alpha="0.5" includeIn="send,mj,poker,server"></e:Rect>
+	<e:ToggleButton id="_changeBtn" label="Button" x="25" y="24" width="100" height="50">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Rect width="100%" height="100%" fillColor="0xef2121" />
+				<e:Label horizontalCenter="0" verticalCenter="0"  text.down="hide" text.up="open" />
+			</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:ToggleButton id="_robotBtn" label="Button" width="162.12" height="50" includeIn="send" bottom="67" horizontalCenter="176" anchorOffsetX="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Rect width="100%" height="100%" fillColor="0xef2121"/>
+			<e:Label horizontalCenter="0" verticalCenter="0"  text.down="Robot On" text.up="Robot Off"/>
+		</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:Scroller includeIn="server" top="112" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" height="212.67">
+		<e:List id="_ipList">
+			<e:itemRendererSkinName>
+				<e:Skin states="up,down,disabled">
+					<e:Rect width="100%" height="100%" includeIn="down" horizontalCenter="0" verticalCenter="0" fillColor="0xe51d1d" />
+					<e:Label text="{data}" />
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object ip="192.168.0.193" />
+					<e:Object ip="192.168.0.193" />
+					<e:Object ip="192.168.0.193" />
+					<e:Object ip="192.168.0.193" />
+					<e:Object ip="192.168.0.193" />
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="_btnGroup" includeIn="mj,poker" anchorOffsetX="0" horizontalCenter="1.5" top="150" width="95%"
+	         anchorOffsetY="0" height="281.82" height.poker="240">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="9" horizontalAlign="center" requestedColumnCount.poker="13" />
+		</e:layout>
+	</e:Group>
+	<e:Button id="_sendBtn" label="send" x="518" y="442.75" width="100" height="50" includeIn="send"
+	          skinName="TestButtonSkin"></e:Button>
+	<e:Button id="_subBtn" label="提交" width="100" height="50" includeIn="mj,poker" skinName="TestButtonSkin" top="567"
+	          horizontalCenter="-90" horizontalCenter.poker="-160" top.poker="511" />
+	<e:Button id="_setLoginInfoBtn" label="提交" width="100" height="50" includeIn="server" skinName="TestButtonSkin"
+	          top="475" horizontalCenter="0" />
+	<e:List id="_portList" includeIn="server" top="352" height="40" horizontalCenter="0">
+		<e:itemRendererSkinName>
+			<e:Skin states="up,down,disabled">
+				<e:Rect width="100%" height="100%" includeIn="down" horizontalCenter="0" verticalCenter="0" fillColor="0xe51d1d" />
+				<e:Label  text="{'端口:'+data}"/>
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:layout>
+			<e:HorizontalLayout gap="20"/>
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object ddd="null"/>
+				<e:Object ddd="null"/>
+				<e:Object ddd="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+	</e:List>
+	<e:Group includeIn="poker" horizontalCenter="0.5" top="585">
+		<e:Button id="_setCardBtn1" label="第一手牌" width="140" height="50" includeIn="poker" skinName="TestButtonSkin" x="0"
+		          y="0" name="1" />
+		<e:Button id="_setCardBtn2" label="第二手牌" width="140" height="50" includeIn="poker" skinName="TestButtonSkin" x="188"
+		          y="0" name="2" />
+		<e:Button id="_setCardBtn3" label="第三手牌" width="140" height="50" includeIn="poker" skinName="TestButtonSkin" x="198"
+		          y="10" name="3" />
+		<e:Button id="setFirstIdBtn" label="第一手ID" width="140" height="50" includeIn="poker" skinName="TestButtonSkin" x="208"
+		          y="20" />
+		<e:Button id="_setMaxIdBtn" label="最大牌ID" width="140" height="50" includeIn="poker" skinName="TestButtonSkin" x="218"
+		          y="30" />
+		<e:Group y="-192.49" anchorOffsetX="0" width="80%" height="50" horizontalCenter="1" includeIn="poker" x="-286"
+		         scaleX="1" scaleY="1">
+			<e:Rect width="100%" height="100%" fillColor="0xFF8402" />
+			<e:EditableText id="_idText" width="100%" height="100%"  prompt="请输入id" textAlign="left"
+			                verticalAlign="middle" textColor="0x000000" multiline="true" size="22" />
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout gap="15" />
+		</e:layout>
+	</e:Group>
+	<e:Button id="_delBtn" label="删除" width="100" height="50" includeIn="mj,poker" skinName="TestButtonSkin" top="567"
+	          horizontalCenter="100" horizontalCenter.poker="-8" top.poker="511" />
+	<e:Button id="_clearBtn" label="清空" width="100" height="50" includeIn="poker" skinName="TestButtonSkin" top="511"
+	          horizontalCenter="141" />
+	<e:Group y="180.32" anchorOffsetX="0" width="600" height="60" horizontalCenter="0.5" includeIn="send" locked="true">
+		<e:Rect width="100%" height="100%" fillColor="0xff8402" />
+		<e:EditableText id="_inputMsg" width="100%" height="100%"  prompt="请输入协议名" textAlign="left"
+		                verticalAlign="middle" textColor="0x000000" />
+	</e:Group>
+	<e:Group y="448.51" anchorOffsetX="0" width="80%" height="100" horizontalCenter="1" includeIn="mj,poker"
+	         horizontalCenter.poker="1" y.poker="392.51" locked="true">
+		<e:Rect width="100%" height="100%" fillColor="0xFF8402" />
+		<e:EditableText id="_mjText" width="100%" height="100%"  prompt="请输入麻将牌" textAlign="left" verticalAlign="top"
+		                textColor="0x000000" multiline="true" size="22" top.poker="0" horizontalCenter.poker="0" />
+	</e:Group>
+	<e:Group y="266.32" anchorOffsetX="0" width="600" height="150" horizontalCenter="0.5" includeIn="send" locked="true">
+		<e:Rect width="100%" height="100%" fillColor="0xFF8402" />
+		<e:EditableText id="_inputDatas" width="100%" height="100%"  prompt="请输入消息内容" textAlign="left"
+		                verticalAlign="top" textColor="0x000000" multiline="true" />
+	</e:Group>
+	<e:TabBar id="_tabBar" horizontalCenter="0" top="66" includeIn="send,mj,poker,server" horizontalCenter.server="0" top.server="36">
+		<e:itemRendererSkinName>
+			<e:Skin states="up,down,disabled">
+				<e:Rect height="60" width="200" horizontalCenter="0" verticalCenter="0" fillColor="0xffffff" fillColor.up="0x000000" />
+				<e:Label text="{data.label}" horizontalCenter="0" verticalCenter="0" bold="true" textColor.up="0xffffff"
+				         textColor.down="0x000000" />
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="send" />
+				<e:Object label="input" />
+				<e:Object label="poker" />
+				<e:Object label="server" />
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:HorizontalLayout gap="20" />
+		</e:layout>
+	</e:TabBar>
+	<e:Button id="_sendLogBtn" label="发送log" width="100" height="50" includeIn="send" skinName="TestButtonSkin" top="603" horizontalCenter="-72"/>
+</e:Skin>

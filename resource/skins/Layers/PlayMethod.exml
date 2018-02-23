@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Layers.PlayMethodSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="-2" source="wf_bg_wood_png" />
+	<e:Scroller id="_scroller" width="790" scrollPolicyH="off" height="462" left="223" y="21" anchorOffsetX="0">
+		<e:Group x="-2">
+			<e:Label id="_label" width="100%" textColor="0x810f00" top="0" fontFamily="微软雅黑" horizontalCenter="0" size="20"
+			         lineSpacing="6" />
+		</e:Group>
+	</e:Scroller>
+	<e:Scroller width="176" height="457" x="21" y="24" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group x="-1" anchorOffsetY="0" height="477">
+			<e:TabBar id="_tabBar" width="177" height="454" anchorOffsetX="0" x="0" y="0" anchorOffsetY="0">
+				<e:itemRendererSkinName>
+					<e:Skin states="up,down,disabled" width="168" height="73">
+						<e:Image horizontalCenter="0.5" verticalCenter="0.5" source.down="ddj_icon1_png" source="ddj_icon1_drop_png" />
+						<e:Image source="{data.name}" verticalCenter="4.5" horizontalCenter="0" />
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+					<e:VerticalLayout gap="6" />
+				</e:layout>
+			</e:TabBar>
+		</e:Group>
+	</e:Scroller>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin" x="999" y="0" />
+</e:Skin>

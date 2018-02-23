@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+	<e:Skin class="niuniu.brnn.GameSceneSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui"
+			xmlns:w="http://ns.egret.com/wing" xmlns:brnn="niuniu.brnn.*" xmlns:UI="UI.*" xmlns:niuniu="niuniu.*"
+			xmlns:zjh="zjh.*" xmlns:brnn1="brnn.*" xmlns:ns1="*">
+	<e:Image x="0" y="0" width="100%" height="100%" source="brnn_bg_jpg"  locked="true"/>
+
+	<e:Image source="cm_tiao1_png" bottom="0" horizontalCenter="0"  locked="true"/>
+	<ns1:PhoneInfoBox skinName="PhoneInfoBoxSkin" right="0" id="_phoneInfoBox" top="95" />
+	<e:Group verticalCenter="-29" anchorOffsetX="0" anchorOffsetY="0" height="253" width="753" horizontalCenter="0" scaleX="1.1" scaleY="1.1">
+		<brnn:ChipsPool id="_pool0" x="1" skinName="niuniu.brnn.ChipsPoolSkin" bgStr="tian_yzarea1_png" y="0"
+		                anchorOffsetX="0"  touchChildren="false"/>
+		<brnn:ChipsPool id="_pool1" x="179" bgStr="di_yzarea1_png" y="0" skinName="niuniu.brnn.ChipsPoolSkin" touchChildren="false"/>
+		<brnn:ChipsPool id="_pool2" x="399" skinName="niuniu.brnn.ChipsPoolSkin" bgStr="xuan_yzarea1_png" y="0"
+		                anchorOffsetX="0"  touchChildren="false"/>
+		<brnn:ChipsPool id="_pool3" x="642.44" skinName="niuniu.brnn.ChipsPoolSkin" bgStr="huang_yzarea1_png" y="-1"
+		                anchorOffsetX="0"  touchChildren="false"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="justify" gap="4" />
+		</e:layout>
+	</e:Group>
+	<UI:BrnnCountDown id="_countDown" horizontalCenter="0.5" curTime="5" scaleX="0.9" scaleY="0.9"
+	                  verticalCenter="154" visible="false">
+		<UI:skinName>
+			<e:Skin>
+				<e:Image x="0" y="0" source="clock_icon_png" />
+				<e:BitmapLabel text="{curTime}" font="clock_num_fnt" horizontalCenter="0" verticalCenter="0" />
+			</e:Skin>
+		</UI:skinName>
+	</UI:BrnnCountDown>
+	<e:ProgressBar id="_chipCountPgb" width="220.2" height="14.4" anchorOffsetX="0" anchorOffsetY="0"
+	               skinName="brnnChipProgressSkin" horizontalCenter="0" maximum="100"  verticalCenter="70" visible="false"/>
+
+	<e:Group id="_chipGroup" horizontalCenter="2" height="89.68" bottom="0" anchorOffsetX="0" width="529.66"
+	         anchorOffsetY="0">
+		<UI:BrnnRadioBtn bgStr="1w_hzcm1_png" x="3" y="1" skinName="ChipBtnSkin" value="100" groupName="brnnChip"
+		             selected="true" icon="1万" />
+		<UI:BrnnRadioBtn bgStr="zjh_chouma_2_png" x="114" y="0" skinName="ChipBtnSkin" value="200" groupName="brnnChip"
+		             icon="5万" />
+		<UI:BrnnRadioBtn bgStr="zjh_chouma_3_png" x="224" y="0" skinName="ChipBtnSkin" value="500" groupName="brnnChip"
+		             icon="20万" />
+		<UI:BrnnRadioBtn bgStr="zjh_chouma_4_png" x="335" y="0" skinName="ChipBtnSkin" value="1000" groupName="brnnChip"
+		             icon="50万" />
+		<UI:BrnnRadioBtn bgStr="zjh_chouma_5_png" x="446" y="-1" skinName="ChipBtnSkin" value="2000" groupName="brnnChip"
+		             icon="100万" />
+
+	</e:Group>
+	<brnn:TipBar id="_tipBar" skinName="niuniu.brnn.TipBarSkin" horizontalCenter="0" verticalCenter="0" width="100%"
+	              visible="false"/>
+	<e:Image id="_yazhuImg" source="yzz_hztext_png" horizontalCenter="0.5"  verticalCenter="93" visible="false"/>
+	<e:Image id="_qddImg" source="qdd_hztext_png" horizontalCenter="0.5"  anchorOffsetY="0" verticalCenter="92.5" visible="false"/>
+	<e:Image id="_zhunbeiImg" source="ready_yazhu_png" horizontalCenter="0"  verticalCenter="95" visible="false"/>
+	<e:Label id="_roomId" text="房间号：000000" left="11" top="18" size="26" />
+	<e:Group id="_zhuangjiaGroup" y="0" horizontalCenter="0">
+		<e:Image source="zhuan_dib_png" x="0" y="0"/>
+		<brnn:Player id="_playerZhuang" skinName="brnn.PlayerSkin" name="1" currentState="zhuang" anchorOffsetX="0" x="182.5" y="31" anchorOffsetY="0" height="79"/>
+		<e:Group id="_zhuangChipGroup" x="398" y="57">
+		<e:BitmapLabel id="_chipsLb" text="99998万" font="hz_rzzt33_fnt" y="2" left="26" letterSpacing="-4"/>
+		<e:Image id="_chipIcon" width="24" height="24" source="iconCoin_png" anchorOffsetX="0" anchorOffsetY="0" y="0" left="0"/>
+		</e:Group>
+		<e:Image source="z_hzicon_png" width="35" height="35" x="165" y="40"/>
+		<UI:CommonBtn id="_applyBtn" skinName="UI.CommonBtnSkin" bgStr="button_Bred_png" touchChildren="false" icon="sqsz_hztext_png" anchorOffsetX="0" width="89.82" anchorOffsetY="0" height="21.81" scaleX="1.5" scaleY="1.5" x="164" y="74"/>
+		<brnn:DisCardBox id="_disBox" skinName="niuniu.brnn.DisCardBoxSkin" top="6" height="101" right="129" width="174"/>
+	</e:Group>
+	<e:Group id="_winerInfoGroup" left="89" y="-156" scaleX="1.3" scaleY="1.3">
+		<e:Image y="0" source="zi_dikuan_png" horizontalCenter="0" />
+		<e:Image y="3.3" source="sjdyj_toptext_png" horizontalCenter="-1" />
+		<e:Image y="22.99" horizontalCenter="0.5" source="dibang_png" anchorOffsetY="0" height="18.33" width="96%" />
+		<e:Label text="金额" textColor="0xA16473" size="16" fontFamily="Microsoft YaHei" right="27" top="24" />
+		<e:List id="_winerList" y="42.37" height="73.93" width="164.4" anchorOffsetX="0" anchorOffsetY="0" left="7">
+			<e:itemRendererSkinName>
+				<e:Skin states="up,down,disabled" minHeight="50" minWidth="100" height="24" width="170">
+					<e:Label size="15" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" verticalCenter="-1.25"
+					         text="{data.name}" horizontalCenter="-38.5" textColor="0xedd68a" />
+					<e:Label size="15" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" text="{data.gold}"
+					         horizontalCenter="42.5" verticalCenter="-1.25" textColor="0xedd68a" />
+					<e:Image width="100%" height="1.67" x="0" y="21.63" source="sjdyj_x2_png" anchorOffsetY="0" />
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object name="水源" gold="10万" />
+					<e:Object name="大傻逼" gold="10000万" />
+					<e:Object name="稳稳的幸福..." gold="100万" />
+				</e:Array>
+			</e:ArrayCollection>
+		</e:List>
+		<e:Label text="玩家昵称" textColor="0xa16473" size="16" fontFamily="Microsoft YaHei" top="24" left="20" />
+	</e:Group>
+	<e:Group id="_wangListGroup" anchorOffsetX="0" width="131" anchorOffsetY="0" height="103" right="175" y="-103"
+	         visible="false">
+		<e:Image y="0" source="zi_dikuan_png" horizontalCenter="0" width="100%" height="100%" />
+		<e:Image y="3" horizontalCenter="0" source="sqlb_toptext_png" />
+		<e:Image y="22" horizontalCenter="0.5" source="z_area22_png" width="100%" />
+		<e:Image y="27" horizontalCenter="-41.5" source="xh_hztext_png" />
+		<e:Image y="27" horizontalCenter="23" source="yhm_hztext_png" />
+		<e:List id="_wangList" x="7" y="45" height="53.6" width="118.4" anchorOffsetX="0" anchorOffsetY="0">
+			<e:itemRendererSkinName>
+				<e:Skin states="up,down,disabled" minHeight="50" minWidth="100" height="16.5">
+					<e:Label size="12" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" textColor="0xfcd671"
+					         verticalCenter="-1.25" left="13" text="{data.ids}" />
+					<e:Label size="12" fontFamily="Microsoft YaHei" textColor="0xFCD671" verticalAlign="middle" textAlign="center"
+					         horizontalCenter="19.5" verticalCenter="-1.25" text="{data.name}" />
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:ArrayCollection>
+				<!--<e:Array>
+				<e:Object ids="1" name="名字很长很长" />
+				<e:Object ids="2" name="zero" />
+				<e:Object ids="3" name="名字很长很长3" />
+			</e:Array>
+			-->
+		</e:ArrayCollection>
+	</e:List>
+</e:Group>
+<brnn:Player id="_player0" skinName="brnn.PlayerSkin" left="20" verticalCenter="-92" name="1" />
+<brnn:Player id="_player1" skinName="brnn.PlayerSkin" left="45" verticalCenter="59" name="2" />
+<brnn:Player id="_player2" skinName="brnn.PlayerSkin" left="188" verticalCenter="136" name="3" />
+<brnn:Player id="_player3" skinName="brnn.PlayerSkin" left="337" verticalCenter="152" name="3" />
+<brnn:Player id="_player4" skinName="brnn.PlayerSkin" verticalCenter="152" name="3" right="337" />
+<brnn:Player id="_player5" skinName="brnn.PlayerSkin" verticalCenter="136" name="3" right="188" />
+<brnn:Player id="_player6" skinName="brnn.PlayerSkin" verticalCenter="59" right="45" name="4" />
+<brnn:Player id="_player7" skinName="brnn.PlayerSkin" verticalCenter="-92" right="20" name="5" />
+<brnn:Player id="_player8" skinName="brnn.PlayerSkin" currentState="my" bottom="0" left="14" />
+
+
+
+
+<UI:GrayBtn id="_jxyaBtn" icon="xuya_text1_png" touchChildren="false" right="47"
+              bottom="13" anchorOffsetY="0" height="55" bgStr="h_icon1_png"  skinName="UI.GrayBtnSkin"/>
+<niuniu:GameEffectLayer id="effectLayer" width="100%" height="100%" touchChildren="false" touchEnabled="false"
+                         locked="true"/>
+<brnn:ZhuanJiaShanguang id="_shanguang" skinName="zhuangjiaShanguangSkin" anchorOffsetX="0" width="698"
+                        anchorOffsetY="0" height="135" top="-4" horizontalCenter="-5"  visible="false"/>
+<brnn:GameUI id="uiLayer" width="100%" height="100%" skinName="niuniu.brnn.GameUISkin" touchEnabled="false"
+             locked="true" />
+<brnn:HandCardBox id="_handCardBox" width="600" height="136.66" horizontalCenter="0" bottom="36" />
+
+<brnn:ZhuanJiaCuoPai id="_cuopai" skinName="zhuangjiacuopai" horizontalCenter="6" top="104"  visible="false"/>
+</e:Skin>

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin  width="602" height="454" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="_sp">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{100}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{1}" height="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250"/>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{43}" y="{39}" width="{539}" height="{398}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="200"/>
+				<tween:Set/>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{1}" height="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500"/>
+				<tween:Set/>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{48}" y="{41}" width="{530}" height="{394}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="700"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{1}" height="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="650"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{2}" height="{2}" x="{417.43}" y="{179.86}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object height="{82}" x="{373.43}" y="{136}" width="{93}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{363}" y="{122}" width="{121}" height="{107}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{373.43}" y="{136}" width="{93}" height="{82}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{185}" y="{315.5}" width="{1}" height="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="800"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{1}" height="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object width="{62}" height="{60}" x="{150.17}" y="{283.83}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{133}" y="{274}" width="{95}" height="{91}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{150.17}" y="{283.83}" width="{62}" height="{60}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+     <e:Image id="image1" source="spring3_png" x="48.0000000000001" y="41"/>
+     <e:Image id="image0" source="spring2_png" x="43.0000000000001" y="39.0000000000001"/>
+     <e:Image id="image" source="spring1_png" x="43.0000000000001" y="37"/>
+     <e:Image id="image2" source="hua1_png" x="377" y="134"/>
+     <e:Image id="image3" source="hua2_png" x="144" y="284"/>
+</e:Skin>

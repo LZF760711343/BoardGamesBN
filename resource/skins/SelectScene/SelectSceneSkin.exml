@@ -1,0 +1,1349 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SelectSceneSkin" currentState="hall" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:UI="UI.*" xmlns:ns1="*" xmlns:tween="egret.tween.*" width="1136"
+        states="hall,hundrednnSelect,qznnSelect,queryChose" height.hundrednnSelect="640">
+	<w:Declarations>
+		<tween:TweenGroup id="_biibii">
+			<tween:TweenItem target="{_bibi}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{816}" alpha="{1}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}" x="{1372}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1350" />
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{816}" />
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_niu">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{63}" y="{45}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500" />
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{63}" y="{45}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:Wait duration="850" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="50">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:Wait duration="850" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500" />
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}" x="{80}" y="{170}" scaleX="{1.3}" scaleY="{1.3}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object x="{60}" y="{190}" scaleX="{1.5}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="850" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500" />
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" x="{130}" y="{170}" rotation="{-15}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object y="{190}" scaleY="{1.1}" scaleX="{1.3}" alpha="{0}" x="{150}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="850" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image21}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{40}" y="{178}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{93}" alpha="{0.8}" y="{172}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{150}" alpha="{1}" y="{160}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{200}" alpha="{0}" y="{150}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+				<tween:Wait duration="1000" />
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_szp">
+			<tween:TweenItem target="{image3}">
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{141}" rotation="{-60}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{130}" rotation="{-120}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{125}" rotation="{-180}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{130}" rotation="{-240}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{135}" rotation="{-300}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{148}" rotation="{-360}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="100" />
+				<tween:Set/>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image4}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="300" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" x="{206}" y="{144}" width="{10}" height="{10}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object height="{59}" width="{55}" y="{116}" x="{184}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1100" />
+				<tween:Set/>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image5}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{202}" y="{183}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object width="{18}" height="{14}" y="{200}" x="{222}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="200" />
+				<tween:Set/>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image6}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{5}" height="{5}" y="{264}" x="{134}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object height="{33}" width="{42}" x="{120}" y="{249}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{5}" height="{5}" x="{134}" y="{264}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{120}" y="{249}" width="{42}" height="{33}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="400" />
+				<tween:Set/>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image26}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{30}" x="{109}" y="{120}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object y="{105}" rotation="{-90}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{95}" rotation="{-180}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{110}" rotation="{-270}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{120}" rotation="{-360}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="700" />
+				<tween:Set/>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image22}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{40}" y="{188}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{93}" alpha="{0.8}" y="{182}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{150}" alpha="{1}" y="{170}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{200}" alpha="{0}" y="{160}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="250" />
+				<tween:Set/>
+				<tween:Wait duration="1000" />
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_bs">
+			<tween:TweenItem target="{image7}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" alpha="{1}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{1}" scaleY="{1}" rotation="{90}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0}" scaleX="{0}" scaleY="{0}" rotation="{180}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1650" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image8}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{114}" x="{58}" alpha="{0}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0.75}" scaleY="{0.75}" rotation="{90}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}" rotation="{180}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1050" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image9}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{172}" y="{123}" alpha="{0}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1250" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object scaleX="{0.6}" scaleY="{0.6}" alpha="{1}" rotation="{90}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object rotation="{180}" scaleX="{0}" scaleY="{0}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="450" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image10}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{180}" y="{86}" alpha="{0}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1800" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0.45}" scaleY="{0.45}" rotation="{120}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}" rotation="{240}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image25}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{30}" y="{168}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.8}" x="{73}" y="{162}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}" x="{130}" y="{150}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}" x="{180}" y="{140}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1250" />
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_fj">
+			<tween:TweenItem target="{image11}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{47}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{83}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{75}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2400" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image12}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{164}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{128}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{140}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2400" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image13}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{2}" height="{2}" x="{153}" y="{161}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+				<tween:To duration="300" ease="quintOut">
+					<tween:props>
+						<e:Object alpha="{1}" y="{54}" x="{202}" width="{60}" height="{60}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{0.4}" scaleX="{0.9}" scaleY="{0.9}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.9}" scaleX="{1}" scaleY="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.6}" scaleX="{1}" scaleY="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.6}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.9}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.65}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image14}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{2}" height="{2}" x="{153}" y="{161}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+				<tween:To duration="300" ease="quintOut">
+					<tween:props>
+						<e:Object width="{45}" height="{45}" x="{70}" y="{172}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object scaleX="{0.9}" scaleY="{0.9}" alpha="{0.6}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.8}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image15}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{2}" height="{2}" x="{153}" y="{161}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object width="{30}" height="{30}" x="{62}" y="{83}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{0.5}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{0.6}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.4}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.75}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{0.55}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image23}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{50}" y="{175}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.8}" x="{83}" y="{177}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{150}" alpha="{1}" y="{165}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{200}" alpha="{0}" y="{155}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1250" />
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_ddz">
+			<tween:TweenItem target="{image16}">
+				<tween:Set/>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{50}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{53}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{49}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{52}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{42}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image17}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" scaleX="{0}" scaleY="{0}" y="{138}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="950" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}" y="{138}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="850">
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{1}" scaleY="{1}" rotation="{90}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="800">
+					<tween:props>
+						<e:Object rotation="{180}" scaleX="{0}" scaleY="{0}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1150" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image18}">
+				<tween:Set/>
+				<tween:To duration="1050" ease="cubicOut">
+					<tween:props>
+						<e:Object y="{128}" x="{126}" alpha="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2700" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image19}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{179}" y="{168}" alpha="{0}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1400" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}" rotation="{90}" scaleX="{0.8}" scaleY="{0.8}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="650">
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}" rotation="{180}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="950" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image20}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2350" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}" y="{112}" x="{169}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object rotation="{90}" alpha="{1}" scaleX="{0.55}" scaleY="{0.55}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}" rotation="{180}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="450" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image24}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{30}" y="{160}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.8}" x="{73}" y="{162}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}" x="{130}" y="{150}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}" x="{180}" y="{140}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1250" />
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_mj">
+			<tween:TweenItem target="{image27}">
+				<tween:Set/>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object x="{53}" y="{138}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object x="{53}" y="{143}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object x="{53}" y="{146}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image28}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{50}" height="{48}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{102}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{101}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750" ease="sineOut">
+					<tween:props>
+						<e:Object y="{105.5}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image29}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object scaleX="{0.5}" scaleY="{0.5}" rotation="{90}" x="{59}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object rotation="{180}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image30}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1300" />
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0.8}" scaleY="{0.8}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object scaleX="{0.6}" scaleY="{0.6}" rotation="{90}" y="{166}" x="{191}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object rotation="{180}" scaleX="{0}" scaleY="{0}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image31}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{10}" y="{163}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.8}" x="{63}" y="{157}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}" x="{120}" y="{145}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}" y="{135}" x="{159.39}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="250" />
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{159.39}" />
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1000" />
+				<tween:Set/>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_Pai">
+			<tween:TweenItem target="{image32}">
+				<tween:Set/>
+				<tween:To duration="650">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0.9}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_right">
+			<tween:TweenItem target="{_zeRect1}">
+				<tween:Set/>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0.4}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0.85}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0.35}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_left">
+			<tween:TweenItem target="{_Left}">
+				<tween:Set/>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0.4}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0.85}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0.35}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_deng1">
+			<tween:TweenItem target="{_SelectRoom1}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0.5}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{0.85}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{0.6}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_deng2">
+			<tween:TweenItem target="{_SelectRoom2}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0.5}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{0.85}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{0.6}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="_Gift">
+			<tween:TweenItem target="{image33}">
+				<tween:Set/>
+				<tween:To duration="650">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0.9}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object alpha="{0.7}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{1}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="15c48c5f99d" />
+	<e:Image x="0" y="0" width="100%" height="100%" source="dbj_jpg" source.qznnSelect="choosebg_jpg"            source.queryChose="dbj_jpg" source.hall="choosebg_jpg" locked="true" />
+	<UI:CommonBtn id="_downAppBtn" skinName="UI.ScaleButonSkin" icon="app_iconhz_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" x="448" top="16"
+	              icon.hall="app_iconhz_png" />
+	<e:Image top="0" left="0" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" source.hall="sd-area_png"
+	         source="sd-area_png" />
+	<ns1:SpeakerMan id="_speakerMan" includeIn="hall" skinName="SperakerManSkin" horizontalCenter="32" top="106" />
+	<e:Group id="_headGroup" left="26" top="25">
+		<e:Rect id="_roundMask" width="56" height="56" x="2" y="2" ellipseWidth="10" ellipseHeight="10" />
+		<e:Image id="_bgCeng" x="0" y="0" width="60" height="60" source="tad_area_png" />
+		<UI:HeadBox id="_headBox" skinName="UI.HeadBoxSkin" includeIn="hall,hundrednnSelect,qznnSelect,queryChose"
+		            width="60" height="60" x="0" y="0" />
+	</e:Group>
+	<e:Image bottom="0" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" source="xt_area_png"            scale9Grid.qznnSelect="167,14,783,84" scale9Grid.queryChose="167,14,783,84" left.hall="0" bottom.hall="0"            left="0" width="100%" />
+	<e:Image x="214" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" scaleY="0.9" scaleX="0.9"
+	         source="jb_Area_png" y="9" source.hall="jb_Area_png" y.hall="9" />
+	<e:Image x="214" y="46" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" scaleY="0.9" scaleX="0.9"
+	         source="zs_area_png" y.hall="46" />
+	<e:Image id="image33" source="px_ghz_png" anchorOffsetX="47" anchorOffsetY="43" includeIn="hall" top="7" right="173" />
+	<e:Image x="214" y="73" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" source="fangka_icon1_png"
+	         scaleX="0.38" scaleY="0.38" />
+	<e:Image id="image32" source="px_ghz_png" anchorOffsetX="47" anchorOffsetY="43" bottom="-4" left.hall="24"
+	         bottom.hall="-4" horizontalCenter="-88%"  left="24"/>
+	<UI:CommonBtn id="_inviteButton" skinName="UI.ScaleButonSkin" icon="ph_icon_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="6" bottom.hall="6"
+	              x.hall="185.2" horizontalCenter="-88%" />
+	<!-- <e:Image source="join_room_png" x="996" y="526" />
+	-->
+	<!-- <e:Image source="smyz_icon_png" x="1050" y="17" />
+	<e:Image source="sclb_icon_png" x="953" y="7" />
+	-->
+	<UI:CommonBtn id="_FirstGiftButon" skinName="UI.ScaleButonSkin" icon="sclb_icon_png" x.hall="948.65" top.hall="9"                 x.hundrednnSelect="868.33" y.hundrednnSelect="9" y.hall="9" right.hall="95" right.qznnSelect="181"                 top.qznnSelect="9" right.queryChose="181" top.queryChose="9"></UI:CommonBtn>
+	<!--<e:Image source="jb_jh_png" x="382" y="11" />
+	<e:Image source="zs_jh_png" x="382" y="49" />
+	-->
+	<!-- 字体ui -->
+	<e:Label id="_GoldLabel" text="6666666" size="16" fontFamily="Microsoft YaHei"
+	         includeIn="hall,hundrednnSelect,qznnSelect,queryChose" x="244" y="15" y.hall="15" />
+	<e:Label id="_Diamondlabel" text="6666666" size="16" fontFamily="Microsoft YaHei"
+	         includeIn="hall,hundrednnSelect,qznnSelect,queryChose" x="244" y="49" y.hall="49" />
+	<e:Label id="_cardLab" text="666" size="16" fontFamily="Microsoft YaHei" top="82" left="244"
+	         includeIn="hall,hundrednnSelect,qznnSelect,queryChose" />
+	<e:Image x="290" y="76" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" source="liuka_icon1_png"
+	         y.queryChose="76" />
+	<e:Label id="_cardNiu" text="0" size="16" fontFamily="Microsoft YaHei" top="82" left="322"
+	         includeIn="hall,hundrednnSelect,qznnSelect,queryChose" />
+	<UI:CommonBtn id="_ShopButton" skinName="UI.ScaleButonSkin" icon="cz_icon_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" x="353" top="16" />
+	<e:Label id="_nameLabel" text="zeze156181198198" fontFamily="Microsoft YaHei" size="16" textAlign.queryChose="left"            textAlign.qznnSelect="left" textAlign.hall="left"            includeIn="hall,hundrednnSelect,qznnSelect,queryChose" left="94" top.qznnSelect="37" left.hall="94"            top.hall="37" left.hundrednnSelect="94" width.hundrednnSelect="94" y.hundrednnSelect="35" top="37"            top.queryChose="37" anchorOffsetX.hall="0" width.hall="94" anchorOffsetX.qznnSelect="0" left.qznnSelect="94"            width.qznnSelect="94" anchorOffsetX.queryChose="0" left.queryChose="94" width.queryChose="94"            anchorOffsetX="0" width="94" textAlign="left" height="16" top.hundrednnSelect="37"            />
+	<e:Label id="_IDLabel" text="888888888" fontFamily="Microsoft YaHei" size="15"
+	         includeIn="hall,hundrednnSelect,qznnSelect,queryChose" left="94" top="60" textColor="0xEFE8E8"
+	         left.hall="94" top.hall="60" />
+	<UI:CommonBtn id="_SetButton" skinName="UI.ScaleButonSkin" icon="sZ_icon_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="7" bottom.hall="7"
+	              x.hall="737.67" horizontalCenter="41%" />
+	<UI:CommonBtn id="_contactBtn" skinName="UI.ScaleButonSkin" icon="gG_icon_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="5" icon.hall="gG_icon_png"
+	              bottom.hall="5" x.hall="460.23" horizontalCenter="-11%" />
+	<UI:CommonBtn id="_CombatGainsButton" skinName="UI.ScaleButonSkin" icon="zj_icon1_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="7" icon.hall="zj_icon1_png"
+	              bottom.hall="7" x.hall="597.87" horizontalCenter="15%" />
+	<UI:CommonBtn id="_FeedbackButton" skinName="UI.ScaleButonSkin"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="6" bottom.hall="6"
+	              x.hall="41.34" horizontalCenter="-88%" />
+	<UI:CommonBtn id="_GameNews" skinName="UI.ScaleButonSkin" icon="xiaoxi_icon_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="6" horizontalCenter="-62.5%"
+	              horizontalCenter.hall="-62.5%" bottom.hall="6" />
+	<UI:CommonBtn id="_RealNameButton" skinName="UI.ScaleButonSkin" icon="smrz_icon_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" x="961" top="8" visible="false" />
+	<!-- 字体ui end -->
+	<!-- 下方控件 -->
+	<UI:CommonBtn id="_GoldAddButton" skinName="UI.ScaleButonSkin" icon="jb_icon_png" left="319" top="10"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" left.hall="319" top.hall="10" />
+	<UI:CommonBtn id="_DiamondAddButton" icon="jb_icon_png" skinName="UI.ScaleButonSkin" left="319" top="44"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" left.hall="319" top.hall="44" />
+	<UI:CommonBtn id="_buyCardBtn" icon="jb_icon_png" skinName="UI.ScaleButonSkin" left="319" top="77"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" visible.hall="false" visible="false" />
+	<e:Scroller includeIn="hundrednnSelect" left="153" right="135" height="415" verticalCenter="-2.5" visible="false">
+		<e:List id="_listTable" itemRendererSkinName="hunderNNSelectRoomBtnSkin">
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:TileLayout horizontalGap="6" verticalGap="6" columnAlign="justifyUsingGap" verticalAlign="contentJustify"
+				              rowAlign="justifyUsingGap" requestedColumnCount="3" />
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Scroller includeIn="hundrednnSelect" left="153" right="135" height="415" verticalCenter="-2.5" visible="false">
+		<e:List id="_listTable1" itemRendererSkinName="hunderNNSelectRoomBtnSkin">
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+					<e:Object aa="null" />
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:TileLayout horizontalGap="6" verticalGap="6" columnAlign="justifyUsingGap" verticalAlign="contentJustify"
+				              rowAlign="justifyUsingGap" requestedColumnCount="3" />
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<UI:CommonBtn id="_QuickPlay" label="Button" includeIn="hundrednnSelect" x="992.31" y="518.68"
+	              skinName="UI.ScaleButonSkin" visible="false" />
+	<UI:CommonBtn id="_backBtn" label="Button" includeIn="hundrednnSelect,qznnSelect,queryChose"                 skinName="UI.ScaleButonSkin" icon="tc_icon_png" right.qznnSelect="10" top.hall="28" right="23"                 top.qznnSelect="9" icon.qznnSelect="tc_icon_png" icon.hundrednnSelect="tc_icon_png"                 right.hundrednnSelect="13" y.hundrednnSelect="9" right.queryChose="10" top.queryChose="9"                 icon.queryChose="tc_icon_png" top="9"                 />
+	<UI:CommonBtn id="_shareGift" label="Button" includeIn="hall" skinName="UI.ScaleButonSkin" icon="fxlb_icon_png"
+	              right="181" top="9" />
+	<UI:CommonBtn id="_safeBox" label="Button" skinName="UI.ScaleButonSkin" icon="bxx_icon1_png"
+	              includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bottom="5" bottom.hall="5"
+	              x.hall="310.57" horizontalCenter="-38%" />
+	<UI:CommonBtn id="_welfare" skinName="UI.ScaleButonSkin" icon="fl_icon_png" x.hundrednnSelect="956.33"                 y.hundrednnSelect="9" right.hall="10" top.hall="9" right.qznnSelect="95" top.qznnSelect="9"                 right.queryChose="95" top.queryChose="9" />
+	<UI:CommonBtn id="_seriesSmall" skinName="UI.ScaleButonSkin" icon="13cjc_icon_png" x="132" y="155"
+	              includeIn="hundrednnSelect,queryChose" horizontalCenter.queryChose="-335.5"
+	              verticalCenter.queryChose="-2.5" name.queryChose="0" />
+	<UI:CommonBtn id="_seriesMible" skinName="UI.ScaleButonSkin" icon="13zjc_icon_png" x="478" y="161"
+	              includeIn="hundrednnSelect,queryChose" horizontalCenter.queryChose="10.5"
+	              verticalCenter.queryChose="-2.5" name.queryChose="1" />
+	<UI:CommonBtn id="_seriesBig" skinName="UI.ScaleButonSkin" icon="13gjc_icon_png" x="812" y="158"
+	              includeIn="hundrednnSelect,queryChose" horizontalCenter.queryChose="348.5"
+	              verticalCenter.queryChose="-2.5" name.queryChose="2" />
+	<e:TabBar id="_tabber" includeIn="hundrednnSelect" anchorOffsetX="0" itemRendererSkinName="levalroomtabberSkin"
+	          verticalCenter="0" visible="false">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object pic="cjc_text1_png" />
+				<e:Object pic="gjc_text1_png" />
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout/>
+		</e:layout>
+	</e:TabBar>
+	<UI:CommonBtn id="_cardRoomBtn" icon="hyfj_icon_png" includeIn="qznnSelect" horizontalCenter="-227"
+	              verticalCenter="-4.5" skinName="UI.CommonBtnSkin"></UI:CommonBtn>
+	<UI:CommonBtn id="_selectRoomFastChose" icon="jiarufangj_icon_png" includeIn="qznnSelect" horizontalCenter="219"
+	              verticalCenter="-4.5" skinName="UI.ScaleButonSkin"></UI:CommonBtn>
+	<!-- 下方控件end -->
+	<!-- 中间控件滑动 -->
+	<e:Scroller id="_slither" scrollPolicyH="on" scrollPolicyV="off" verticalCenter="-41.5" includeIn="hall" visible="true"
+	            width="1040" horizontalCenter="0">
+		<e:Group y="22.73" touchEnabled="true" x="-2" width="2080">
+			<UI:CommonBtn id="_BrNiuNiuRoomButton" includeIn="hall"  name="41" skinName="hzBrllSkin" horizontalCenter="-121.5" verticalCenter="20" anchorOffsetY="0" height="245" anchorOffsetX="0" width="261"/>
+
+			<UI:CommonBtn id="_QZNiuNiuRoomButton1" includeIn="hall"  name="9" skinName="hzQzllSkin" horizontalCenter="-392.5" verticalCenter="20" anchorOffsetY="0" height="245" anchorOffsetX="0" width="255"/>
+
+			<e:Group id="_SanZhangPaiRoomButton" name="11" touchChildren="false">
+				<UI:CommonBtn icon="psz_icon_png" skinName="UI.ScaleButonSkin" x="28" y="20"></UI:CommonBtn>
+				<e:Image id="image3" source="chouma_icon336_png" x="180" y="148" anchorOffsetX="21" anchorOffsetY="14" />
+				<e:Image id="image4" source="star_icon336_png" x="188.33" y="129" anchorOffsetX="29.33" anchorOffsetY="28" />
+				<e:Image id="image5" source="star_icon336_png" x="198.33" y="139" anchorOffsetX="29.33" anchorOffsetY="28" />
+				<e:Image id="image6" source="star_icon336_png" x="208.33" y="149" anchorOffsetX="29.33" anchorOffsetY="28" />
+				<e:Image id="image26" width="41" height="37" x="115.33" y="126.33" source="chouma_icon337_png" scaleY="1"
+				         anchorOffsetX="21.33" anchorOffsetY="19.33" />
+				<e:Image id="image22" source="guan_png" x="50.0000000000001" y="180" />
+			</e:Group>
+			<e:Group id="_JoinEnterIntoRoom" touchChildren="false">
+				<UI:CommonBtn icon="yue_icon_png" skinName="UI.ScaleButonSkin" x="18" y="25" />
+				<e:Image id="image11" source="cj_icon36_png" x="73.9999999999999" y="75" />
+				<e:Image id="image12" source="ypai_icon36_png" x="129" y="63" />
+				<e:Image id="image13" x="198" y="77" anchorOffsetX="18" anchorOffsetY="19" source="xppxx_area1_png" />
+				<e:Image id="image14" x="208" y="87" anchorOffsetX="18" anchorOffsetY="19" source="xppxx_area1_png" />
+				<e:Image id="image15" x="218" y="97" anchorOffsetX="18" anchorOffsetY="19" source="xppxx_area1_png" />
+				<e:Image id="image23" source="guan_png" x="40" y="180" />
+			</e:Group>
+			<e:Group id="_MaJiangRoomButton" height="250" width="250" name="40" touchChildren="false">
+				<UI:CommonBtn icon="gdmj_icon_png" skinName="UI.ScaleButonSkin" x="0" y="0"/>
+				<e:Image id="image27" x="53" y="146" anchorOffsetX="29" anchorOffsetY="27" source="saizi_icon2_png"/>
+				<e:Image id="image28" x="183" y="105.5" anchorOffsetX="28" anchorOffsetY="26" source="saizi_icon2_png"/>
+				<e:Image id="image29" x="61.33" y="207.33" anchorOffsetX="61.33" anchorOffsetY="45.33" source="star_mj_png"/>
+				<e:Image id="image30" x="195.33" y="161.33" anchorOffsetX="61.33" anchorOffsetY="45.33" width="110" height="85" source="star_mj_png"/>
+				<e:Image id="image31" source="guan_png" x="20" y="163"/>
+			</e:Group>
+			<e:Group id="_DouDiZhuRoomButton" name="13" touchChildren="false">
+				<UI:CommonBtn icon="ddz_icon_png" skinName="UI.ScaleButonSkin" y="13"></UI:CommonBtn>
+				<e:Image id="image16" source="huangg_icon336_png" x="40" y="42" />
+				<e:Image id="image17" source="star_336_png" x="82" y="125" anchorOffsetX="56" anchorOffsetY="46" />
+				<e:Image id="image18" source="star_336_png" x="179" y="155" anchorOffsetX="56" anchorOffsetY="46" />
+				<e:Image id="image19" source="star_336_png" x="169" y="99" anchorOffsetX="56" anchorOffsetY="46" />
+				<e:Image id="image20" source="star_226_png" x="126" y="115" />
+				<e:Image id="image24" source="guan_png" x="40" y="180" />
+			</e:Group>
+			<e:Group id="_matchRoomBtn" touchChildren="false">
+				<UI:CommonBtn y="14" icon="bsc_icon_png" skinName="UI.ScaleButonSkin" />
+				<e:Image id="image7" source="star_366_png" x="115" y="69" anchorOffsetX="62" anchorOffsetY="55" />
+				<e:Image id="image8" source="star_366_png" x="125" y="79" anchorOffsetX="62" anchorOffsetY="55" />
+				<e:Image id="image9" source="star_366_png" x="135" y="89" anchorOffsetX="62" anchorOffsetY="55" />
+				<e:Image id="image10" source="star_366_png" x="145" y="99" anchorOffsetX="62" anchorOffsetY="55" />
+				<e:Image id="image25" source="guan_png" x="40" y="180" />
+			</e:Group>
+			<e:Group id="_QZNiuNiuRoomButton" y="22.73" name="9" touchChildren="false" visible="false">
+				<UI:CommonBtn icon="nn_icon_png" skinName="UI.ScaleButonSkin" x="28" y="10"/>
+				<e:Image id="image0" source="ll_tou2bl_png" x="63" y="49" touchEnabled="false"/>
+				<e:Image id="image" source="ll_tou1bl_png" x="63" y="47"/>
+				<e:Image id="image1" source="yan_bl1_png" x="95" y="152" anchorOffsetX="51"/>
+				<e:Image id="image2" source="yan_bl2_png" x="119" y="157"/>
+				<e:Image id="image21" source="guan_png" x="50.0000000000001" y="180"/>
+			</e:Group>
+
+
+			<UI:CommonBtn id="_matchRoomBtn0" x="791" y="0" icon="bsc_icon_png" skinName="UI.ScaleButonSkin"  visible="false"/>
+			<UI:CommonBtn id="_matchRoomBtn1" x="791" y="0" icon="bsc_icon_png" skinName="UI.ScaleButonSkin" visible="false" />
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="bottom" gap="-4" />
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="_versionLab" text="版本号:1.0.0" bottom="7" left="11" visible="false" />
+	<e:Group includeIn="queryChose" horizontalCenter="-335.5" verticalCenter="121.5">
+		<e:Image includeIn="queryChose" source="lk_area_png" horizontalCenter="0" verticalCenter="1.5" />
+		<e:Label text="入场限制" includeIn="queryChose" x="14.12" y="14.31" size="12" />
+		<e:Label id="_labelGlod1" text="100" includeIn="queryChose" size="13" horizontalCenter="29.5" verticalCenter="2.5" />
+	</e:Group>
+	<e:Group includeIn="queryChose" horizontalCenter="10.5" verticalCenter="121.5">
+		<e:Image includeIn="queryChose" source="lk_area_png" horizontalCenter="0" verticalCenter="1.5" />
+		<e:Label text="入场限制" includeIn="queryChose" x="16.17" y="13.83" size="12" />
+		<e:Label id="_labelGlod2" text="100" includeIn="queryChose" size="13" horizontalCenter="30.5" verticalCenter="2.5" />
+	</e:Group>
+	<e:Group includeIn="queryChose" horizontalCenter="348.5" verticalCenter="121.5">
+		<e:Image includeIn="queryChose" source="lk_area_png" horizontalCenter="0" verticalCenter="1.5" />
+		<e:Label text="入场限制" includeIn="queryChose" x="14.17" y="14.16" size="12" />
+		<e:Label id="_labelGlod3" text="100" includeIn="queryChose" size="13" horizontalCenter="30.5" verticalCenter="2.5" />
+	</e:Group>
+	<UI:CommonBtn id="_zeRect" includeIn="hall,hundrednnSelect,qznnSelect,queryChose" bgStr="jrfj_icon_png"
+	              skinName="UI.CommonBtnSkin" bottom="-4" scaleY="0.9" right="-1" scaleY.hall="1" />
+	<UI:CommonBtn id="_SelectRoomButton" icon="jiarufangjian_icon_png" icon.hundrednnSelect="jiarufangjian_icon_png"                 includeIn="hall,hundrednnSelect,qznnSelect" bottom.hall="-4" bgStr.hall="jrfj_icon1_png"                 icon.hall="hyroom_text_png" skinName.hall="UI.CommonBtnSkin" bgStr="jrfj_icon_png"                 skinName="UI.CommonBtnSkin" bottom="-6" right.queryChose="0" right="0" right.hall="0"                 bgStr.qznnSelect="jrfj_icon_png" />
+	<e:Group horizontalCenter="0" includeIn="hall" verticalCenter="145">
+		<UI:CommonBtn id="_SelectRoom1" bgStr="1deng_icon_png" skinName="UI.CommonBtnSkin" y="0" x="0" width="30" height="32" />
+		<UI:CommonBtn id="_SelectRoom2" skinName="UI.CommonBtnSkin" icon="yeshu2_text_png" y="0" x="42.41999999999996"
+		              width="30" height="32" />
+	</e:Group>
+	<UI:DropDwonList id="_selectRoomFastStart" label="Button" includeIn="hundrednnSelect,queryChose"
+	                 skinName="UI.DropDownListSkin" right="22" bottom="-6" right.queryChose="22" bottom.queryChose="-6" />
+	<e:Image id="_bibi" bottom="0" blendMode="add" source="bibi_icon_png" alpha="0" x="816" />
+
+
+	<e:Group id="_clickLeft" anchorOffsetY="0" height="268.03" anchorOffsetX="0" width="57.23" left="5" includeIn="hall"
+	         verticalCenter="-8.5" visible="false">
+		<UI:CommonBtn id="_Left" scaleY="0.9" horizontalCenter="0" verticalCenter="0" skinName="UI.ScaleButonSkin"
+		              icon="xiangyou_icon_png" />
+	</e:Group>
+	<e:Group id="_clickRight" anchorOffsetY="0" height="263.49" anchorOffsetX="0" width="57.21" right="2" includeIn="hall"
+	         verticalCenter="-8.5">
+		<UI:CommonBtn id="_zeRect1" scaleY="0.9" horizontalCenter="0" verticalCenter="0" skinName="UI.ScaleButonSkin"
+		              icon="xiangzuo_icon_png" />
+	</e:Group>
+	<e:Group id="_playText" includeIn="queryChose" horizontalCenter="9" bottom="130">
+		<e:Group includeIn="queryChose" horizontalCenter="-335" verticalCenter="164">
+			<e:Image includeIn="queryChose" source="lk_area_png" horizontalCenter="0" verticalCenter="1.5" />
+			<e:Label text="在线状态" includeIn="queryChose" x="14.12" y="14.31" size="12" />
+			<e:Label id="_labelGlod0" text="爆满" includeIn="queryChose" size="13" horizontalCenter="29.5" verticalCenter="2.5"
+			         textColor="0xfc4444" bold="true" />
+		</e:Group>
+		<e:Group includeIn="queryChose" horizontalCenter="-335" verticalCenter="164">
+			<e:Image includeIn="queryChose" source="lk_area_png" horizontalCenter="0" verticalCenter="1.5" />
+			<e:Label text="在线状态" includeIn="queryChose" x="14.12" y="14.31" size="12" />
+			<e:Label id="_labelGlod4" text="拥挤" includeIn="queryChose" size="13" horizontalCenter="29.5" verticalCenter="2.5"
+			         bold="true" textColor="0xffa304" />
+		</e:Group>
+		<e:Group includeIn="queryChose" horizontalCenter="-335" verticalCenter="164">
+			<e:Image includeIn="queryChose" source="lk_area_png" horizontalCenter="0" verticalCenter="1.5" />
+			<e:Label text="在线状态" includeIn="queryChose" x="14.12" y="14.31" size="12" />
+			<e:Label id="_labelGlod5" text="良好" includeIn="queryChose" size="13" horizontalCenter="29.5" verticalCenter="2.5"
+			         bold="true" textColor="0x45c01a" />
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout gap="190" />
+		</e:layout>
+	</e:Group>
+	<!-- 中间控件滑动end -->
+</e:Skin>

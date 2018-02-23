@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChipBtnSkin" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" width="81" height="92">
+	<e:Image  alpha.disabled="0.6" anchorOffsetX="0" anchorOffsetY="0" width="80.2" height="87"  horizontalCenter="-0.5" verticalCenter="2.5" source="{bgStr}"/>
+	<e:BitmapLabel horizontalCenter="1" verticalCenter="-3.5" font="zjhChips_fnt" letterSpacing="-3" alpha.disabled="0.6" text="{icon}"/>
+	<e:Image id="image" includeIn="down" source="cm_skuan2_png" width="113.66" height="98.67" x="41.32" y="43.99" anchorOffsetX="58" anchorOffsetY="54"/>
+</e:Skin>

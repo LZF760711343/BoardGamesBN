@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chatSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*">
+	<w:Config id="15f0acff1ed"/>
+	<e:Group x="0" y="0" scaleX="0.9" scaleY="0.9">
+		<e:Image source="liaot_area22_png" x="44.66" y="0"/>
+		<e:Scroller id="_scroll" width="299" height="413.22" y="13" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="auto" scrollPolicyH="off" x="54.66">
+			<e:DataGroup id="_chatdg" itemRendererSkinName="chatTalkItemSkin" scrollEnabled="true" useVirtualLayout="false" anchorOffsetX="0" width="296">
+			<e:ArrayCollection>
+				<e:Array>
+				<e:Object kkkk="null"/>
+				<e:Object kkkk="null"/>
+				<e:Object kkkk="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+			</e:DataGroup>
+		</e:Scroller>
+		<e:Group y="443.57" x="0">
+			<e:Image x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="kjy_icon1_png" width="394"/>
+			<e:Image x="28" y="8" source="shuru_area_png"/>
+			<UI:CommonBtn id="_send"  x="310" y="14" skinName="UI.CommonBtnSkin" icon="fs_hztext_png"/>
+		</e:Group>
+		<e:EditableText id="_talkInput" width="241" height="30"  x="34.5" y="457.57" anchorOffsetX="0" anchorOffsetY="0" textColor="0x000000" backgroundColor="0x000000" promptColor="0x000000" strokeColor="0x000000"/>
+	</e:Group>
+</e:Skin>

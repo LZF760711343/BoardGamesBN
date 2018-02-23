@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelectBoxSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:majiang="majiang.*" xmlns:w="http://ns.egret.com/wing" states="normal,tan"  width="800" height="300">
+	<UI:CommonBtn id="_btnGuo" label="Button" skinName="UI.ScaleButonSkin" icon="gou_mjz_png" right="0" bottom="0" includeIn="normal"/>
+	<e:Group id="_btnGroup" right="132" bottom="-5" includeIn="normal">
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="bottom" gap="12"/>
+		</e:layout>
+		<e:Group id="_shaoGroup" x="534" y="0" scaleX="1" scaleY="1">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="_gangGroup" x="544" y="10" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="_chiGroup" x="544" y="10" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="_pengGroup" x="554" y="20" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="_tanGroup" x="544" y="10" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="_huGroup" x="544" y="10" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Image source="mj_tp_text_png" x="10" y="114" includeIn="tan"/>
+	<UI:GrayBtn id="_btnCancel" label="Button" includeIn="tan" x="430" y="126" skinName="UI.GrayBtnSkin" bgStr="hz_rediocn1_png" icon="qx_text1_png"/>
+	<UI:GrayBtn id="_btnSure" includeIn="tan" x="585" y="126" skinName="UI.GrayBtnSkin" bgStr="ready_greeniocn1_png" icon="queding_text1_png"/>
+</e:Skin>

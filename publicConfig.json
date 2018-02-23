@@ -1,0 +1,27 @@
+{
+	
+	"qdtest": {
+		"gameKey": "BoardGamesBN",
+		"update_url": "http://www.hongzhegame.com/boardgamesBN/native",
+		"code_url": "http://www.hongzhegame.com/boardgamesBN/native/game_code_$1.zip",
+		"serverConf": {
+			"host": "www.hongzhegame.com",
+			"port": 22,
+			"username": "root",
+			"password": "Hz17679088808"
+		},
+		"uploadPath": "/srv/htpdocs/boardgamesBN/"
+	},
+	"qdtest1": {
+		"gameKey": "BoardGamesBN",
+		"update_url": "http://www.hongzhegame.com/boardgamesBN/web",
+		"code_url": "http://www.hongzhegame.com/boardgamesBN/web/game_code_$1.zip",
+		"serverConf": {
+			"host": "www.hongzhegame.com",
+			"port": 22,
+			"username": "root",
+			"password": "Hz17679088808"
+		},
+		"uploadPath": "/srv/htpdocs/boardgamesBN/"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"native": {
+		"path_ignore": [],
+		"android_as_path": "../BoardGamesBNAs"
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "../../PublishDir/BoardGamesBN"
+	},
+	"egret_version": "4.1.0",
+	"eui": {
+		"exmlRoot": "resource/skins",
+		"themes": [
+			"resource/default.thm.json"
+		],
+		"exmlPublishPolicy": "content"
+	},
+	"modules": [
+		{
+			"name": "egret",
+			"path": "${EGRET_DEFAULT}"
+		},
+		{
+			"name": "game",
+			"path": "${EGRET_DEFAULT}"
+		},
+		{
+			"name": "resourcemanager",
+			"path": "resourcemanager"
+		},
+		{
+			"name": "eui",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "tween",
+			"path": "${EGRET_DEFAULT}"
+		},
+		{
+			"name": "socket",
+			"path": "${EGRET_DEFAULT}"
+		},
+		{
+			"name": "particle",
+			"path": "../../ThreeLib/particle/libsrc"
+		},
+		{
+			"name": "promise",
+			"path": "./promise"
+		}
+	]
+}

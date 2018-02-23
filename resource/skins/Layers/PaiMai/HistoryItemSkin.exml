@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HistoryItemSkin" width="843" height="73" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="_bgImg" source="kuang1_png" width="100%" height="100%"/>
+	<e:Label id="time" text="12-20  12:01:01" anchorOffsetX="0" width="138" anchorOffsetY="0" height="17" size="18" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="322.5" verticalCenter="-2"/>
+	<e:Label id="type" text="门票" anchorOffsetX="0" width="45" anchorOffsetY="0" height="17" size="18" fontFamily="Microsoft YaHei" horizontalCenter="-196" verticalCenter="-1.5" textAlign="center"/>
+	<e:Label id="count" text="1" anchorOffsetX="22.5" width="45" anchorOffsetY="0" height="17" size="18" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="-68" verticalCenter="-1.5" x="10" y="10"/>
+	<e:Label id="cost" text="50000" anchorOffsetX="0" width="109" anchorOffsetY="0" height="17" size="18" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="60" verticalCenter="-1.5"/>
+	<e:Label id="player" text="门票" anchorOffsetX="0" width="103" anchorOffsetY="0" height="17" size="18" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="193" verticalCenter="-1.5"/>
+	<e:Label id="order" text="123456" anchorOffsetX="0" width="86" anchorOffsetY="0" height="17" size="18" fontFamily="Microsoft YaHei" horizontalCenter="-318.5" verticalCenter="-0.5" textAlign="center"/>
+</e:Skin>

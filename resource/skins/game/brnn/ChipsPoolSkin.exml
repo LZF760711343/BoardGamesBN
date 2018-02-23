@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.brnn.ChipsPoolSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*" xmlns:ns1="*" xmlns:niuniu="niuniu.*" xmlns:brnn="niuniu.brnn.*" width="176" height="215">
+<w:Declarations>
+		<tween:TweenGroup id="_play">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.6}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0.7}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0}" scaleX="{1.1}" scaleY="{1.1}" x="{90}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="15c3e884e27" />
+	<e:Image id="_bg" horizontalCenter="0.5"  source="{bgStr}" width="177" height="177" anchorOffsetY="0"/>
+	<e:Component id="_chipLayer" height="213" width="175" horizontalCenter="0" touchChildren="false" touchEnabled="false"/>
+	<brnn:DisCardBox id="_disBox" skinName="niuniu.brnn.DisCardBoxSkin" verticalCenter="15.5" horizontalCenter="0" scaleX="0.95" scaleY="0.95"/>
+	<e:Group id="_group" scrollEnabled="true" touchChildren="false" touchEnabled="false" top="183" horizontalCenter="0.5">
+		<e:Group id="_box">
+			<e:Label id="_allChipsLb" text="0/1300万" style="styleDefault" size="23"  x="0" textColor="0xff9b52" bold="true" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="image" source="hzblue_kuan1_png" y="107" scale9Grid="42,52,29,26" anchorOffsetY="115" anchorOffsetX="100" width="200" horizontalCenter="0" height="230" alpha="0"/>
+	<brnn:ChipsPoolShanguang id="_shangguang" width="239" height="239" x="-35" y="-19.5" skinName="chipsPoolShanguangSkin" anchorOffsetX="0" anchorOffsetY="0" scaleY="0.87" scaleX="0.95" visible="false"/>
+	<brnn:chipsPoolNiuNiu id="_niuniu" x="25" y="21" scaleX="0.7" scaleY="0.7" skinName="chipsPoolNiuNiu" visible="false"/>
+</e:Skin>

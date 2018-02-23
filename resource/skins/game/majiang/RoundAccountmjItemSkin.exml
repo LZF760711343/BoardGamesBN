@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoundAccountmjItemSkin" width="705" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:majiang="majiang.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="mj_rolekuan_png"/>
+	<UI:HeadBox id="_headBox" width="70" height="70" x="16.5" y="7" skinName="UI.HeadBoxSkin"/>
+	<e:Label id="_chipsLb" text="9.99万" x="38" y="96" size="13" fontFamily="微软雅黑" bold="true" width="57" textColor="0xFFF8F0"/>
+	<e:Label id="_lei" text="1垒" x="643.5" y="11" size="13" fontFamily="微软雅黑" bold="true" textColor="0xFFF8F0"/>
+	<e:Label id="_fen" text="-2800" x="643.5" y="67" size="13" fontFamily="微软雅黑" bold="true" textColor="0xffda00"/>
+	<e:Image id="_chipIcon" x="15" y="93" width="20" height="20" source="feng_icon1_png"/>
+	<e:Label id="_nameLb" text="名字很长很长" y="80" size="11" bold="true" fontFamily="微软雅黑" textColor="0xFFF8F0" x="19"/>
+	<e:Image id="_dealerImg" source="zhuan1_icon_png" y="-13" x="-18"/>
+	<majiang:CardBox id="_cardBox0" height="87" x="140"/>
+</e:Skin>

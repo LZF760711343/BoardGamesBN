@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.GameSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:niuniu="niuniu.*" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="5,8">
+	<e:Image horizontalCenter="0" y="0" width="100%" height="100%" source="niuBg_jpg" locked="true"/>
+	<niuniu:Player id="player0" skinName="niuniu.PlayerSkin" bottom="3" left="18" currentState="player1" />
+	<niuniu:Player id="player1" left="9" x="10" skinName="niuniu.PlayerSkin" currentState="player2" verticalCenter="12.5"
+	               currentState.8="player6" left.8="68" verticalCenter.8="-77" />
+	<niuniu:Player id="player2" skinName="niuniu.PlayerSkin" currentState="player3" top="17" horizontalCenter="-119.5"
+	               horizontalCenter.8="-241" top.8="19" horizontalCenter.5="-155.5" top.5="11" />
+	<niuniu:Player id="player3" skinName="niuniu.PlayerSkin" currentState="player3" horizontalCenter="167.5" top="17"
+	               horizontalCenter.8="266" top.8="21" horizontalCenter.5="134.5" top.5="11" />
+	<niuniu:Player id="player4" skinName="niuniu.PlayerSkin" currentState="player4" right="12.5" verticalCenter="9"
+	               right.8="92" verticalCenter.8="69" currentState.8="player5" />
+	<niuniu:Player id="player5" skinName="niuniu.PlayerSkin" currentState="player3" top="20" includeIn="8"
+	               horizontalCenter="9"  visible="false"/>
+	<niuniu:Player id="player6" skinName="niuniu.PlayerSkin" currentState="player5" right="92" verticalCenter="-77"
+	               includeIn="8"  visible="false"/>
+	<niuniu:Player id="player7" left="68" x="10" skinName="niuniu.PlayerSkin" currentState="player6" verticalCenter="69"
+	               includeIn="8"  visible="false"/>
+	<niuniu:HandCardBox id="cards0" width="600" height="136.66" horizontalCenter="-65"  anchorOffsetY.5="0" horizontalCenter.5="-38" bottom.5="0" height.5="135.88" y="400.15"/>
+	<niuniu:GameBtnBar id="_btnBar" skinName="niuniu.GameBtnBarSkin" horizontalCenter="0" currentState="none"
+	                   verticalCenter="21"  verticalCenter.8="-22"  width="200"/>
+	<niuniu:CalBox id="_calBox" skinName="niuniu.CalBoxSkin" horizontalCenter="0" verticalCenter="69.5"  visible="false"/>
+	<UI:CommonBtn id="_btnYouniu" name="0" touchChildren="false" bottom="158" right="86"
+	              bgStr="bigG_icon_png"  label="没 牛" scaleX="0.8" scaleY="0.8" skinName="UI.CommonBtnSkin" visible="false"/>
+	<UI:CommonBtn id="_btnWuniu" name="1" touchChildren="false" right="87" bottom="86"
+	              bgStr="bigG_icon_png"  label="有 牛" scaleX="0.8" scaleY="0.8" skinName="UI.CommonBtnSkin" visible="false"/>
+	<UI:CommonBtn id="_btnAuto" name="-1" touchChildren="false" right="87" bottom="13"
+	              bgStr="bigG_icon_png"  label="自动算牛" scaleX="0.8" scaleY="0.8" skinName="UI.CommonBtnSkin" visible="false">
+	</UI:CommonBtn>
+	<niuniu:DiscardBox id="cards1" verticalCenter="0" left="170" height="98" width="210" scaleX="0.85" scaleY="0.85"
+	                   left.8="181" verticalCenter.8="-61" />
+	<niuniu:DiscardBox id="cards2" horizontalCenter="-148.75" top="158" height="98" width="210" scaleX="0.85" scaleY="0.85"
+	                   horizontalCenter.8="-239" top.8="123" />
+	<niuniu:DiscardBox id="cards3" horizontalCenter="139.25" top="157" height="98" width="210" scaleY="0.85" scaleX="0.85"
+	                   horizontalCenter.8="269.5" top.8="124" />
+	<niuniu:DiscardBox id="cards4" verticalCenter="0" height="98" width="210" right="171.5" scaleX="0.85" scaleY="0.85"
+	                   right.8="210" verticalCenter.8="79.5" />
+	<niuniu:DiscardBox id="cards5" top="124" height="98" width="210" scaleX="0.85" scaleY="0.85" includeIn="8"
+	                   horizontalCenter="12.5"  visible="false"/>
+	<niuniu:DiscardBox id="cards6" verticalCenter="-61.5" height="98" width="210" right="207" scaleX="0.85" scaleY="0.85"
+	                   includeIn="8"  visible="false"/>
+	<niuniu:DiscardBox id="cards7" verticalCenter="79.5" left="181" height="98" width="210" scaleX="0.85" scaleY="0.85"
+	                   includeIn="8"  visible="false"/>
+	<niuniu:DiscardBox id="_disBox" height="98" width="210" horizontalCenter="3.25" bottom="172.7" scaleX="0.85"
+	                   scaleY="0.85" />
+	<ns1:PhoneInfoBox y="88" skinName="PhoneInfoBoxSkin" right="0" id="_phoneInfoBox"/>
+	<niuniu:GameUI id="uiLayer" skinName="niuniu.GameUISkin" width="100%" height="100%" x="1.33" locked="true"/>
+	<niuniu:GameEffectLayer id="effectLayer" width="100%" height="100%" touchChildren="false" touchEnabled="false" horizontalCenter="0" verticalCenter="0"  locked="true"/>
+</e:Skin>

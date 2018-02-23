@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.brnn.TipBarSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*" xmlns:niuniu="niuniu.*" xmlns:UI="UI.*" xmlns:ns1="*" xmlns:Utils="Utils.*"
+        xmlns:brnn="niuniu.brnn.*" height="180" width="1136" states="waitKing,wait,none,account">
+	<w:Declarations>
+		<tween:TweenGroup id="Wait">
+			<tween:TweenItem target="{_wait1}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{-10}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="900" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_wait2}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{-10}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="750" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_wait3}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="300" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{-10}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_wait4}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="450" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{-10}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{0}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="450" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_wait5}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="600" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{32.47}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{42.47}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="300" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_wait6}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="750" />
+				<tween:Set/>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{32.47}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{42.47}" />
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="150" />
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{_wait7}">
+				<tween:props>
+					<e:Object loop="{true}" />
+				</tween:props>
+				<tween:Wait duration="900" />
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{269.94}" />
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{32.47}" />
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{42.47}" x="{269.94}" />
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="ddkj_di_png" x="0" verticalCenter="0" includeIn="waitKing,wait,account" source.account="hj_diarea_png"
+	         width.waitKing="100%" height.waitKing="100%" width.wait="100%" height.wait="100%" verticalCenter.account="0.5"
+	         x.account="-1" />
+	<e:Group id="_waitOpen" includeIn="waitKing,wait" y="58" y.waitKing="46" horizontalCenter="-0.5">
+		<e:Image id="_wait1" width="61" height="61" includeIn="waitKing,wait" x="0" y="0.580000000000048"
+		         source="deng_icon1_png" y.wait="0" />
+		<e:Image id="_wait2" width="61" height="61" includeIn="waitKing,wait" x="59.35999999999996" y="0.029999999999958504"
+		         source="dai_icon1_png" y.wait="0" />
+		<e:Image id="_wait3" width="61" height="61" includeIn="waitKing,wait" x="120.16000000000008" y="1.5000000000000142"
+		         source="kai_icon1_png" y.wait="0" />
+		<e:Image id="_wait4" width="61" height="61" includeIn="waitKing,wait" x="179.27999999999997" y="0"
+		         source="ju_icon1_png" />
+		<e:Image id="_wait5" width="19" height="18" includeIn="waitKing,wait" x="237.18999999999994" y="42.46999999999996"
+		         source="dian_icon1_png" />
+		<e:Image id="_wait6" width="19" height="18" includeIn="waitKing,wait" x="253.26" y="42.46999999999996"
+		         source="dian_icon1_png" />
+		<e:Image id="_wait7" width="19" height="18" includeIn="waitKing,wait" x="269.94" y="42.46999999999996"
+		         source="dian_icon1_png" />
+	</e:Group>
+	<e:Image verticalCenter="44" source="ddwjdw_text_png" horizontalCenter="-16.5" includeIn="waitKing" />
+	<e:Image width="139" height="75" x="250" y="52.5" source="hj_text_png" includeIn="account" x.account="250" />
+	<brnn:WinLose id="_moneyLb" x="478" y="64" skinName="niuniu.WinLoseSkin" horizontalCenter.wait="0" includeIn="account" />
+</e:Skin>

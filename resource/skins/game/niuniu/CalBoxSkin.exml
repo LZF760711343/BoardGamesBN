@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="niuniu.CalBoxSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:components="components.*" height="49">
+	<e:Image source="jisuanditu_kuan_png" x="4" verticalCenter="0"/>
+	<e:Image source="jisuanditu_kuan_png" x="92" y="4"/>
+	<e:Image x="61" source="jiahao_text1_png" verticalCenter="0"/>
+	<e:Image x="149" source="jiahao_text1_png" verticalCenter="0"/>
+	<e:Image source="jisuanditu_kuan_png" x="181" y="4"/>
+	<e:Image source="jisuanditu_kuan_png" x="269" verticalCenter="0"/>
+	<e:Image x="239.5" source="denghao_text1_png" verticalCenter="0"/>
+	<e:Label id="_lab1" bold="true" fontFamily="黑体" size="30" verticalCenter="0.5" textAlign="center" verticalAlign="middle" width="44" textColor="0xffffff" text="1" horizontalCenter="-131"/>
+	<e:Label id="_lab2" fontFamily="黑体" bold="true" size="30" width="47" textAlign="center" textColor="0xffffff" text="2" horizontalCenter="-41.5" verticalCenter="0.5"/>
+	<e:Label id="_lab3" fontFamily="黑体" bold="true" size="30" width="44" textAlign="center" textColor="0xffffff" text="3" horizontalCenter="46" verticalCenter="0.5"/>
+	<e:Label id="_labResult" fontFamily="黑体" bold="true" verticalCenter="0.5" size="30" width="44" textAlign="center" textColor="0xffffff" text="1" horizontalCenter="134"/>
+</e:Skin>

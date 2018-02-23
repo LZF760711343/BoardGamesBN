@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameNewListSkin" width="687" height="58" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="_newGroup" x="0" y="0">
+		<e:Image source="y_icon_png" x="0" y="0"/>
+		<e:Label id="_headline" x="30" width="220" height="30" y="14" text="{data.msgStr}"/>
+		<e:Label id="_headline0" height="30" text="{data.new}" x="289" y="14"/>
+		<e:Label id="_headline1" height="30" text="{data.new1}" x="496" y="14"/>
+	</e:Group>
+	
+</e:Skin>

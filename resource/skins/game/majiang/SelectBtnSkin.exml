@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="majiang.SelectBtnSkin" xmlns:e="http://ns.egret.com/eui" xmlns:majiang="majiang.*" xmlns:w="http://ns.egret.com/wing" states="normal,noBg" >
+	<e:Image source="mj_dikuan_png" includeIn="normal"/>
+	<e:Image id="_icon" x="7" y="9" scaleX="0.55" scaleY="0.55" scaleX.noBg="1" scaleY.noBg="1" source="hu_mjz1_png"/>
+	<majiang:CardType id="_cardType" horizontalCenter="29.5" includeIn="normal" scaleX="0.6" scaleY="0.6" verticalCenter="0"/>
+</e:Skin>

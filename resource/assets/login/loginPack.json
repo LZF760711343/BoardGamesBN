@@ -1,0 +1,12 @@
+{"file":"loginPack.png","frames":{
+"bigR_icon_png":{"x":1296,"y":1,"w":197,"h":80,"offX":3,"offY":6,"sourceW":200,"sourceH":86},
+"btn_guest_login_png":{"x":1630,"y":70,"w":209,"h":67,"offX":3,"offY":0,"sourceW":220,"sourceH":67},
+"btn_quick_login_png":{"x":1630,"y":1,"w":209,"h":67,"offX":3,"offY":0,"sourceW":220,"sourceH":67},
+"btn_weixin_login_png":{"x":1,"y":1,"w":257,"h":102,"offX":0,"offY":0,"sourceW":257,"sourceH":102},
+"dg_icon_png":{"x":1890,"y":1,"w":42,"h":38,"offX":0,"offY":0,"sourceW":42,"sourceH":38},
+"jdt_di_png":{"x":1959,"y":1,"w":20,"h":23,"offX":0,"offY":0,"sourceW":20,"sourceH":23},
+"jdt_ht_png":{"x":260,"y":1,"w":1034,"h":20,"offX":0,"offY":0,"sourceW":1034,"sourceH":20},
+"jdt_sg1_png":{"x":1841,"y":1,"w":47,"h":99,"offX":0,"offY":0,"sourceW":47,"sourceH":99},
+"k1_area_png":{"x":1934,"y":1,"w":23,"h":24,"offX":0,"offY":0,"sourceW":23,"sourceH":24},
+"loading2_png":{"x":1495,"y":1,"w":133,"h":113,"offX":8,"offY":18,"sourceW":150,"sourceH":150},
+"tongyi_area_png":{"x":260,"y":23,"w":223,"h":35,"offX":0,"offY":0,"sourceW":223,"sourceH":35}}}

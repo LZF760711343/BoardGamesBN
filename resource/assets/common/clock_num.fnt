@@ -1,0 +1,12 @@
+{"file":"clock_num.png","frames":{
+"1":{"x":103,"y":28,"w":13,"h":26,"offX":2,"offY":0,"sourceW":17,"sourceH":26},
+"2":{"x":78,"y":1,"w":23,"h":26,"offX":2,"offY":0,"sourceW":27,"sourceH":26},
+"3":{"x":1,"y":29,"w":24,"h":26,"offX":2,"offY":0,"sourceW":28,"sourceH":26},
+"4":{"x":27,"y":1,"w":24,"h":26,"offX":2,"offY":0,"sourceW":28,"sourceH":26},
+"5":{"x":103,"y":1,"w":23,"h":25,"offX":2,"offY":1,"sourceW":27,"sourceH":26},
+"6":{"x":53,"y":29,"w":23,"h":26,"offX":2,"offY":0,"sourceW":27,"sourceH":26},
+"7":{"x":27,"y":29,"w":24,"h":25,"offX":2,"offY":1,"sourceW":28,"sourceH":26},
+"8":{"x":78,"y":29,"w":23,"h":26,"offX":2,"offY":0,"sourceW":27,"sourceH":26},
+"9":{"x":1,"y":1,"w":24,"h":26,"offX":2,"offY":0,"sourceW":28,"sourceH":26},
+"0":{"x":53,"y":1,"w":23,"h":26,"offX":2,"offY":0,"sourceW":27,"sourceH":26},
+" ":{"x":27,"y":56,"w":4,"h":5,"offX":0,"offY":0,"sourceW":4,"sourceH":26}}}

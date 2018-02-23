@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatBoxSkin" currentState="default" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        width="480" states="default,brnn">
+	<e:ViewStack id="viewStack" width="372" selectedIndex="0" height="450" verticalCenter="45" left="100" anchorOffsetX="0"               anchorOffsetY="0" selectedIndex.brnn="1" left.brnn="100" verticalCenter.brnn="18">
+		<e:Scroller id="scroller1" scrollPolicyH="off" width="100%" anchorOffsetY="0" height="425">
+			<e:List id="list1" width="375.33" y="11" itemRendererSkinName="ChatItemSkin" horizontalCenter="0" touchEnabled="true"
+			        scrollEnabled="true" cacheAsBitmap="true" touchThrough="false" useVirtualLayout="false" height="425">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object str="测试!!!!!dddddddddddddddd" label="数据1" />
+						<e:Object str="测试!!!!!!" label="数据2" />
+						<e:Object str="测试!!!!!!" label="数据3" />
+						<e:Object str="测试!!!!!!" label="null" />
+						<e:Object str="测试!!!!!!" label="null" />
+						<e:Object str="测试!!!!!!" label="null" />
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" gap="13" />
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Scroller id="scroller2" width="100%" height="425" scrollPolicyH="off">
+			<e:List id="list2" useVirtualLayout="false" height="425">
+				<e:layout>
+					<e:TileLayout paddingTop="10" verticalAlign="middle" horizontalAlign="center" horizontalGap="90" verticalGap="100"
+					              requestedRowCount="4" requestedColumnCount="4" />
+				</e:layout>
+				<e:ArrayCollection>
+				<!--<e:Array>
+					<e:Object img="biaoqing#200_png" />
+					<e:Object img="biaoqing#201_png" />
+					<e:Object img="biaoqing#202_png" />
+					<e:Object img="biaoqing#203_png" />
+					<e:Object img="biaoqing#204_png" />
+					<e:Object img="biaoqing#205_png" />
+					<e:Object img="biaoqing#206_png" />
+					<e:Object img="biaoqing#207_png" />
+					<e:Object img="biaoqing#208_png" />
+					<e:Object img="biaoqing#209_png" />
+					<e:Object img="biaoqing#210_png" />
+					<e:Object img="biaoqing#211_png" />
+				</e:Array>-->
+			</e:ArrayCollection>		
+		</e:List>
+	</e:Scroller>
+	<e:Group id="chatGroup" width="100%" height="100%" name="视图"></e:Group>
+</e:ViewStack>
+<e:Image x="117" source="bqkjy_icon1_png" top="14"  visible.brnn="false"/>
+<e:TabBar id="tabBar" x="117" top="14" visible.brnn="false">
+	<e:itemRendererSkinName>
+		<e:Skin states="up,down,disabled" width="112" height="58">
+			<e:Image left.up="0" width.down="171" source="{data.img1}" verticalCenter.disabled="0" horizontalCenter.disabled="0"
+			         verticalCenter="0" horizontalCenter="0" visible.up="false" top="0" bottom="0" right="0" left="0" />
+			<e:Image source="{data.img2}" x.disabled="166" verticalCenter="0" horizontalCenter="0" />
+			<e:Image verticalCenter="0" horizontalCenter="0" source="{data.img3}" visible.down="false" />
+		</e:Skin>
+	</e:itemRendererSkinName>
+	<e:layout>
+		<e:HorizontalLayout gap="0" />
+	</e:layout>
+	<e:ArrayCollection>
+		<e:Array>
+			<e:Object img1="huang_iconleft_png" img2="kjy_text1_png" img3="kjy_text1l_png" />
+			<e:Object img1="huang_lticon2_png" img2="bq_text1_png" img3="bq_text1l_png" />
+			<e:Object img1="huang_iconright_png" img2="liaot_hztext_png" img3="liaot_hztext2_png" />
+		</e:Array>
+	</e:ArrayCollection>
+</e:TabBar>
+</e:Skin>

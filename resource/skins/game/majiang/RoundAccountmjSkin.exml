@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoundAccountmjSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:majiang="majiang.*"
+        xmlns:w="http://ns.egret.com/wing" states="card,coin" >
+	<e:Image width="1105" height="625" source="paihang1_png" x="2.66" y="-2.66" />
+	<UI:GrayBtn id="btnChangeDesk" label="换桌" horizontalCenter="-125" icon="bigR_icon_png" bottom="-10"  x="458" y="-4.760000000000005" skinName="UI.CommonBtnSkin3" includeIn="coin"/>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin" top="15" right="5" anchorOffsetX="0"
+	              anchorOffsetY="0" scaleX="0.8" scaleY="0.8" visible="false" />
+	<majiang:Player id="_player0" skinName="majiang.PlayerSkin" left="37" currentState="accountplayer" y="91.52" />
+	<majiang:Player id="_player1" skinName="majiang.PlayerSkin" left="37" currentState="accountplayer" y="203.88" />
+	<majiang:Player id="_player2" skinName="majiang.PlayerSkin" left="37" currentState="accountplayer" y="322.32" />
+	<majiang:Player id="_player3" skinName="majiang.PlayerSkin" left="37" currentState="accountplayer" y="439.69" />
+	<e:Image id="_huType1" horizontalCenter="475.5" y="118.69" source="hp_text2_png"  visible="false"/>
+	<e:Image id="_huType2" horizontalCenter="475.5" y="239.3" source="hp_text2_png"  visible="false"/>
+	<e:Image id="_huType3" horizontalCenter="475" y="396" source="hp_text2_png"  visible="false"/>
+	<e:Image id="_fanpao1" horizontalCenter="475" y="118.69" source="fp_text2_png"  visible="false"/>
+	<e:Image id="_fanpao2" horizontalCenter="475" y="239.3" source="fp_text2_png"  visible="false"/>
+	<e:Image id="_fanpao3" horizontalCenter="475" y="396" source="fp_text2_png"  visible="false"/>
+	<e:Image id="_huType4" horizontalCenter="475.5" y="477.32" source="hp_text2_png" visible="false"/>
+	<e:Image id="_fanpao4" horizontalCenter="475" y="480.67" source="fp_text2_png" x="10" visible="false"/>
+	<e:Image id="_title" source="jiesuan_text112_png" y="24.01" horizontalCenter="0.5" />
+	<majiang:CardBox id="_cardBox0" x="182" y="137.36" scaleX="0.6" scaleY="0.6" />
+	<majiang:CardBox id="_cardBox1" x="182" y="248.04" scaleX="0.6" scaleY="0.6" />
+	<majiang:CardBox id="_cardBox2" x="181" y="364" scaleX="0.6" scaleY="0.6" />
+	<majiang:CardBox id="_cardBox3" x="191" y="480.66" scaleX="0.6" scaleY="0.6" />
+	<UI:CommonBtn id="_btnShare"  y="518.33" skinName="UI.CommonBtnSkin" icon="fengxian_text_png" x="329"
+	              bgStr="orange_icon1_png" />
+	<UI:CommonBtn id="_goBtn" label="继续" bottom="-10" skinName="UI.CommonBtnSkin" bgStr="button_green_png"
+	              horizontalCenter="139"  horizontalCenter.card="0"/>
+	<UI:CommonBtn id="_btnShare1" label="退出" horizontalCenter="-152.5" bottom="-30" skinName="UI.CommonBtnSkin"
+	              bgStr="bigR_icon_png" visible="false" />
+	<e:DataGroup id="_dataGroup" x="908.99" y="106.2" height="414.66" anchorOffsetY="0">
+		<e:itemRendererSkinName>
+			<e:Skin states="up,down,disabled" height="120">
+				<e:Label text="{data.fenStr}" fontFamily="Microsoft YaHei" y="20" size="22" horizontalCenter="0"
+				         textColor="0xffe000" />
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object leiStr="1累" fenStr="-2800" />
+				<e:Object leiStr="10累" fenStr="-1000" />
+				<e:Object leiStr="100累" fenStr="-4000" />
+				<e:Object leiStr="100累" fenStr="-4000" />
+			</e:Array>
+		</e:ArrayCollection>
+	</e:DataGroup>
+	<e:DataGroup id="_dataGroupMaCard" x="38.6" y="554.34" alpha="1">
+		<e:itemRendererSkinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="38" height="56" source="{data.maStr}" alpha="{data.apl}" />
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object maStr="mj_bottomD19_png" apl="0.5" />
+				<e:Object maStr="mj_bottomD19_png" apl="1" />
+				<e:Object maStr="mj_bottomD19_png" apl="1" />
+				<e:Object maStr="mj_bottomD19_png" apl="1" />
+				<e:Object maStr="mj_bottomD19_png" apl="1" />
+				<e:Object maStr="mj_bottomD19_png" apl="1" />
+			</e:Array>
+		</e:ArrayCollection>
+	</e:DataGroup>
+	<e:Group id="_LaziGourp" x="149.1" y="7">
+		<e:Label text="赖子:" x="0" y="25.939999999999998" fontFamily="Microsoft YaHei" />
+		<e:Image id="_laziCard" x="80.9" y="0" width="60" height="87" scaleX="0.9" scaleY="0.9" />
+	</e:Group>
+</e:Skin>

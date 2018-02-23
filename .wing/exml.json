@@ -1,0 +1,14 @@
+{
+  "global": {
+    "globalAutoLayerMarkEnable": false,
+    "globalBindingDataTestObj": []
+  },
+  "15d5a0595c2": {
+    "bindingDataTestObj": [
+      {
+        "key": "label",
+        "value": "3 倍"
+      }
+    ]
+  }
+}

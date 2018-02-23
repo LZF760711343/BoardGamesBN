@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DDZ.GameSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing"
+        xmlns:DDZ="DDZ.*" xmlns:ddz="ddz.*" xmlns:game="game.*" xmlns:ns1="*" width="1136" height="640">
+	<e:Image horizontalCenter="0" width="100%" height="100%"  source="bg_ddz_jpg" locked="true"/>
+	<e:Image source="ddz_tiao_png" bottom="0" locked="true"/>
+	<DDZ:Player id="_player0" skinName="DDZ.PlayerSkin" bottom="-11" left="10" currentState="player1" />
+	<DDZ:Player id="_player1" skinName="DDZ.PlayerSkin" left="8" verticalCenter="-77" currentState="player2" />
+	<DDZ:Player id="_player2" right="6" verticalCenter="-75" currentState="player3" skinName="DDZ.PlayerSkin" />
+	<DDZ:CardBox id="_cardBox" height="121.27" anchorOffsetX="0" anchorOffsetY="0" right="109" left="145" bottom="43" />
+	<DDZ:DiscardBox id="_disBox0" bottom="219" height="98" horizontalCenter="0" touchEnabled="false" touchChildren="false">
+		<e:layout>
+			<e:HorizontalLayout gap="-38" horizontalAlign="center" />
+		</e:layout>
+	</DDZ:DiscardBox>
+	<DDZ:DiscardBox id="_disBox1" left="190"  verticalCenter="-67.5" touchEnabled="false"
+	                touchChildren="false">
+		<e:layout>
+			<DDZ:DiscardLayout horizontalGap="-38" col="9" horizontalAlign="left" />
+		</e:layout>
+	</DDZ:DiscardBox>
+	<DDZ:DiscardBox id="_disBox2" right="186" verticalCenter="-67.5" touchChildren="false"
+	                touchEnabled="false">
+		<e:layout>
+			<DDZ:DiscardLayout horizontalGap="-38" col="9" horizontalAlign="right" />
+		</e:layout>
+	</DDZ:DiscardBox>
+<e:Component id="_pubCardsBox" top="0" horizontalCenter="-22.5" anchorOffsetX="0">
+<e:skinName>
+	<e:Skin states="up,down,disabled" width="213" height="85">
+		<e:Image  source="cardBg_png" anchorOffsetX="0" width="212.94"/>
+		<DDZ:Card x="90" cardValue="{cardValue1}" y="19" currentState="big" skinName="niuniu.CardSkin" scaleX="0.3"
+		          scaleY="0.3" />
+		<DDZ:Card y="19" cardValue="{cardValue2}" currentState="big" skinName="niuniu.CardSkin" scaleX="0.3" scaleY="0.3"
+		          x="35" />
+		<DDZ:Card y="19" cardValue="{cardValue3}" currentState="big" skinName="niuniu.CardSkin" scaleX="0.3" scaleY="0.3"
+		          x="145" />
+		<e:Image x="-12" y="66"  source="df_area__png"/>
+	</e:Skin>
+</e:skinName>
+</e:Component>
+<DDZ:GameBtnBar id="_btnBar" skinName="DDZ.GameBtnBarSkin" horizontalCenter="6.5" curState="none" currentState="none"
+                 y="220"/>
+	<ns1:PhoneInfoBox id="_phoneInfoBox" y="88" skinName="PhoneInfoBoxSkin" right="0"/>
+<DDZ:GameUI id="uiLayer" width="100%" height="100%" skinName="DDZ.GameUISkin"  locked="true"/>
+<e:Label id="text_beilv" text="倍数:15" anchorOffsetX="0" width="164" anchorOffsetY="0" height="24"
+         fontFamily="Microsoft YaHei" size="22" bottom="3" right="156" />
+<e:Label id="text_difen" text="游戏底分:2000" anchorOffsetX="0" width="200" anchorOffsetY="0" height="24"
+         fontFamily="Microsoft YaHei" size="22" bottom="3"  horizontalCenter="20"/>
+<e:Label id="text_level" text="倍数:15" anchorOffsetX="0" width="164" anchorOffsetY="0" height="24"
+         fontFamily="Microsoft YaHei" size="22" bottom="3" right="795" />
+<DDZ:GameEffectLayer id="effectLayer" width="100%" height="100%" touchChildren="false" touchEnabled="false"
+                      locked="true"/>
+<!--<ddz:plane id="_plane" horizontalCenter="0" verticalCenter="-36" skinName="plane" />
+<ddz:wangzha id="_wangzha" horizontalCenter="0" verticalCenter="-56.5" skinName="wangzha" visible="false" />
+<ddz:shunzi id="_shunzi" horizontalCenter="0" verticalCenter="-50" skinName="sz" visible="false" />
+<ddz:liandui id="lianzui" skinName="liandui" horizontalCenter="0" verticalCenter="-50" visible="false" />
+<ddz:zhadan id="_zd" horizontalCenter="0" verticalCenter="-50" skinName="zd" visible="false" />
+<game:Start id="_start" skinName="start" horizontalCenter="0" verticalCenter="0" visible="false" />
+<game:Win id="_win" skinName="win" horizontalCenter="0" verticalCenter="0" visible="false" />
+<game:Lost id="_lost" skinName="lost" x="297" y="85" visible="false" />
+-->
+</e:Skin>

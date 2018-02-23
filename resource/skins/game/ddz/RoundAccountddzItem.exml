@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoundAccountddzItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="500" height="70">
+	<e:Image id="_headImg" x="25" verticalCenter="-15" />
+	<e:Label id="_name" text="稳稳的幸福" style="style1" textColor="0xffffff" horizontalCenter="-58" y="17"/>
+	<e:Label id="_fenshu" text="+2" y="16.5" style="style1" textColor="0x41977d" horizontalCenter="258"/>
+</e:Skin>

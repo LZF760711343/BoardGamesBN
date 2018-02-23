@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PhoneInfoBoxSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="54">
+	<e:Image source="phone_info_bg_png"/>
+	<e:Image source="charge_0_png" x="51" y="10"/>
+	<e:Image id="_netImg" y="10" horizontalCenter="-20.5" anchorOffsetX="0" anchorOffsetY="0" scaleY="0.8" scaleX="0.8" source="signal_4_png"/>
+	<e:Rect id="_kWhObj" width="26" height="12" x="54" y="13" fillColor="0x86ff99"/>
+	<e:Label id="_timeLab" text="24：00" y="33" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0"/>
+</e:Skin>

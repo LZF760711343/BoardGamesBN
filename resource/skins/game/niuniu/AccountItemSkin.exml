@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="niuniu.AccountItemSkin" height="370" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing" width="195">
+	<w:Config id="15c25e5b869" />
+	<e:Image source="kuang1_png" width="100%" height="100%"/>
+	<UI:HeadBox id="_headBox" y="28" skinName="UI.HeadBoxSkin" horizontalCenter="5.5"  width="73" height="73"/>
+	<e:Image y="303" horizontalCenter="-1"  source="yuan_area_png" alpha="0.5"/>
+	<e:Label id="_nickName" text="{data.nickName}" y="101" horizontalCenter="0" size="18"
+	         fontFamily="Microsoft YaHei"  textColor="0xffffff"/>
+	<e:Label id="_id" y="122" horizontalCenter="0" size="18"
+	         fontFamily="Microsoft YaHei"  text="{'ID:'+data.account}" textColor="0xffffff"/>
+	<e:Label y="307" size="18" textColor="0xffffff"
+	         textAlign="center"  text="总积分" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Label id="_score0" y="327" size="18" textColor="0xFFFFFF" textAlign="center" text="{data.score}" horizontalCenter="0.5" fontFamily="Microsoft YaHei"/>
+	<e:Group y="156" horizontalCenter="0">
+		<e:Rect width="168" height="36" ellipseWidth="35" ellipseHeight="35" scaleX="1" scaleY="1" x="0"
+		        y="0"  fillColor="0x504a78"/>
+		<e:Label id="lab1" text="最高积分:" size="22" y="7" horizontalCenter="0" fontFamily="Microsoft YaHei"  textColor="0xffffff"/>
+	</e:Group>
+	<e:Group y="203" horizontalCenter="0">
+		<e:Rect width="168" height="36" ellipseWidth="35" ellipseHeight="35" scaleX="1" scaleY="1" x="0"
+		        y="0"  fillColor="0x504a78"/>
+		<e:Label id="lab2" text="最高积分:" size="22" y="7" horizontalCenter="0" fontFamily="Microsoft YaHei"  textColor="0xffffff"/>
+	</e:Group>
+	<e:Group y="249" horizontalCenter="0">
+		<e:Rect width="168" height="36" ellipseWidth="35" ellipseHeight="35" scaleX="1" scaleY="1" x="0"
+		        y="0"  fillColor="0x504a78"/>
+		<e:Label id="lab3" text="最高积分:" size="22" y="7" horizontalCenter="0" fontFamily="Microsoft YaHei"  textColor="0xffffff"/>
+	</e:Group>
+	<e:Image id="_roomOnwerImg" x="22" y="35"  source="fZ_area_png"/>
+	<e:Image id="_winerImg" x="146" y="-2"  source="dyj_area_png"/>
+</e:Skin>

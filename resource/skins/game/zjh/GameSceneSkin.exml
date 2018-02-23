@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="zjh.GameSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:zjh="zjh.*" xmlns:UI="UI.*"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15d15ece2a6"/>
+	<e:Image horizontalCenter="0" y="0" width="100%" height="100%"  source="niuBg_jpg" locked="true"/>
+	<e:Group id="_roundTipBar" right="92" top="17">
+		<e:Image x="-10.64" y="0" source="tmk_area_png" anchorOffsetX="0" width="167.67" anchorOffsetY="0" height="132.34"/>
+		<e:Label id="_betRoundLab" text="单注:0\n轮数:0/10" anchorOffsetY="0" anchorOffsetX="0" size="20" lineSpacing="10" width="131.33" fontFamily="Microsoft YaHei" x="15.31" verticalCenter="-6.5"/>
+	</e:Group>
+	<zjh:DiscardBox id="_disBox0" horizontalCenter="1" bottom="85" minHeight="159"  width="300"/>
+	<zjh:DiscardBox id="_disBox1" verticalCenter="-15" left="151" scaleX="0.54" scaleY="0.54" minHeight="159" width="200" />
+	<zjh:DiscardBox id="_disBox2" horizontalCenter="-302.5" top="22" scaleY="0.54" scaleX="0.54" minHeight="159"
+	                width="200" />
+	<zjh:DiscardBox id="_disBox3" horizontalCenter="16" top="23" scaleX="0.54" scaleY="0.54" width="200" minHeight="159" />
+	<zjh:DiscardBox id="_disBox4" right="221" verticalCenter="-15" scaleX="0.54" scaleY="0.54" minHeight="159" width="200" />
+	<zjh:Player id="_player1" skinName="zjh.PlayerSkin" currentState="player2" left="12.5" verticalCenter="-34.5" />
+	<zjh:Player id="_player2" skinName="zjh.PlayerSkin" currentState="player3" top="10" horizontalCenter="-150" />
+	<zjh:Player id="_player3" skinName="zjh.PlayerSkin" currentState="player3" top="10" horizontalCenter="180" />
+	<zjh:Player id="_player4" skinName="zjh.PlayerSkin" currentState="player4" verticalCenter="-34.5" right="12.5" />
+	<zjh:ChipsBar id="_allChipsBar" y="186.32" width="200" horizontalCenter="0" height="43" visible="false">
+		<e:Skin>
+		<e:Image scale9Grid="16,14,79,3" source="zscm_area_1_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="_betChipsLab" size="22" fontFamily="微软雅黑" verticalAlign="middle" textColor="0xFFFFFF" text="999999" verticalCenter="9" horizontalCenter="8"/>
+		</e:Skin>
+	</zjh:ChipsBar>
+	<zjh:Player id="_player0" skinName="zjh.PlayerSkin" currentState="player1" left="125" bottom="102"/>
+	<zjh:ChipsPool id="_chipsPool" width="100%" height="100%" touchChildren="false" touchEnabled="false" x="0" y="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<UI:CommonBtn id="btnChangeDesk" label="换 桌" bgStr="button_green_png" skinName="UI.CommonBtnSkin3" x="0" y="0" scaleX="0.8" scaleY="0.83" includeInLayout="true"/>
+		<UI:CommonBtn id="_btnReady" label="准 备" bgStr="button_Bred_png" skinName="UI.CommonBtnSkin3" x="0" y="2" scaleX="0.8" scaleY="0.83"/>
+		<e:layout>
+			<e:HorizontalLayout gap="80"/>
+		</e:layout>
+	</e:Group>
+	<zjh:GameBtnBar id="_btnBar" width="100%" bottom="0" horizontalCenter="0" skinName="zjh.GameBtnBarSkin"  visible="false"/>
+	<ns1:PhoneInfoBox y="88" skinName="PhoneInfoBoxSkin" right="0" id="_phoneInfoBox"/>
+	<zjh:GameUI id="uiLayer" skinName="zjh.GameUISkin" width="100%" height="100%"  locked="true"/>
+	<zjh:GameEffectLayer id="effectLayer" width="100%" height="100%" touchChildren="false" touchEnabled="false" locked="true"/>
+	<zjh:PKAniLayer id="_pkAnuLayer" skinName="PkBoardSkin" horizontalCenter="0" verticalCenter="0" visible="false"/>
+</e:Skin>

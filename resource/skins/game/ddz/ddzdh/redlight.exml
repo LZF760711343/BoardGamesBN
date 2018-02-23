@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="redlight" width="122" height="114" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="_rl">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{42}" y="{40}" width="{38}" height="{37}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{23}" y="{21}" width="{75}" height="{74}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{42}" y="{40}" width="{38}" height="{37}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{23}" y="{21}" width="{75}" height="{74}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{42}" y="{40}" width="{38}" height="{37}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+     <e:Image id="image" source="light_icon_png" x="36" y="41"/>
+     <e:Image id="image0" source="redlight2_png" x="23" y="21"/>
+</e:Skin>

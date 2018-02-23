@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="plane"  width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="_plane">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{-46}" x="{-335}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1500" ease="sineOut">
+					<tween:props>
+						<e:Object x="{1136}" y="{515.11}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+     <e:Image id="image" source="fy3_area_png" x="235" y="249"/>
+
+</e:Skin>

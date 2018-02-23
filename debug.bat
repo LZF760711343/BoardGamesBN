@@ -1,0 +1,2 @@
+set "var=%cd:\=/%"
+(egret publish --version iosDebug --runtime native -compile)&&(XCOPY /s/e/y  C:\project\BoardGames\PublishDir\BoardGamesBN\native\iosDebug E:\programfiles\xampp\htdocs\boardgamesBN\native)

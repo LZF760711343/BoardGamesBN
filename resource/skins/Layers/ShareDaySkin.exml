@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShareDaySkin" width="758" height="393" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" height="100%" source="paihang1_png" scale9Grid="94,217,571,291"/>
+	<e:Image horizontalCenter="0" top="26" source="meirifenxiang_text_png"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" scaleX="0.8" scaleY="0.8"/>
+	<UI:CommonBtn id="_shareFriend"   x="113" y="264" bgStr="bigG_icon_png" skinName="UI.CommonBtnSkin" icon="fx_area_png"/>
+	<UI:CommonBtn id="_weChatFriends"  x="449" y="264" bgStr="bigG_icon_png" icon="fxq_area_png" skinName="UI.CommonBtnSkin"/>
+	<e:Label text="分享到朋友圈，每天获得3000金币"  style="style2" size="39" x="89" y="150.5" textColor="0xffffff"/>
+</e:Skin>

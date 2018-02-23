@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="performanceLayerSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" height="619" width="1113">
+	<UI:LayerBgImg width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image width="100%" height="100%" source="dbj_jpg" visible="false"/>
+    <e:Scroller id="_perfLayerScroller" width="1110.67" height="505.33" y="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="3.5">
+        <e:List id="_listItem" x="1" y="1"  itemRendererSkinName="PerformanceItemSkin" useVirtualLayout="false">
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+							<e:Object aaa="null"/>
+						</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+						<e:HorizontalLayout gap="20"/>
+					</e:layout>
+				</e:List>
+    </e:Scroller>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin" right="5" anchorOffsetX="0" anchorOffsetY="0" width="89" height="88" scaleX="0.8" scaleY="0.8" top="13"/>
+	<e:Group id="noneTips" width="1100" height="553.33" y="88" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-5">
+		<e:Image x="18" y="8" source="kuang1_png" anchorOffsetX="0" width="1068" anchorOffsetY="0" height="512"/>
+		<e:Image x="370.14" y="102.84" anchorOffsetX="0" anchorOffsetY="0" source="new_area_png"/>
+		<e:Label text="暂时无战绩，快邀请好友一起来玩吧" x="270.34" y="336.34" anchorOffsetX="0" anchorOffsetY="0" size="36" fontFamily="Microsoft YaHei" textColor="0xf9f4f4"/>
+	</e:Group>
+	<e:Image horizontalCenter="0.5" top="25" source="zhanji_text_png"/>
+</e:Skin>

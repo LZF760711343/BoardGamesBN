@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SaleWindowSkin" width="760" height="581" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:UI="UI.*">
+	<UI:LayerBgImg width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0"/>
+
+	<e:Image x="52" y="335" width="658" height="78" anchorOffsetX="0" anchorOffsetY="0" source="kuang1_png"/>
+	<e:Label text="总价：" x="162.16" y="358.5" anchorOffsetX="0" width="172" anchorOffsetY="0" height="31" textAlign="center" size="24" fontFamily="Microsoft YaHei" verticalAlign="middle"/>
+	<UI:CommonBtn id="btn_sale" label="确认出售" x="282" y="450" skinName="UI.CommonBtnSkin" bgStr="bigG_icon_png"/>
+	<e:Image x="52" y="113" width="685" height="183" scale9Grid="9,8,147,52" anchorOffsetX="0" anchorOffsetY="0" source="kuang1_png"/>
+	<e:Group x="240.5" y="353.94">
+		<e:Image x="68.56" y="-1.54" anchorOffsetX="0" width="257" anchorOffsetY="0" height="44" source="kuang1_png"/>
+		<e:EditableText id="text_down" width="167" height="28" text="500000" anchorOffsetX="0" anchorOffsetY="0" size="34" textAlign="center" verticalAlign="middle" restrict="&quot;0-9&quot;" horizontalCenter="36.5" verticalCenter="-1.5"/>
+	</e:Group>
+	<e:Group x="339.52" y="242.68">
+		<e:Image x="0" y="0" width="214" height="44" source="kuang1_png"/>
+		<e:EditableText text="1" size="32" textAlign="center" verticalAlign="middle" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Image x="127" y="136" anchorOffsetX="0" anchorOffsetY="0" source="kuangbg_area_png"/>
+	<e:Image x="141.4" y="153.4" width="108" height="95" source="fangka_icon1_png"/>
+	<e:Label id="text_count" text="门票:12" x="337" y="142" anchorOffsetX="0" width="198" anchorOffsetY="0" height="44" textAlign="left" size="33" fontFamily="Microsoft YaHei"/>
+	<e:Label text="选择出售的数量：" x="337.5" y="198.76" anchorOffsetX="0" width="224.67" anchorOffsetY="0" height="25" textAlign="left" size="24" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<UI:CommonBtn id="_btnClose" label="Button" anchorOffsetX="0" anchorOffsetY="0" bgStr="close_icon_png" skinName="UI.CloseBtnSkin" scaleX="0.8" scaleY="0.8" right="5" top="13"/>
+	<e:Image horizontalCenter="0" top="19" source="daojuchushou_text_png"/>
+
+
+
+
+
+</e:Skin>

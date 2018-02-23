@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SperakerManSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="800" height="49">
+	<e:Image source="lb_area_png" y="8" x="0"/>
+	<e:Label id="label" text="禁止任何利用本平台进行赌博活" fontFamily="Microsoft YaHei" size="20" verticalCenter="0" x="86"/>
+</e:Skin>

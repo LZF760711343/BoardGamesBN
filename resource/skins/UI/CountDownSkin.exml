@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UI.CountDownSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15cc406a32b"/>
+    <e:Image touchEnabled="false"  horizontalCenter="0" verticalCenter="0" source="clock_icon_png"/>
+    <e:Label id="time_label" touchEnabled="false" horizontalCenter="0"
+             verticalCenter="0"  textColor="0xffffff"  visible="false"/>
+	<e:BitmapLabel font="clock_num_fnt" text="{curTime}" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

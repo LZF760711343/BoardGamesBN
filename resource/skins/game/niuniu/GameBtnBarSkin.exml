@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="niuniu.GameBtnBarSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:UI="UI.*" states="none,zhunbei,rob,bet,waitBet,cal,waitReady,wait,goldzhunbei" height="260" width.goldzhunbei="400">
+    <e:Image includeIn="rob,bet,waitBet,wait" horizontalCenter="4"              horizontalCenter.cal="0.5" y.cal="-35"                           bottom="185" bottom.cal="167" horizontalCenter.waitReady="0.5" y.waitReady="25"              bottom.waitReady="168"  source.cal="j_area_png" source.waitReady="j_area_png" horizontalCenter.wait="0" bottom.wait="118" source="gamebegin_icon_png" source.wait="gamebegin_icon_png" horizontalCenter.rob="4" bottom.rob="117" horizontalCenter.bet="4" bottom.bet="117" horizontalCenter.waitBet="4" bottom.waitBet="117"/>
+	<e:Image y="-68" source="clock_icon_png" horizontalCenter.wait="4" horizontalCenter.waitBet="4" horizontalCenter.bet="4" horizontalCenter.rob="4" horizontalCenter.zhunbei="4" horizontalCenter.none="4" includeIn="rob,bet,waitBet,cal,waitReady,wait" horizontalCenter.cal="2" y.cal="-0.01" y.waitReady="1" horizontalCenter.waitReady="0" y.rob="0" y.bet="0" y.waitBet="0" y.wait="0" horizontalCenter.goldzhunbei="4"/>
+    <UI:CommonBtn id="btnChangeDesk" label="准 备" includeIn="goldzhunbei"
+                   horizontalCenter="0.5" bottom="105" bgStr="bigR_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.8" scaleY="0.8" horizontalCenter.goldzhunbei="-116" label.goldzhunbei="换 桌" bgStr.goldzhunbei="button_green_png"/>
+	<UI:CommonBtn id="_btnReady" label="准 备" includeIn="zhunbei,goldzhunbei" horizontalCenter="116" bottom="105" bgStr="bigR_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.8" scaleY="0.8" horizontalCenter.zhunbei="0"/>
+    <e:Label id="_tipsLb" text="请下注" horizontalCenter="4" bold="true" size="25"              includeIn="rob,bet,waitBet,wait" fontFamily="黑体"              bottom="200" y.waitReady="52"               horizontalCenter.cal="0.5" bottom.cal="200" horizontalCenter.waitReady="0.5" bottom.waitReady="202" size.cal="30" textColor.waitReady="0xffffff" size.waitReady="30" textColor.wait="0xffffff" verticalCenter.wait="-14.5" horizontalCenter.wait="1" bottom.wait="132" textColor="0xffffff" size.wait="25" text.rob="请抢庄" horizontalCenter.rob="3" bottom.rob="130" text.bet="请抢庄" text.waitBet="请抢庄" text.wait="请抢庄" textColor.cal="0xffffff" horizontalCenter.bet="4" bottom.bet="132" horizontalCenter.waitBet="4" bottom.waitBet="132"/>
+	<e:BitmapLabel id="_tmieSurplus" includeIn="rob,bet,waitBet,cal,waitReady,wait" font="clock_num_fnt"  horizontalCenter="0" horizontalCenter.wait="4.5" y.wait="31" horizontalCenter.rob="4.5" y.rob="31" y.bet="31" horizontalCenter.bet="4.5" horizontalCenter.waitBet="4.5" y.waitBet="31" verticalCenter="-85"/>
+    <e:Group horizontalCenter="0.5" bottom="35" includeIn="bet">
+        <UI:CommonBtn id="btnBet1" y="133" bgStr="bigG_icon_png" x="1" includeIn="bet"  label="1 分" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <UI:CommonBtn id="btnBet2" y="133" bgStr="bigG_icon_png" x="1" includeIn="bet"  label="2 分" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <UI:CommonBtn id="btnBet3" y="133" bgStr="bigG_icon_png" x="1" includeIn="bet"  label="3 分" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <UI:CommonBtn id="btnBet4" y="133" bgStr="bigG_icon_png" x="1" includeIn="bet"  label="4 分" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <UI:CommonBtn id="btnBet5" y="133" bgStr="bigR_icon_png" x="1" includeIn="bet"  label="5 分" bgGrayStr="bigH_icon_png" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <e:layout>
+            <e:HorizontalLayout gap="10" />
+        </e:layout>
+    </e:Group>
+    <e:Group horizontalCenter="0.5" bottom="36" includeIn="rob">
+        <UI:CommonBtn id="btnNot" includeIn="rob" name="0" x="326"  bgStr="bigR_icon_png" label="不 抢" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <UI:CommonBtn id="btnRob1" includeIn="rob" name="1"
+                      x="126"  bgStr="bigG_icon_png" bgGrayStr="bigH_icon_png" label="抢 庄" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+			<UI:CommonBtn id="btnRob2" includeIn="rob" name="1" x="126" bgStr="bigG_icon_png" bgGrayStr="bigH_icon_png" label="1 倍" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+			<UI:CommonBtn id="btnRob3" includeIn="rob" name="1" x="126" bgStr="bigG_icon_png" bgGrayStr="bigH_icon_png" label="3 倍" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+			<UI:CommonBtn id="btnRob4" includeIn="rob" name="1" x="126" bgStr="bigG_icon_png" bgGrayStr="bigH_icon_png" label="4 倍" skinName="UI.CommonBtnSkin3" scaleX="0.7" scaleY="0.7"/>
+        <e:layout>
+            <e:HorizontalLayout gap="40" />
+        </e:layout>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameListItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="_gourp" x="0" y="0">
+		<e:Image id="_headImg" width="68" height="66" source="defaultHead_png" x="0" y="0"/>
+		<e:Image x="69" y="36.5" source="iconCoin_png" width="20" height="20"/>
+		<e:Label id="_nameLabel" text="游客" x="85" y="8.54000000000002" fontFamily="Microsoft YaHei" size="16" style="style2" textAlign="center" rotation="359.81" textColor="0xffffff"/>
+		<e:Label id="_goldlabel" text="88888" x="93" y="37.54000000000002" fontFamily="Microsoft YaHei" size="16" style="style2" textAlign="center" rotation="359.81" textColor="0xFFFFFF"/>
+	</e:Group>
+</e:Skin>

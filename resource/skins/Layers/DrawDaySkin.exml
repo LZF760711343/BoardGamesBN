@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DrawDaySkin" width="929" height="607" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<UI:LayerBgImg width="100%" height="100%" />
+	<e:Image source="kuang1_png" width="862" y="87.05" height="406" x="35.34"/>
+	<e:Label text="第三天" x="467" y="146" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="22" lineSpacing="6" />
+	<e:Label text="第四天" x="651" y="146" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="22"  lineSpacing="6" />
+	<e:Label text="第五天" x="185" y="333" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="22" lineSpacing="6" />
+	<e:Label text="第六天" x="371" y="333" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="22" lineSpacing="6" />
+	<e:Label text="第七天" x="557" y="333" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="22" lineSpacing="6" />
+	<e:Label text="第二天" x="281" y="146" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="22" lineSpacing="6" />
+	<e:Label text="第一天" x="94" y="146" style="style1" textColor="0xEDE7E3" size="25" bold="true" anchorOffsetY="0"
+	         height="108" anchorOffsetX="0" width="33" lineSpacing="6" />
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13"  scaleX="0.8" scaleY="0.8"/>
+	<UI:CommonBtn id="_qiandaolingqu" label="确 定" skinName="UI.CommonBtnSkin" bgStr="bigG_icon_png"
+	               horizontalCenter="0" verticalCenter="250.5"/>
+	<e:Group id="_groud1" x="138" y="125" anchorOffsetX="0" width="118" anchorOffsetY="0" height="165">
+		<e:Image x="0" y="0" height="121" source="kuangbg_area_png" width="116"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" source="jb_icon1_png"/>
+		<e:Image x="5" y="126.3" width="38" height="38" source="jb_Area_png"/>
+		<e:Label text="3000" x="43" y="130.3" size="30"/>
+		<e:Group id="_get1" x="0" y="-3" anchorOffsetX="0" width="117" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="_groud2" x="325" y="125" anchorOffsetX="0" width="119">
+		<e:Image x="0" y="0" height="121" source="kuangbg_area_png" width="116"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" source="jb_icon2_png"/>
+		<e:Image x="5" y="126.3" width="38" height="38" source="jb_Area_png"/>
+		<e:Label text="4000" x="43" y="130.3" size="30"/>
+		<e:Group id="_get2" x="0" y="-3" anchorOffsetX="0" width="117" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="_groud3" x="514" y="125">
+		<e:Image height="121" source="kuangbg_area_png" width="116" scaleX="1" scaleY="1"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63" scaleX="1" scaleY="1"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" scaleX="1" scaleY="1" source="jb_icon3_png"/>
+		<e:Image x="5" y="126.3" width="38" height="38" scaleX="1" scaleY="1" source="jb_Area_png"/>
+		<e:Label text="5000" y="130.3" size="30" scaleX="1" scaleY="1" x="43"/>
+		<e:Group id="_get3" anchorOffsetX="0" width="117" scaleX="1" scaleY="1" y="-3" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="_groud4" x="696" y="125" anchorOffsetX="0" width="120">
+		
+		<e:Image height="121" source="kuangbg_area_png" width="116" scaleX="1" scaleY="1"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63" scaleX="1" scaleY="1"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" scaleX="1" scaleY="1" source="jb_icon4_png"/>
+		<e:Image x="5" y="126.3" width="38" height="38" scaleX="1" scaleY="1" source="jb_Area_png"/>
+		<e:Label text="6000" y="130.3" size="30" scaleX="1" scaleY="1" x="43"/>
+		<e:Group id="_get4" anchorOffsetX="0" width="117" scaleX="1" scaleY="1" y="-3" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+		
+	</e:Group>
+	<e:Group id="_groud5" x="231" y="304" anchorOffsetX="0" width="119">
+		<e:Image height="121" source="kuangbg_area_png" width="116" scaleX="1" scaleY="1"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63" scaleX="1" scaleY="1"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" scaleX="1" scaleY="1" source="jb_icon4_png"/>
+		<e:Image x="4" y="126.3" width="38" height="38" scaleX="1" scaleY="1" source="jb_Area_png"/>
+		<e:Label text="7000" y="130.3" size="30" scaleX="1" scaleY="1" x="42"/>
+		<e:Group id="_get5" anchorOffsetX="0" width="117" scaleX="1" scaleY="1" y="-3" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="_groud6" x="416" y="304" anchorOffsetX="0" width="119">
+		<e:Image height="121" source="kuangbg_area_png" width="116" scaleX="1" scaleY="1"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63" scaleX="1" scaleY="1"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" scaleX="1" scaleY="1" source="jb_icon5_png"/>
+		<e:Image x="6" y="126.3" width="38" height="38" scaleX="1" scaleY="1" source="jb_Area_png"/>
+		<e:Label text="8000" y="130.3" size="30" scaleX="1" scaleY="1" x="44"/>
+		<e:Group id="_get6" anchorOffsetX="0" width="117" scaleX="1" scaleY="1" y="-3" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="_groud7" x="602" y="304">
+		<e:Image height="121" source="kuangbg_area_png" width="116" scaleX="1" scaleY="1"/>
+		<e:Image source="button_Bred_png" width="117" height="45" y="122.63" scaleX="1" scaleY="1"/>
+		<e:Image width="93" height="80" x="12.36" y="21.67" scaleX="1" scaleY="1" source="jb_icon6_png"/>
+		<e:Image x="6" y="126.3" width="38" height="38" scaleX="1" scaleY="1" source="jb_Area_png"/>
+		<e:Label text="9000" y="130.3" size="30" scaleX="1" scaleY="1" x="44"/>
+		<e:Group id="_get7" anchorOffsetX="0" width="117" scaleX="1" scaleY="1" y="-3" visible="false">
+			<e:Image source="kuang1_png" width="100%" height="173" y="0" anchorOffsetY="0" x="0"/>
+			<e:Image y="44" source="kuang1_png" height="39" anchorOffsetX="0" width="119" x="0"/>
+			<e:Label text="已领取" x="13" y="50" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Image horizontalCenter="0" top="26" source="meiriqiandao_text_png"/>
+</e:Skin>

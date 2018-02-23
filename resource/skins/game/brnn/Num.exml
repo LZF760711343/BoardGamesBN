@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Num" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  width="50" height="48">
+	<w:Config id="15c77db091d"/>
+	<w:Declarations>
+		<tween:TweenGroup id="Dong">
+			<tween:TweenItem target="{_imgDong}">
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object scaleX="{1.1}" scaleY="{1.1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="_imgDong" horizontalCenter="0" verticalCenter="0" scaleX="0.3" scaleY="0.3" source="{data.Str}"/>
+</e:Skin>

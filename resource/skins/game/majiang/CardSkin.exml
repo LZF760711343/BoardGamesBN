@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="majiang.CardSkin" currentState="big_back" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15d8351b01b"/>
+	<e:Image id="_img" source="{icon}" width="100%" height="100%"/>
+	<e:Image id="_lazi" source="lai_tiao2area_png"  right="0" top="14" visible="false"/>
+</e:Skin>

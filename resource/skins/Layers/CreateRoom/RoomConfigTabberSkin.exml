@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoomConfigTabberSkin" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled"  width.down="190" width.disabled="190" height.down="87" height.disabled="87">
+	<e:Image source.disabled="ao_area_png" source="tu_area_png" x.down="11" x.disabled="11" source.up="tu_area_png" width="180" width.down="170" width.disabled="170" x.up="5" source.down="ao_area_png" y.down="10" y.disabled="10"/>
+	<e:Label text="{data.name}" textAlign="center" horizontalCenter="0" verticalCenter="-5" bold="true" fontFamily="Microsoft YaHei" verticalCenter.down="0" verticalCenter.disabled="0" horizontalCenter.up="2.5" verticalCenter.up="-4.5"/>
+</e:Skin>

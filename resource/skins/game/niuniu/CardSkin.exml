@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="niuniu.CardSkin" currentState="back" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        states="big,small,big_w,small_w,back,big_back,bigGray,big_brnn" width.back="74" height.back="98"
+        width.small_w="74" width.small="74" height.small_w="98" height.small="98" width.big_back="120"
+        height.big_back="166" width.big_w="120" height.big_w="166">
+        <e:Image id="bg" source="big_card_bg_png" width="100%" height="100%" />
+        <e:Image id="icon_key" left="1" top="8" scaleX.small_w="0.7" scaleY.small_w="0.7"
+                 includeIn="big,small,big_w,small_w,big_brnn" source="card_1_1_png" scaleX.small="0.9"
+                 scaleY.small="0.9" left.big_brnn="-1" top.big_brnn="4" />
+        <e:Image id="icon_color" right="10" bottom="11" right.small="5" bottom.small="6" scaleX.small="0.5"
+                 scaleY.small="0.5" right.big_w="10" bottom.big_w="11" right.small_w="6" bottom.small_w="6"
+                 scaleX.small_w="0.5" scaleY.small_w="0.5" includeIn="big,small,big_w,small_w,big_brnn"
+                 source="card_color1_png" scaleX="0.85" scaleY="0.85" />
+        <e:Image id="icon" left="6" top="52" includeIn="big,big_brnn" source="card_icon1_png" left.big_brnn="8"
+                 top.big_brnn="67" />
+        <e:Rect id="shader" height="100%" width="100%" x="0" y="0" alpha="0.2" ellipseHeight="25" ellipseWidth="25"
+                ellipseHeight.small="15" ellipseWidth.small="15" ellipseHeight.small_w="15" ellipseWidth.small_w="15"
+                includeIn="big,small,big_w,small_w,big_brnn" visible="false" />
+</e:Skin>

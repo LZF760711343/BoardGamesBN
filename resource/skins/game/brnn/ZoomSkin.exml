@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UI.ZoomSkin" width="192" height="620" currentState="gold" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" states="fan,gold" >
+	<w:Declarations>
+		<tween:TweenGroup id="Open">
+			<tween:TweenItem target="{_contractionBtn}">
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{180}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="Close">
+			<tween:TweenItem target="{_contractionBtn}">
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="_bgImg" x="117" y="35" alpha="1" source="shousuo_blackarea_png" height="230" scale9Grid="9,73,58,164" visible="false"/>
+	<e:Group id="_shirckGroup" x="114" y="97" touchThrough="true">
+		<UI:CommonBtn id="_SetBtn" label="Button" skinName="UI.ScaleButonSkin" icon="Sz_icon_png" left="1" top="-11" visible="false"/>
+		<UI:CommonBtn id="_dissolveBtn" label="Button" icon="tc_icon_png" skinName="UI.ScaleButonSkin" left="1" top="80" visible="false"/>
+		<UI:CommonBtn id="_ruleBtn" label="Button" icon="gz_icon_png" skinName="UI.ScaleButonSkin" left="2" top="170" includeIn="fan" visible="false"/>
+	</e:Group>
+	<UI:CommonBtn id="_contractionBtn"  x="156" y="36" skinName="UI.CommonBtnSkin" bgStr="sou_icon_png" anchorOffsetX="38" anchorOffsetY="41" />
+</e:Skin>

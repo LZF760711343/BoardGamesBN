@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="majiang.RoomConfigLayerSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:UI="UI.*" width="870" height="510" states="1,2,3" height.3="618" width.2="1114" height.2="618"
+        height.1="464" width.3="1114">
+	<!--<e:Image includeIn="2,3" source="user_info_bg_png" left="0" top="0" anchorOffsetY="0" height="100%" width="100%" />
+	-->
+	<UI:LayerBgImg includeIn="2,3" height="100%" width="100%" />
+	<e:Image horizontalCenter="0" top="25" source="guizeshuom_text_png" includeIn="2,3" />
+	<e:Image x="229" y="93" anchorOffsetY="0" height="515" anchorOffsetX="0" width="875" scaleX="1" scaleY="1"
+	         source="kuang1_png" scale9Grid="14,286,206,0" includeIn="2,3" />
+	<e:Image width="199" height="519" x="23" y="93" source="kuang1_png" includeIn="2,3" />
+	<e:TabBar width="200" includeIn="3" x="29.01" y="112" itemRendererSkinName="RoomConfigTabberSkin" height="91">
+		<e:ArrayCollection>
+		<e:Array>
+			<e:Object name="棋牌说明"/>
+		</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+	<UI:CommonBtn id="_btnClose" label="Button" includeIn="2,3" x="1027" y="5.640000000000029" icon="close_icon_png" skinName="UI.CloseBtnSkin" scaleX="1" scaleY="1"/>
+	<!--<e:Image includeIn="3" source="user_info_bg_png" anchorOffsetY="0" height="100%" width="100%" left="0" top="0" />
+	-->
+	<!--<e:Image includeIn="2" source="close_icon_bg_png" right="0" top="0" />
+	-->
+	<e:Group id="_roomGroup" x="38.51999999999998" y="31.32000000000001" x.2="308.33" y.2="127.35" x.3="85.31" y.3="115.38" includeIn="1,2">
+		<e:Label text="局数" x="13" y="0" size="25" fontFamily="Microsoft YaHei" size.1="25" x.1="13"/>
+		<e:Label text="玩法" x="13" y="84" size="25" fontFamily="Microsoft YaHei" x.1="13"/>
+		<e:Label text="胡牌" x="13" y="236" size="25" fontFamily="Microsoft YaHei" x.1="13"/>
+		<e:Label text="限制" x="13" y="397" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="赖子" x="13" y="275" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="马牌" x="13" y="312" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Group id="_fanGroup" x="72" y="80" width="678">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="3" columnAlign="justifyUsingWidth" horizontalGap="6" verticalGap="3"/>
+		</e:layout>
+		</e:Group>
+		<e:Label y="440.68" text="注：房卡在开始游戏后第一局牌局结算后扣除，提前解散不扣房卡" fontFamily="微软雅黑" size="18" x="106.48000000000002" includeIn="1,2" textColor.1="0xde7577" textColor.2="0xde7577" textColor="0xde7577"/>
+		<e:RadioButton id="_kchRadio" y="236" skinName="CRadioButtonMjSkin" x="117" label="可吃胡" groupName="mj_hupai" value="0" skinName.1="CRadioButtonMjSkin2"/>
+		<e:RadioButton id="_jhzmRadio" y="236" skinName="CRadioButtonMjSkin" x="301.5" label="鸡糊自摸" groupName="mj_hupai" value="1" skinName.1="CRadioButtonMjSkin2"/>
+		<e:RadioButton id="_zmRadio" y="236" skinName="CRadioButtonMjSkin" x="506.48" label="自摸" groupName="mj_hupai" value="2"/>
+		<e:RadioButton id="_wgRadio" skinName="CRadioButtonMjSkin" x="117" label="没有赖子" groupName="mj_guipai" value="0" skinName.1="CRadioButtonMjSkin2" y="275"/>
+		<e:RadioButton id="_levelRadio1" skinName="CRadioButtonMjSkin" x="116" label="8局(2房卡)" groupName="szp_level" value="0" skinName.1="CRadioButtonMjSkin2" x.1="116" groupName.1="mj_level"/>
+		<e:RadioButton id="_levelRadio2" label="16局(3房卡)" skinName="CRadioButtonMjSkin" groupName="szp_level" x="332.33" value="1" skinName.1="CRadioButtonMjSkin2" groupName.1="mj_level"/>
+		<e:RadioButton id="_levelRadio3" label="26局(5房卡)" skinName="CRadioButtonMjSkin" groupName="szp_level" x="554.97" value="2" groupName.1="mj_level"/>
+		<e:RadioButton id="_wmRadio" y="312" skinName="CRadioButtonMjSkin" x="118" label="无马" groupName="mj_mapai" value="1" skinName.1="CRadioButtonMjSkin2"/>
+		<e:RadioButton id="_mmRadio" y="312" skinName="CRadioButtonMjSkin" x="301.5" label="买马" groupName="mj_mapai" value="2" skinName.1="CRadioButtonMjSkin2"/>
+		<e:ToggleButton id="_mgdfTogBtn" y="311" skinName="CRadioButtonMjSkin" x="506.48" label="马跟底分" skinName.1="CRadioButtonMjSkin2"/>
+		<e:RadioButton id="_2mRadio" y="350" skinName="CRadioButtonMjSkin" x="118" label="买2马" groupName="mj_mapaishu" value="2"/>
+		<e:RadioButton id="_4mRadio" y="350" skinName="CRadioButtonMjSkin" x="301.5" label="买4马" groupName="mj_mapaishu" value="4"/>
+		<e:RadioButton id="_6mRadio" y="349" skinName="CRadioButtonMjSkin" x="506.48" label="买6马" groupName="mj_mapaishu" value="6"/>
+		<e:RadioButton id="_bbgRadio" skinName="CRadioButtonMjSkin" x="302.5" label="白板赖子" groupName="mj_guipai" value="2" y="275" skinName.1="CRadioButtonMjSkin2"/>
+		<e:RadioButton id="_fgRadio" skinName="CRadioButtonMjSkin" x="506.48" label="翻赖子" groupName="mj_guipai" value="1" skinName.1="CRadioButtonMjSkin2" y="275" value.1="1" selected="true"/>
+		<e:ToggleButton id="_ipxzRadio" x="116" y="400" skinName="RRadioButtonSkin" label="IP限制" y.2="402" y.3="396.67" y.1="399.99"/>
+		<e:ToggleButton id="_dlwzRadio" x="342" y="400" skinName="RRadioButtonSkin" label="地理位置限制" y.2="402" y.3="396.67" y.1="399.99"/>
+	</e:Group>
+	<e:Group id="_cardGorup" includeIn="2,3" x="309.33" y="132.99" visible.2="false">
+		<e:Image source="hzmj_gz_png" includeIn="2,3"/>
+	</e:Group>
+	<e:TabBar id="_tabber" includeIn="2" itemRendererSkinName="RoomConfigTabberSkin" y="113.64" x="28">
+		<e:layout>
+		<e:VerticalLayout/>
+		</e:layout>
+		<e:ArrayCollection>
+		<e:Array>
+			<e:Object name="房间规则"/>
+			<e:Object name="棋牌说明"/>
+		</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+	</e:Skin>

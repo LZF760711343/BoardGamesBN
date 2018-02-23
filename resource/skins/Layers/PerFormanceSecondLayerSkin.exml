@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PerFormanceSecondLayerSkin" width="1136" height="618" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing">
+	<UI:LayerBgImg width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+	<UI:CommonBtn id="_btnClose" label="Button" skinName="UI.CloseBtnSkin" anchorOffsetX="0" anchorOffsetY="0" right="5" top="13" scaleX="0.8" scaleY="0.8"/>
+	<UI:LayerBgImg horizontalCenter="6" verticalCenter="35.5" width="1078" height="505" alpha="0.3"/>
+	<e:Label text="时间" x="141.2" y="121" size="32" textColor="0xffffff" fontFamily="Microsoft YaHei"/>
+	<e:DataGroup id="_nameList" width="852" height="49.33" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="102" verticalCenter="-171.5">
+		<e:itemRendererSkinName>
+			<e:Skin xmlns:e="http://ns.egret.com/eui">
+				<e:Label fontFamily="微软雅黑" width="197"
+				         textAlign="center"  text="{data}" size="27" textColor="0xffffff" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object data="null"/>
+				<e:Object data="null"/>
+				<e:Object data="null"/>
+				<e:Object data="null"/>
+				<e:Object data="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="-40"/>
+		</e:layout>
+	</e:DataGroup>
+	<e:Scroller id="_scroller" width="1072" height="398.66" x="38.67" y="176.35" anchorOffsetX="0" anchorOffsetY="0">
+		<e:List id="_dataGroup" width="1068" itemRendererSkinName="PerformanceSencondlistItemSkin" x="1.52" anchorOffsetX="0">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object data="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+		</e:List>
+	</e:Scroller>
+	<e:Image id="_title" horizontalCenter="0" top="26" source="niuniu_text_png"/>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameAnnouncementSkin" xmlns:e="http://ns.egret.com/eui" xmlns:UI="UI.*" xmlns:w="http://ns.egret.com/wing" width="1114" height="618">
+	<UI:LayerBgImg x="0" y="0" width="100%" height="100%"/>
+	<e:Image horizontalCenter="0" top="23" source="youxigonggao_text_png"/>
+	<UI:CommonBtn id="_btnClose" skinName="UI.CloseBtnSkin" right="5" top="13" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Image x="20" y="84" source="kuang1_png" anchorOffsetX="0" width="174" anchorOffsetY="0" height="518"/>
+	<e:Image x="205.16" y="84" anchorOffsetY="0" height="516" anchorOffsetX="0" width="890" scaleX="1" scaleY="1" source="kuang1_png" scale9Grid="82,226,56,60"/>
+	<e:Image id="_webSize" width="880" height="502" x="212" y="102" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Scroller width="167" height="503" x="28" y="99" anchorOffsetX="0" anchorOffsetY="0">
+		<e:TabBar id="_tabBar" x="18" y="94"  anchorOffsetY="0" height="501">
+		<e:itemRendererSkinName>
+		<e:Skin states="up,down,disabled" minHeight="50" minWidth="100">
+			<e:Image scale9Grid="1,3,8,8" alpha.disabled="0.5" horizontalCenter.up="0" verticalCenter.up="0" horizontalCenter.down="0" verticalCenter.down="0" horizontalCenter.disabled="0" verticalCenter.disabled="0" source.down="ao_area_png" width="157" height="77" width.down="157" source="bigG_icon_png"/>
+			<e:Label fontFamily="Microsoft YaHei" textColor="0xFFFFFF" horizontalCenter="0.5" verticalCenter="-1.5" size="23" text="{data.title}" verticalCenter.down="0" horizontalCenter.down="0"/>
+		</e:Skin>
+		</e:itemRendererSkinName>
+		<e:layout>
+		<e:VerticalLayout gap="20"/>
+		</e:layout>
+	</e:TabBar>
+	</e:Scroller>
+	
+</e:Skin>
